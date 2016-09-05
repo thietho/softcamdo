@@ -1,7 +1,7 @@
 <?php
 // HTTP
-define('HTTP_IMAGE', 'http://'.$_SERVER['HTTP_HOST'].'/hongvanphat/file/');
-define('HTTP_SERVER', 'http://'.$_SERVER['HTTP_HOST'].'/hongvanphat/');
+define('HTTP_IMAGE', 'http://'.$_SERVER['HTTP_HOST'].'/softcamdo/file/');
+define('HTTP_SERVER', 'http://'.$_SERVER['HTTP_HOST'].'/softcamdo/');
 
 
 // HTTPS
