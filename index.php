@@ -25,7 +25,6 @@
 		
 		// Front Controller
 		$controller = new Front();
-		
 		// Router
 		if (isset($request->get['route'])) {
 			$action = new Router($request->get['route']);

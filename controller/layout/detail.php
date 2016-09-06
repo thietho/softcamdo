@@ -1,10 +1,10 @@
 <?php
-class ControllerLayoutHome extends Controller
+class ControllerLayoutDetail extends Controller
 {
 	public function index()
 	{
 		
-		if(file_exists(@$_GET['sitemapid'].".html"))
+		if(file_exists($_GET['sitemapid'].".html"))
 		{
 			
 			@$this->data['output'] = file_get_contents($_GET['sitemapid'].".html");
@@ -17,12 +17,12 @@ class ControllerLayoutHome extends Controller
 		
 		
 		
-			$this->template="layout/home.tpl";
+			$this->template="layout/detail.tpl";
 			$this->children=array(
 				'common/header',
 				
 			);
-			$this->render();
+		$this->render();
 		}
 	}
 }

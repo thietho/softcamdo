@@ -28,28 +28,6 @@ final class User {
 		}
 		
 		$this->siteid = $this->session->data['siteid'];
-		
-	
-    	/*if (isset($this->session->data['userid'])) {
-			$query = $this->db->query("SELECT * FROM user WHERE userid = '" . $this->db->escape($this->session->data['userid']) . "'");
-			
-			if ($query->num_rows) {
-				$this->userid = $query->row['userid'];
-				$this->username = $query->row['username'];
-				
-      			$this->db->query("UPDATE user SET userip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "' WHERE userid = '" . (int)$this->session->data['userid'] . "'");
-				$sql = "SELECT permission FROM usertype where usertypeid = (Select usertypeid from user where userid = '" . $this->db->escape($this->session->data['userid']) . "')";
-      			$query = $this->db->query($sql);
-				$this->setPermission($query->row['permission']);
-				$this->nhanvien = $this->getNhanVien();
-				
-			}elseif(isset($this->session->data['safemode'])){
-				$this->userid = $this->session->data['userid'];
-				$this->username = $this->session->data['username'];
-			} else {
-				$this->logout();
-			}
-    	}*/
   	}
 		
   	
@@ -179,74 +157,9 @@ final class User {
 
 	}
 
-	public function getNhanVien()
-	{
-		return $this->session->data['nhanvien'];
-	}
-	public function getShop()
-	{
-		$nhanvien = $this->getNhanVien();
-		$staffid = $nhanvien['id'];
-		$sql = "Select *
-									from `shop_staff` 
-									where staffid = '".$staffid."' ";
-		$query = $this->db->query($sql);
-		
-		$shopid = $query->row['shopid'];
-		$sql = "Select *
-									from `shop` 
-									where id = '".$shopid."' ";
-		$query = $this->db->query($sql);
-		
-		return $query->row;
-	}
 	
-	private function getAllModule()
-	{
-		$sql = "Select *
-									from `module`";
-
-		$query = $this->db->query($sql);
-		return $query->rows;
-	}
 	
-	public function checkPermission($moduleid)
-	{
-		
-		if($this->getUserTypeId() == 'admin')
-			return true;
-		
-		//Nhung module ko co khai bao thi ko can kiem tra
-		$data_module = $this->getAllModule();
-		$arr_allmodule = $this->string->matrixToArray($data_module,'moduleid');
-		if(!in_array($moduleid,$arr_allmodule))
-			return true;
-		//Kiem tra
-		$nhanvien = $this->getNhanVien();
-		$arr_allowmodule = $this->getAllowModule();
-		if(in_array($moduleid,$arr_allowmodule))
-			return true;
-		else
-			return false;
-	}
 	
-	public function getAllowModule()
-	{
-		$nhanvien = $this->getNhanVien();
-		$arr_allowmodule = $this->string->referSiteMapToArray($nhanvien['permission']);
-		if(count($arr_allowmodule)==0)
-		{
-			$sql = "Select *
-									from `module`
-									Where permission like '%[".$this->usertypeid."]%'";
-			$query = $this->db->query($sql);
-			foreach($query->rows as $module)
-			{
-				$arr_allowmodule[] = $module['moduleid'];
-			}
-		}
-		return $arr_allowmodule;
-	}
 	
 	public function getLogs($where)
 	{

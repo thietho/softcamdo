@@ -96,21 +96,11 @@ final class Document {
 		$this->filepath = DIR_FILE."db/setting.json";
 		$this->createDB();
 		$this->getData();
-		$this->loadSetting();
-		@$this->title = $this->setup['Title'];
-	}
-	
-	private function loadSetting()
-	{
-		$sql = "Select `media_information`.* 
-									from `media_information` Where mediaid = 'setting'";
-		$query = $this->db->query($sql);
-		foreach($query->rows as $item)
-		{
-			$this->setup[$item['fieldname']] = $item['fieldvalue'];
-		}
+		
 		
 	}
+	
+	
 	
 	private function createDB()
 	{

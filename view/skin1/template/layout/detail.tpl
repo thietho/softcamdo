@@ -20,7 +20,8 @@
     <!-- Custom CSS -->
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>sb-admin-2.css" rel="stylesheet">
 
-    
+    <!-- Morris Charts CSS -->
+    <link href="<?php echo HTTP_SERVER.DIR_CSS?>morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>font-awesome.css" rel="stylesheet" type="text/css">
@@ -36,10 +37,15 @@
 
 <body>
 
-    
+    <div id="wrapper">
 
-    <?php echo @$content?>
-        
+        <!-- Navigation -->
+        <?php echo @$header?>
+
+        <?php echo @$content?>
+        <!-- /#page-wrapper -->
+
+    </div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -51,7 +57,10 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="<?php echo HTTP_SERVER.DIR_JS?>metisMenu.js"></script>
 
-    
+    <!-- Morris Charts JavaScript -->
+    <script src="<?php echo HTTP_SERVER.DIR_JS?>raphael.js"></script>
+    <script src="<?php echo HTTP_SERVER.DIR_JS?>morris.js"></script>
+    <script src="<?php echo HTTP_SERVER.DIR_JS?>morris-data.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="<?php echo HTTP_SERVER.DIR_JS?>sb-admin-2.js"></script>
