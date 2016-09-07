@@ -1,4 +1,35 @@
 <?php
+/**
+ * Class Controller
+ *
+ * @property Loader load
+ * @property Smartweb smartweb
+ * @property Language language
+ * @property Config config
+ * @property Request request
+ * @property Response response
+ * @property Document document
+ * @property Url url
+ * @property CacheHTML cachehtml
+ * @property Session session
+ * @property String string
+ * @property Date date
+ * @property Validation validation
+ *
+ * @property ModelCoreBaseMedia model_core_basemedia
+ * @property ModelCoreSitemap model_core_sitemap
+ * @property ModelCoreReceivedemail model_core_receivedemail
+ * @property ModelCoreMessage model_core_message
+ * @property ModelCoreProduct model_core_product
+ * @property ModelCoreTag model_core_tag
+ * @property ModelCoreCustomer model_core_customer
+ * @property ModelModuleInformation model_module_information
+ *
+ * @property Common common
+ * @property User user
+ * @property Member member
+ *
+ */
 abstract class Controller {
 	protected $id;
 	protected $template;

@@ -9,6 +9,7 @@ $_['decimal_point']         = '.';
 $_['thousand_point']        = ',';
 
 // Text
+$_['title_welcome'] = 'Chào mừng bạn đến với hệ thống quản lý nội dung Website';
 $_['text_home']             = 'Trang chủ';
 
 $_['text_time']             = 'Page created in %s seconds';
@@ -19,94 +20,161 @@ $_['text_select']           = ' --- Please Select --- ';
 $_['text_all_zones']        = 'All Zones';
 $_['text_pagination']       = 'Showing %s to %s of %s (%s Pages)';
 $_['text_separator']        = ' &gt; ';
+$_['text_sitemapheader'] = 'SITEMAP MANAGEMENT';
+$_['text_editmodule']='Loại trang';
+$_['text_status']='Tình trạng';
+$_['text_control']='Công cụ';
+$_['text_orderid']='Order Id';
+$_['text_memberid']='MemberID';
+$_['text_customername']='Tên khách hàng';
+$_['text_address']='Địa chỉ';
+$_['text_email']='Email';
+$_['text_phone']='Số điện thoại';
+$_['text_fax']='Fax';
+$_['text_price']='Giá bán';
+$_['text_subtotal']='Sub total';
+$_['text_fromdate']='From date';
+$_['text_todate']='To date';
+$_['text_id']='ID';
+$_['text_customername']='Customer name';
+$_['text_orderdate']='Order Date';
+$_['text_fullname']='Họ và tên';
+$_['text_username']='User name';
+$_['text_password']='Password';
+$_['text_changepassword']='Change Password';
+$_['text_currentpassword']='Mật khẩu hiện tại';
+$_['text_newpassword']='Mật khẩu mới';
+$_['text_confirmnewpassword']='Xác nhận mật khẩu mới';
+$_['text_personalid']='Personal ID';
+$_['text_birthday']='Ngày sinh';
+$_['text_provinecity']='Provine/City';
+$_['text_country']='Country';
+$_['text_userprofile']='USER PROFILE';
+$_['text_user']='USER';
+$_['text_title']='Title';
+$_['text_slogan']='Slogan';
+$_['text_currency']='Currency';
+$_['text_emailtraning']='Email nhận khóa học';
+$_['text_emailcontract']='Email liên hệ';
+$_['text_emailorder']='Email đặt hàng';
+$_['text_alias']='Alias';
+$_['text_keyword']='Key word';
+$_['text_user_type'] = 'Loại người dùng';
+$_['text_avatar'] = 'Hình đại diện';
+$_['entry_photo'] = 'Chọn hình';
+$_['entry_del_photo'] = 'Xóa hình';
+$_['lbl_country'] = 'Quốc gia';
+$_['lbl_province'] = 'Tỉnh / Thành phố';
+$_['lbl_title'] = 'Tiêu đề';
+$_['lbl_category'] = 'Danh mục';
+$_['lbl_date'] = 'Ngày';
+$_['lbl_image'] = 'Hình';
+$_['lbl_key'] = 'Từ khóa';
+$_['lbl_fromdate'] = 'Từ ngày';
+$_['lbl_todate'] = 'Đến ngày';
+$_['title_add_new_sitemap'] = 'Thêm trang mới';
+$_['lbl_name'] = 'Tên';
+$_['lbl_standardprice'] = 'Giá thị trường';
+$_['lbl_sale'] = 'Khuyến mại';
+$_['lbl_price'] = 'Giá bán';
+$_['lbl_order'] = 'Thứ tự';
+$_['lbl_time'] = 'Thời gian';
+$_['lbl_detail'] = 'Chi tiết';
+$_['lbl_property'] = 'Thuộc tính';
+$_['lbl_infor'] = 'Thông tin';
+$_['lbl_document'] = 'Tài liệu';
+$_['lbl_assessment'] = 'Đánh giá';
+$_['lbl_page'] = 'Trang';
 
-$_['text_news']        		= 'Tin tức & Sự kiện';
-$_['text_hitcounter']       = 'Số lượt truy cập';
-$_['text_numberonline']     = 'Số người đang online';
-$_['text_numberaccess']       = 'Số lượt truy cập';
-
-$_['text_detail']       = 'Chi tiết';
-$_['text_order']       	= 'Đặt hàng';
-$_['text_hotline']       	= 'HOTLINE';
-
-$_['text_cart']       	= 'Giỏ hàng';
-$_['text_viewcart']       	= 'Xem giỏ hàng';
-$_['text_image']       	= 'Hình';
-$_['text_productname']       	= 'Tên sản phẩm';
-$_['text_price']       	= 'Giá';
-$_['text_qty']       	= 'Số lượng';
-$_['text_subtolal']       	= 'Thành tiền';
-$_['text_tolal']       	= 'Tổng cộng';
-$_['text_continueshopping']       	= 'Tiếp tục mua hàng';
-$_['text_payment']       	= 'Thanh toán';
-
-$_['text_orderinformation']       	= 'Thông tin đơn hàng';
-$_['text_fullname']       	= 'Họ và tên';
-$_['text_email']       	= 'Email';
-$_['text_address']       	= 'Địa chỉ';
-$_['text_phone']       	= 'Điện thoại';
-$_['text_fax']       	= 'Fax';
-$_['text_company']       	= 'Công ty';
-$_['text_note']       	= 'Ghi chú';
-
-
-$_['text_register']       	= 'Đăng ký thành viên';
-$_['text_login']       	= 'Đăng nhập tài khoản';
-$_['text_customerinformation']       	= 'Thông tin khách hàng';
-
-//Warring
-$_['war_usernamenotnull'] = 'Bạn chưa nhập tên đăng nhập';
-$_['war_usernamenotavailable'] = 'Tên đăng nhập đã đươc sử dụng';
-$_['war_passwordnotnull'] = 'Bạn chưa nhập mật khẩu';
-$_['war_passwordnotcorrect'] = 'Mật khẩu không đúng';
-$_['war_confirmpasswordnotnull'] = 'Bạn chưa nhập xác nhận mật khẩu';
-$_['war_confirmpasswordnotcorrect'] = 'Bạn chưa nhập xác nhận mật khẩu';
-$_['war_fullnamenotnull'] = 'Bạn chưa nhập họ tên';
-$_['war_emailnotnull'] = 'Bạn chưa nhập email';
-$_['war_emailnotformate'] = 'Email không đúng định dạng';
-$_['war_emailhasused'] = 'Email đã được sử dụng';
-$_['war_emailnotavailable'] = 'Không tồn tại email này';
-$_['war_addressnotnull'] = 'Bạn chưa nhập địa chỉ';
-$_['war_phonenotnull'] = 'Bạn chưa nhập số điên thoại';
-$_['war_descriptionnotnull'] = 'Bạn chưa nhập lời nhắn';
-$_['war_accountnotactive1'] = 'Tài khoản của bạn chưa được kích hoạt!';
-$_['war_accountnotactive2'] = 'Kích hoạt tài khoản click vào đây';
-
-$_['war_younotagree'] = 'Bạn chưa đồng ý với chúng tôi';
-
-$_['war_contactsuccess'] = 'Thông tin của bạn đã gửi đến chúng tôi';
-
+//File
+$_['lbl_file'] = 'Tập tin';
+$_['entry_file'] = 'Chọn tập tin';
 
 // Buttons
 $_['button_continue']       = 'Tiếp tục';
 $_['button_back']           = 'Trở về';
-$_['button_change_password'] = 'Thay đổi mật khẩu';
+$_['button_change_password']= 'Thay đổi mật khẩu';
+$_['button_myprofile']     = 'Thông tin đăng ký';
+$_['button_logout']        = 'Đăng xuất';
+
+$_['button_add']            = 'Thêm';
 $_['button_edit']           = 'Sửa';
+$_['button_editcontent'] = 'Sửa nội dung';
+$_['button_addchild'] = 'Thêm danh mục con';
 $_['button_delete']         = 'Xóa';
-$_['button_reviews']        = 'Nhận xét';
-$_['button_write']          = 'Viết nhận xét';
+$_['button_updateposition']         = 'Cập nhật Vị trí';
+$_['button_update'] = 'Cập nhật';
+$_['button_cancel']         = 'Bỏ qua';
 $_['button_login']          = 'Đăng nhập';
-$_['button_update']         = 'Cập nhật';
-$_['button_shopping']       = 'Tiếp tục mua hàng';
-$_['button_checkout']       = 'Đặt hàng';
-$_['button_view']           = 'Xem chi tiết';
-$_['button_search']         = 'Tìm kiếm';
-$_['button_close']         = 'Đóng';
-$_['button_send']        	= 'Gửi đến chúng tôi';
-$_['button_reset']         = 'Làm lại';
+$_['button_save'] = 'Lưu';
+$_['button_lock'] = 'Khóa';
+$_['button_active'] = 'Kích hoạt';
+$_['button_forgot_pass'] = 'Quên mật khẩu';
+$_['button_search'] = 'Tìm';
+$_['button_viewall'] = 'Xem tất cả';
+$_['button_preview'] = 'Xem trước';
 
-/*
-$d = dir('./catalog/language/'.$filename);
-while (false !== ($entry = $d->read())) {
-	if($entry != '.' && $entry != '..' && substr($entry, -3, 3) != 'php')
-	{
-   		foreach(glob('catalog/language/'.$filename.'/'.$entry.'/*.php') as $class_filename) {
-   		//echo($class_filename);
-		require($class_filename);
-		}
-	}
-}
-$d->close();
-*/
+//Menu
+$_['menu_addons']          = 'Các chức năng bổ sung';
+$_['menu_myaccount']       = 'Cài đặt tài khoản';
+$_['menu_admin']       = 'Quản trị hệ thống';
 
+//login
+$_['title_system'] = "Hệ thống quản lý";
+$_['lbl_username'] = "Tài khoản";
+$_['lbl_password'] = "Mật khẩu";
+$_['lbl_confirmpass'] = 'Xác nhận mật khẩu';
+$_['security_code'] = 'Mã bảo vệ';
+$_['logged_user'] = 'Tài khoản đăng nhập';
+
+//sitebar
+$_['dashboard'] = 'Thông tin website';
+$_['management'] = 'Các chức năng quản lý';
+$_['message'] = 'Tin nhắn';
+$_['category'] = 'Quản lý danh mục';
+$_['user_management'] = 'Quản lý người dùng';
+$_['menu_sitemap'] = 'Quản lý cấu trúc website';
+$_['menu_media'] = 'Quản lý thông tin';
+$_['menu_file'] = 'Quản lý file';
+
+//list
+$_['header_title_user'] = 'Quản lý người dùng';
+
+//announcement
+$_['announ_del'] = 'Bạn có muốn xóa không?';
+$_['announ_infor'] = 'Đang xử lý ...';
+$_['announ_del'] = 'Xóa thành công';
+$_['announ_active'] = 'Kích hoạt thành công';
+$_['announ_lock'] = 'Tài khoản đã bị khóa';
+$_['announ_changepass'] = 'Mật khẩu của bạn đã được thay đổi';
+
+//warning
+$_['war_username'] = 'Xin vui lòng điền tài khoản của bạn';
+$_['war_email'] = 'Xin vui lòng điền thông tin email';
+$_['war_password'] = 'Xin vui lòng điền mật khẩu';
+$_['war_confirmpass'] = 'Mật khẩu và xác nhận mật khẩu không giống nhau';
+$_['war_invalid_username'] = 'Tài khoản không hơp lệ';
+$_['war_existed_username'] = 'Tài khoản này đã tồn tại';
+$_['war_invalid_email'] = 'Email không hợp lệ';
+$_['war_ID'] = 'Xin vui lòng điền mã đại diện';
+$_['war_invalid_ID'] = 'Mã đại diện không hợp lệ';
+$_['war_existed_ID'] = 'Mã đại diện đã tồn tại';
+$_['war_existed_name'] = 'Xin vui lòng điền thông tin tên';
+
+//dashboard
+$_['dash_header'] = 'Thiết lập';
+$_['dash_infor_header'] = 'Thông tin chung';
+$_['dash_title'] = 'Tiêu đề trang';
+$_['dash_slogan'] = 'Khẩu hiệu';
+$_['dash_currency'] = 'Tiền tệ';
+$_['dash_email'] = 'Email liên hệ';
+
+//change password
+$_['header_change_password'] = 'Thay đổi mật khẩu';
+$_['header_category'] = 'Quản lý danh mục';
+$_['text_categoryID'] = 'Mã danh mục';
+$_['text_categroyname'] = 'Tên danh mục';
+$_['text_position'] = 'Vị trí';
+$_['text_category_parent'] = 'Danh mục cha';
+$_['text_sitemapid'] = 'Mã đại diện';
 ?>

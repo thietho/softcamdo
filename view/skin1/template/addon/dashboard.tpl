@@ -1,3 +1,5 @@
+<!-- Morris Charts CSS -->
+<link href="<?php echo HTTP_SERVER.DIR_CSS?>morris.css" rel="stylesheet">
 <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
@@ -538,3 +540,7 @@
             </div>
             <!-- /.row -->
         </div>
+<!-- Morris Charts JavaScript -->
+<script src="<?php echo HTTP_SERVER.DIR_JS?>raphael.js"></script>
+<script src="<?php echo HTTP_SERVER.DIR_JS?>morris.js"></script>
+<script src="<?php echo HTTP_SERVER.DIR_JS?>morris-data.js"></script>

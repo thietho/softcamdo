@@ -13,11 +13,11 @@ class ControllerPageHome extends Controller
 	public function index()
 	{	
 		if (@$this->user->isLogged()) {
-			@$this->redirect('dashboard.html');
+			@$this->redirect('?route=addon/dashboard');
 		}
 
 		if ((@$this->request->post) && (@$this->validate())) {
-	  		@$this->redirect('dashboard.html');
+            @$this->redirect('?route=addon/dashboard');
 			return;
 		}
 		$this->id="content";

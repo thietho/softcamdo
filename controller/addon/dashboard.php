@@ -8,6 +8,7 @@ class ControllerAddonDashboard extends Controller
 		
 		$this->id="content";
 		$this->template="addon/dashboard.tpl";
+        $this->layout="layout/detail";
 		$this->render();
 	}
 	

@@ -20,12 +20,25 @@
     <!-- Custom CSS -->
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>sb-admin-2.css" rel="stylesheet">
 
-    <!-- Morris Charts CSS -->
-    <link href="<?php echo HTTP_SERVER.DIR_CSS?>morris.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- jQuery -->
+    <script src="<?php echo HTTP_SERVER.DIR_JS?>jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php echo HTTP_SERVER.DIR_JS?>bootstrap.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="<?php echo HTTP_SERVER.DIR_JS?>metisMenu.js"></script>
+
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="<?php echo HTTP_SERVER.DIR_JS?>sb-admin-2.js"></script>
+    <script src="<?php echo HTTP_SERVER.DIR_JS?>jquery.blockUI.js"></script>
+    <script src="<?php echo HTTP_SERVER.DIR_JS?>common.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,22 +61,7 @@
     </div>
     <!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="<?php echo HTTP_SERVER.DIR_JS?>jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="<?php echo HTTP_SERVER.DIR_JS?>bootstrap.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="<?php echo HTTP_SERVER.DIR_JS?>metisMenu.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="<?php echo HTTP_SERVER.DIR_JS?>raphael.js"></script>
-    <script src="<?php echo HTTP_SERVER.DIR_JS?>morris.js"></script>
-    <script src="<?php echo HTTP_SERVER.DIR_JS?>morris-data.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="<?php echo HTTP_SERVER.DIR_JS?>sb-admin-2.js"></script>
 
 </body>
 
