@@ -4,8 +4,7 @@
         <div class="col-lg-12">
             <h1 class="page-header">
             	<?php echo @$this->document->title?>
-                <input type="button" value="Lưu" class="btn btn-primary" onClick="save()"/>
-     	        <input type="button" value="Quay lại" class="btn btn-danger" onclick="linkto('?route=core/category')"/>
+
             </h1>
         </div>
         
@@ -36,6 +35,12 @@
                         <?php } ?>
                     </select>
                 </div>
+                <center>
+                    <button type="button" onClick="save()" class="btn btn-default btn-bg btn-success"><span class="fa fa-floppy-o"></span> Save</button>
+                    <button type="button" onclick="window.location = '?route=core/category'" class="btn btn-default btn-bg btn-success"><span class="fa fa-undo  "></span> Quay lại</button>
+
+
+                </center>
             </form>
             
         </div>

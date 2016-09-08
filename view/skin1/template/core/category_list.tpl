@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">
-                <button onclick="window.location.href='<?php echo @$insert?>'" type="button" class="btn btn-default btn-bg btn-success"><span class="fa fa-plus"></span> Thêm</button>
+                <button onclick="window.location.href='<?php echo $insert?>'" type="button" class="btn btn-default btn-bg btn-success"><span class="fa fa-plus"></span> Thêm</button>
 
                 <button id="btnEditPosition" name="btnEditPosition" class="btn btn-default btn-bg btn-success"><span class="fa fa-sort"></span> Sắp sếp thứ tự</button>
                 <button id="btnUpdateTree" name="btnUpdateTree" class="btn btn-default btn-bg btn-success" style="display:none" onclick="updateTree()"><span class="fa fa-check-square-o"> Lưu</button>

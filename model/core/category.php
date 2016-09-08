@@ -1,20 +1,6 @@
 <?php
 class ModelCoreCategory extends Model
 {
-    private $root = "category";
-    function __construct()
-    {
-
-        $data = @$this->getItem(@$this->root);
-        if(count($data)==0)
-        {
-            $data['categoryid'] = @$this->root;
-            $data['categoryname'] = "Category";
-            $data['parent'] = "";
-            $data['position'] = 0;
-            @$this->insert($data);
-        }
-    }
 
     public function getItem($categoryid, $where="")
     {

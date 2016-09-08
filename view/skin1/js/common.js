@@ -337,15 +337,15 @@ function printObject(o) {
 }
 function logout()
 {
-	$.blockUI({ message: "<h1><?php echo @$announ_infor ?></h1>" }); 
+	$.blockUI({ message: "<h1>Đang xử lý</h1>" });
 	
-	$.get(HTTP_SERVER+"?route=sitebar/login/logout", 
+	$.get(HTTP_SERVER+"?route=common/header/logout",
 		function(data){
 			if(data == "true")
 			{
 				alert("Bạn đã đăng xuất thành công!");
 				//window.location = "<?php echo HTTP_SERVER?>site/default/login";
-				window.location = HTTP_SERVER;
+				window.location.reload();
 			}
 			else
 			{

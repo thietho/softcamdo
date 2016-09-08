@@ -1,19 +1,15 @@
 <?php
-class ModelAddonGameregister extends Model
+class ModelAddonGroup extends Model
 { 
 	private $arr_col = array(
-							
-							'fullname',
-							'phone',
-							'address',
-							'email',
-							'registime',
-							'regiscode',
+							'groupid',
+							'groupname',
+							'rate'
 							);
 	public function getItem($id)
 	{
-		$query = $this->db->query("Select `game_register`.* 
-									from `game_register` 
+		$query = $this->db->query("Select `group`.*
+									from `group`
 									where id ='".$id."' ");
 		return $query->row;
 	}
@@ -21,8 +17,8 @@ class ModelAddonGameregister extends Model
 	public function getList($where="", $from=0, $to=0)
 	{
 		
-		$sql = "Select `game_register`.* 
-									from `game_register` 
+		$sql = "Select `group`.*
+									from `group`
 									where 1=1 " . $where ;
 		if(@$to > 0)
 		{
@@ -35,9 +31,9 @@ class ModelAddonGameregister extends Model
 	
 	public function updateCol($id,$col,$val)
 	{
-		$id = $id;
-		$col = $col;
-		$val = $val;
+		$id = $this->db->escape($id);
+		$col = $this->db->escape($col);
+		$val = $this->db->escape($val);
 		
 		$field=array(
 						$col
@@ -47,22 +43,22 @@ class ModelAddonGameregister extends Model
 					);
 		
 		$where="id = '".$id."'";
-		$this->db->updateData('game_register',$field,$value,$where);
+		$this->db->updateData("group",$field,$value,$where);
 	}
 	
 	public function save($data)
 	{
-		$game_register = $this->getItem($data['id']);
-		
+		$group = $this->getItem($data['id']);
+
 		$value = array();
-		if(count($game_register))
+		if(count($group))
 		{
-			foreach($game_register as $col => $val)
+			foreach($group as $col => $val)
 			{
 				if(isset($data[$col]))
-					$game_register[$col] = $data[$col];
+					$group[$col] = $data[$col];
 			}
-			$data = $game_register;
+			$data = $group;
 		}
 		
 		foreach($this->arr_col as $col)
@@ -72,22 +68,22 @@ class ModelAddonGameregister extends Model
 		
 		$field=$this->arr_col;
 		
-		if(count($game_register) == 0)
+		if(count($group) == 0)
 		{
-			$data['id'] = $this->db->insertData("game_register",$field,$value);
+			$data['id'] = $this->db->insertData("group",$field,$value);
 		}
 		else
 		{
 			$where="id = '".$data['id']."'";
-			$this->db->updateData("game_register",$field,$value,$where);
+			$this->db->updateData("group",$field,$value,$where);
 		}
-		return $data['id'];
+		return $data;
 	}
 	
 	public function delete($id)
 	{
 		$where="id = '".$id."'";
-		$this->db->deleteData("game_register",$where);
+		$this->db->deleteData("group",$where);
 		
 	}
 	

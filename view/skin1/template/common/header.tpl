@@ -211,7 +211,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="#" onclick="logout()"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -225,7 +225,7 @@
                     <ul class="nav" id="side-menu">
 
                         <li>
-                            <a href="?route=addon/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="<?php echo HTTP_SERVER?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Quản lý danh mục<span class="fa arrow"></span></a>
@@ -234,7 +234,7 @@
                                     <a href="?route=core/category">Phân loại</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <a href="?route=addon/group">Nhóm tài sản</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

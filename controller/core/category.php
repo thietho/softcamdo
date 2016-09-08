@@ -12,10 +12,10 @@ class ControllerCoreCategory extends Controller
    	function __construct() 
 	{
 
-
+        $this->document->title = "Quản lý phân loại";
 		@$this->load->model("core/category");
 
-		$data_childs = @$this->model_core_category->getChild('category');
+		$data_childs = @$this->model_core_category->getChild('');
 		@$this->data['tree'] ="";
 		foreach($data_childs as $child)
 		{
@@ -191,12 +191,13 @@ class ControllerCoreCategory extends Controller
 	}
 	private function getList() 
 	{
+        $this->data['insert'] = @$this->url->http('core/category/insert');
 
-		@$this->id='content';
-		@$this->template="core/category_list.tpl";
-		@$this->layout="layout/detail";
+        $this->id='content';
+		$this->template="core/category_list.tpl";
+		$this->layout="layout/home";
 		
-		@$this->render();
+		$this->render();
 	}
 	
 	
@@ -215,7 +216,7 @@ class ControllerCoreCategory extends Controller
 		
 		@$this->id='content';
 		@$this->template='core/category_form.tpl';
-		@$this->layout="layout/detail";
+		@$this->layout="layout/home";
 		
 		@$this->render();
 	}

@@ -54,7 +54,7 @@ final class User {
 			$action = trim($action);
 			foreach($this->permission as $item)
 			{
-				@$arr = split("-",$item);
+				$arr = explode("-",$item);
 				if($arr[0] ==$moduleid && $arr[1] == $action )
 					$allow = true;
 			}
@@ -64,7 +64,8 @@ final class User {
 	}
   
   	public function isLogged() {
-    	if($this->session->data['userid']){
+        /** @var $this TYPE_NAME */
+        if(isset($this->session->data['userid'])){
 			$this->usertypeid = $this->session->data['usertypeid'];
 			$this->userid = $this->session->data['userid'];
 			$this->username = $this->session->data['username'];	
