@@ -32,49 +32,7 @@ final class Document {
 						   'completed' => "Hoàn thành",
 						   'cancel' => "Hủy đơn hàng"
 						   );
-	public $status_phieunhapxuat = array(
-						   'new' => "Chưa giao",
-						   'delivered' => "Đã giao",
-						   
-						   );
-	public $status_media = array(
-						   'active' => "Hiện",
-						   'hide' => "Ẩn"
-						   
-						   );
-	public $paymenttype = array(
-							'cash'=>'Tiền mặt',
-							'bank' =>'Chuyển khoản'
-							);
-	public $gioitinh = array(
-							'male' => "Nam",
-							'female' => "Nữ"
-							);
-	public $status_comment = array(
-						   'new' => "Chưa duyệt",
-						   'published' => "Duyệt",
-						   'denial' => "Không duyệt"
-						   );
-	public $userstatus = array(
-							'active' => "Đang kích hoạt",
-							'lock' => "Đã bị khóa"
-							);
-	public $tiente = array(
-						"VND" => "VNĐ",
-						"USD" => "USD"
-						);
-	public $tientechu = array(
-						"VND" => "đồng",
-						"USD" => "usd"
-						);
-	public $mediatypes = array(
-						'module/product'=>'Product',
-						'module/news'=>'News'
-						);
-	public $shoptype = array(
-						'retail' => "Cửa hàng bán lẻ",
-						'saleoflot' => "Cửa hàng bán sỉ"
-						);
+
 	public function toVND($value,$donvi)
 	{
 		if($donvi == "VND")
@@ -141,13 +99,7 @@ final class Document {
 		fclose($fp);
 	}
 	
-	public function getSiteMap($sitemapid,$siteid,$name="sitemapname")
-	{
-		$query = $this->db->query("Select `sitemap`.* 
-									from `sitemap` 
-									where sitemapid ='".$sitemapid."' AND siteid = '".$siteid."'");
-		return @$query->row[$name];	
-	}
+
 	
 	public function getCategory($categoryid,$name="categoryname")
 	{
@@ -156,57 +108,14 @@ final class Document {
 									where categoryid ='".$categoryid."' ");
 		return @$query->row[$name];	
 	}
-	
-	public function getMedia($mediaid,$name="title")
-	{
-		$query = $this->db->query("Select `media`.* 
-									from `media` 
-									where mediaid ='".$mediaid."' ");
-		return @$query->row[$name];	
-	}
-	public function productName($mediaid)
-	{
-		if(!is_array( $mediaid))
-		{
-			$query = $this->db->query("Select `media`.* 
-										from `media` 
-										where mediaid ='".$mediaid."' ");
-			$media = $query->row;
-		}
-		else
-		{
-			$media = $mediaid;	
-		}
-		$productname = $media['title'];
-		if(@$media['code'])
-			@$productname .= " - ".$media['code'];
-		if(@$media['sizes'])
-			@$productname .= " ".$media['sizes'];
-		if(@$media['material'])
-			@$productname .= " ".$media['material'];
-		if(@$media['color'])
-			@$productname .= " ".$media['color'];
-		return $productname;
-		
-	}
-	public function getNhanVien($id,$name = 'hoten')
-	{
-		$sql = "Select `qlknhanvien`.* 
-									from `qlknhanvien` 
-									where id ='".$id."' ";
-		$query = $this->db->query($sql);
-		return @$query->row[$name];
-	}
-	
-	
-	public function getUserType($usertypeid,$name = 'usertypename')
-	{
-		$sql = "Select `usertype`.* 
-									from `usertype` 
-									where usertypeid ='".$usertypeid."' ";
-		$query = $this->db->query($sql);
-		return @$query->row[$name];
-	}
+    public function getGroup($id,$name="groupname")
+    {
+        $query = $this->db->query("Select `group`.*
+									from `group`
+									where id ='".$id."' ");
+        return @$query->row[$name];
+    }
+
 	
 	public function getUser($userid,$name = 'fullname')
 	{
@@ -216,121 +125,7 @@ final class Document {
 		$query = $this->db->query($sql);
 		return @$query->row[$name];
 	}
-	public function getCustomer($id,$name = 'fullname')
-	{
-		$sql = "Select `user`.* 
-									from `user` 
-									where id ='".$id."' ";
-		$query = $this->db->query($sql);
-		return @$query->row[$name];
-	}
-	public function getModule($id,$name = 'modulename')
-	{
-		$query = $this->db->query("Select `module`.* 
-									from `module` 
-									where id ='".$id."' ");
-		return @$query->row[$name];	
-	}
-	public function getModuleId($moduleid,$name = 'modulename')
-	{
-		$query = $this->db->query("Select `module`.* 
-									from `module` 
-									where moduleid ='".$moduleid."' ");
-		return @$query->row[$name];	
-	}
-	
-	public function getDonViTinh($madonvi,$name="tendonvitinh")
-	{
-		$query = $this->db->query("Select `qlkdonvitinh`.* 
-									from `qlkdonvitinh` 
-									where madonvi ='".$madonvi."' ");
-		return @$query->row[$name];	
-	}
-	
-	public function getNguyenLieu($id,$name = 'tennguyenlieu')
-	{
-		$sql = "Select `qlknguyenlieu`.* 
-									from `qlknguyenlieu` 
-									where id ='".$id."' ";
-		$query = $this->db->query($sql);
-		return @$query->row[$name];
-	}
-	public function getNhaCungCap($id,$name = 'tennhacungcap')
-	{
-		$sql = "Select `qlknhacungcap`.* 
-									from `qlknhacungcap` 
-									where id ='".$id."' ";
-		$query = $this->db->query($sql);
-		return @$query->row[$name];
-	}
-	public function getSanPham($id,$name = 'tensanpham')
-	{
-		$sql = "Select `qlksanpham`.* 
-									from `qlksanpham` 
-									where id ='".$id."' ";
-		$query = $this->db->query($sql);
-		return @$query->row[$name];
-	}
-	
-	public function getShop($id,$name = 'shopname')
-	{
-		$sql = "Select `shop`.* 
-									from `shop` 
-									where id ='".$id."' ";
-		$query = $this->db->query($sql);
-		return @$query->row[$name];
-	}
-	
-	public function createLink($sitemap="",$id="",$key = "",$val = "")
-	{
-		$link = HTTP_SERVER;
-		if($sitemap)
-			$link.= $sitemap;
-		if($id)
-			$link.= '/'.$id;
-		if($key)
-			$link.= '/'.$key;
-		if($val)
-			$link.= '/'.$val;
-		return $link.'.html';
-	}
-	
-	public function createLinkShare($sitemap="",$id="",$key = "",$val = "")
-	{
-		$link = HTTP_SERVER;
-		if($sitemap)
-			$link.= $sitemap;
-		if($id)
-			$link.= '/'.$id;
-		if($key)
-			$link.= '/'.$key;
-		if($val)
-			$link.= '/'.$val;
-		return $link.'_'.time().'.html';
-	}
-	
-	public function getPara()
-	{
-		$uri = $_SERVER['REQUEST_URI'];
-		@$arr = split("\?",$uri);
-		
-		@$listpara = split("&",$arr[1]);
-		$para = array();
-		foreach($listpara as $val)
-		{
-			@$ar = split("=",$val);	
-			@$para[$ar[0]] = $ar[1];
-		}
-		return $para;
-	}
-	public function getURI()
-	{
-		$uri = $_SERVER['REQUEST_URI'];
-		
-		
-		
-		return $uri;
-	}
+
 	public function httppost($url,$data)
 	{
 		$options = array(

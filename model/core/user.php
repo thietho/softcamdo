@@ -1,6 +1,5 @@
 <?php
-$this->load->model("core/file");
-class ModelCoreUser extends ModelCoreFile 
+class ModelCoreUser extends Model
 {
 	public function getList($where="")
 	{

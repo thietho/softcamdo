@@ -123,7 +123,7 @@ final class MySQL {
 		if(count($fields)!=count($values)){ die("<br><b>ERROR (Syntax Error):</b> Number of fields don't match with values.") ; }
 		else
 		{
-			is_array($fields) ? $sql .= implode(",",$fields) : $sql .= $fields;
+			is_array($fields) ? $sql .= "`".implode("`,`",$fields)."`" : $sql .= $fields;
 			$sql .= ") VALUES('";
 			is_array($values) ? $sql .= implode("','",$values) : $sql .= "'".$values."'";
 			$sql .= "')";
@@ -149,13 +149,13 @@ final class MySQL {
 			{
 				for($i=0;$i<count($fields);$i++)	
 				{
-					$sql .= $fields[$i]." = '".$values[$i]."' " ;
+					$sql .= "`".$fields[$i]."` = '".$values[$i]."' " ;
 					if($i==(count($fields)-1)) $sql .= " " ;
 					else $sql .= ", ";
 					
 				}
 			}
-			else{ $sql .= $fields." = ".$values ; }	
+			else{ $sql .= "`".$fields."` = ".$values ; }
 			$sql .= " WHERE ".$where;
 			$this->query($sql);
 		}

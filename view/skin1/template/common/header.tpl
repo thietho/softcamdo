@@ -236,6 +236,9 @@
                                 <li>
                                     <a href="?route=addon/group">Nhóm tài sản</a>
                                 </li>
+                                <li>
+                                    <a href="?route=core/items">Sản phẩm</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
