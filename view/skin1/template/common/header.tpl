@@ -228,7 +228,7 @@
                             <a href="<?php echo HTTP_SERVER?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Quản lý danh mục<span class="fa arrow"></span></a>
+                            <a href="#">Quản lý danh mục<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="?route=core/category">Phân loại</a>
@@ -242,6 +242,7 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                        <li><a href="?route=addon/invoice">Phiếu cầm đồ</a></li>
                         <li>
                             <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>
