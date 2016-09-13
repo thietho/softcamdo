@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 13, 2016 at 04:29 AM
+-- Generation Time: Sep 13, 2016 at 08:19 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -19,6 +19,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_softcamdo`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cards`
+--
+
+CREATE TABLE IF NOT EXISTS `cards` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `fistname` text COLLATE utf8_unicode_ci NOT NULL,
+  `lastname` text COLLATE utf8_unicode_ci NOT NULL,
+  `fullname` text COLLATE utf8_unicode_ci NOT NULL,
+  `idnumber` text COLLATE utf8_unicode_ci NOT NULL,
+  `iddate` date NOT NULL,
+  `idlocation` text COLLATE utf8_unicode_ci NOT NULL,
+  `phone` text COLLATE utf8_unicode_ci NOT NULL,
+  `address` text COLLATE utf8_unicode_ci NOT NULL,
+  `email` text COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -75,6 +95,51 @@ INSERT INTO `group` (`id`, `groupname`, `rate`, `groupid`) VALUES
 (2, 'Điện thoai', '4', 'phone'),
 (3, 'Xe', '4', 'car'),
 (4, 'Vàng', '3', 'gold');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `invoices`
+--
+
+CREATE TABLE IF NOT EXISTS `invoices` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `invoiceid` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `createdate` datetime NOT NULL,
+  `createby` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `itemid` bigint(20) NOT NULL,
+  `fistname` text COLLATE utf8_unicode_ci NOT NULL,
+  `lastname` text COLLATE utf8_unicode_ci NOT NULL,
+  `fullname` text COLLATE utf8_unicode_ci NOT NULL,
+  `idnumber` text COLLATE utf8_unicode_ci NOT NULL,
+  `iddate` date NOT NULL,
+  `idlocation` text COLLATE utf8_unicode_ci NOT NULL,
+  `phone` text COLLATE utf8_unicode_ci NOT NULL,
+  `group` int(11) NOT NULL,
+  `amount` double NOT NULL,
+  `rate` double NOT NULL,
+  `itemnumber` text COLLATE utf8_unicode_ci NOT NULL,
+  `deallinedate` date NOT NULL,
+  `numberexpirydate` int(11) NOT NULL,
+  `notes` text COLLATE utf8_unicode_ci NOT NULL,
+  `storage` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `status` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `invoices_log`
+--
+
+CREATE TABLE IF NOT EXISTS `invoices_log` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `invoiceid` bigint(20) NOT NULL,
+  `status` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `notes` text COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
