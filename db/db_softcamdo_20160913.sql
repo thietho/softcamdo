@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 08, 2016 at 08:19 PM
+-- Generation Time: Sep 13, 2016 at 04:29 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `category` (
   `parent` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `position` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=12 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `category`
@@ -49,7 +49,8 @@ INSERT INTO `category` (`id`, `categoryid`, `categoryname`, `parent`, `position`
 (8, 'secondhand', 'Hàng đã qua sử dụng', 'status', 2),
 (9, 'storage', 'Tủ dựng', '', 4),
 (10, 't1', 'Tủ 1', 'storage', 1),
-(11, 't2', 'Tủ 2', 'storage', 2);
+(11, 't2', 'Tủ 2', 'storage', 2),
+(12, 'Dell', 'Dell', 'brand', 4);
 
 -- --------------------------------------------------------
 
@@ -74,6 +75,34 @@ INSERT INTO `group` (`id`, `groupname`, `rate`, `groupid`) VALUES
 (2, 'Điện thoai', '4', 'phone'),
 (3, 'Xe', '4', 'car'),
 (4, 'Vàng', '3', 'gold');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `items`
+--
+
+CREATE TABLE IF NOT EXISTS `items` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `itemname` text COLLATE utf8_unicode_ci NOT NULL,
+  `price` double NOT NULL,
+  `brand` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `group` int(11) NOT NULL,
+  `files` text COLLATE utf8_unicode_ci NOT NULL,
+  `link` text COLLATE utf8_unicode_ci NOT NULL,
+  `status` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `items`
+--
+
+INSERT INTO `items` (`id`, `itemname`, `price`, `brand`, `group`, `files`, `link`, `status`) VALUES
+(1, 'Iphone 6', 7000000, 'Apple', 2, '', 'ádasđacsc', 'secondhand'),
+(2, 'Iphone 5', 5000000, 'Apple', 2, '', 'sgsefwf', 'new'),
+(3, 'Galaxy S5', 4000000, 'Samsung', 2, '', '32342', 'new'),
+(4, 'Dell 2740p', 3000000, 'Dell', 1, '', 'sdfwef', 'secondhand');
 
 -- --------------------------------------------------------
 
