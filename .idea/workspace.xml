@@ -4,6 +4,7 @@
     <list default="true" id="e0f69f5a-d18c-43d5-b465-4661cfa68e48" name="Default" comment="" />
     <ignored path="softcamdo.iws" />
     <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,98 +24,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.tpl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/common/header.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="239" column="72" selection-start="12634" selection-end="12634" vertical-scroll-proportion="0.0" vertical-offset="3867" max-vertical-offset="5576">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3867" max-vertical-offset="5576">
+              <caret line="239" column="72" selection-start-line="239" selection-start-column="72" selection-end-line="239" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="items.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/core/items.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="41" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1700">
+            <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1700">
+              <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/library/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="692" max-vertical-offset="1275">
+            <state vertical-scroll-proportion="0.0" vertical-offset="692" max-vertical-offset="1275">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mysql.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/database/mysql.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="46" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="3060">
-              <folding>
-                <marker date="1473608788579" expanded="true" signature="1632:1677" placeholder="SELECT max($..." />
-                <marker date="1473608788579" expanded="true" signature="1818:1882" placeholder="SELECT $tabl..." />
-                <marker date="1473608788579" expanded="true" signature="2336:2401" placeholder="SELECT $tabl..." />
-                <marker date="1473608788579" expanded="true" signature="4044:4081" placeholder="DELETE FROM ..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="3060">
+              <caret line="151" column="46" selection-start-line="151" selection-start-column="46" selection-end-line="151" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items_form.tpl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="items_form.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/core/items_form.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="54" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1649">
+            <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1649">
+              <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="items.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/core/items.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="69" selection-start="0" selection-end="3924" vertical-scroll-proportion="0.0" vertical-offset="1644" max-vertical-offset="2584">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1644" max-vertical-offset="2584">
+              <caret line="105" column="69" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="document.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/library/document.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="28" selection-start="2365" selection-end="2373" vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="4199">
-              <folding>
-                <marker date="1473608447074" expanded="true" signature="4778:4840" placeholder="SELECT $tabl..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="4199">
+              <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items_list.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="items_list.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/core/items_list.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="58" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.5974499" vertical-offset="1270" max-vertical-offset="2380">
+            <state vertical-scroll-proportion="0.98031497" vertical-offset="1270" max-vertical-offset="2380">
+              <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="file.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/core/file.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="39" selection-start="2533" selection-end="2542" vertical-scroll-proportion="0.0" vertical-offset="883" max-vertical-offset="1479">
+            <state vertical-scroll-proportion="0.0" vertical-offset="883" max-vertical-offset="1479">
+              <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file_list.tpl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="file_list.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/core/file_list.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -180,8 +184,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -219,7 +223,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -231,6 +235,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -531,11 +536,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nhaminhfood" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -565,7 +569,7 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
@@ -574,40 +578,48 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration useDefault="false">C:\Users\thiet\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e0f69f5a-d18c-43d5-b465-4661cfa68e48" name="Default" comment="" />
       <created>1473263877589</created>
+      <option name="number" value="Default" />
       <updated>1473263877589</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884398" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -621,294 +633,373 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/view/skin1/template/core/file_list.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/group_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1173" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1173">
+          <caret line="14" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/addon/group.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="49" selection-start="3157" selection-end="3157" vertical-scroll-proportion="0.0" vertical-offset="1933" max-vertical-offset="2822" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1933" max-vertical-offset="2822">
+          <caret line="126" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/group_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="54" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1581" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1581">
+          <caret line="45" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2275" column="0" selection-start="37393" selection-end="37393" vertical-scroll-proportion="0.0" vertical-offset="38348" max-vertical-offset="114971">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="38348" max-vertical-offset="114971">
+          <caret line="2275" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/layout/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="52" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1326" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1326">
+          <caret line="12" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="1" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/layout/detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="4" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/layout/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="357" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="357">
+          <caret line="5" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/page/detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/config/startup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.43342775" vertical-offset="0" max-vertical-offset="1989" />
+        <state vertical-scroll-proportion="0.43342775" vertical-offset="0" max-vertical-offset="1989">
+          <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/engine/controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="55" selection-start="5438" selection-end="5438" vertical-scroll-proportion="-37.615383" vertical-offset="3204" max-vertical-offset="4420" />
+        <state vertical-scroll-proportion="-37.615383" vertical-offset="3204" max-vertical-offset="4420">
+          <caret line="246" column="55" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/language.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="8" selection-start="1778" selection-end="1778" vertical-scroll-proportion="2.6818182" vertical-offset="68" max-vertical-offset="2125" />
+        <state vertical-scroll-proportion="2.6818182" vertical-offset="68" max-vertical-offset="2125">
+          <caret line="63" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/language/english/english.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="0" selection-start="5873" selection-end="5873" vertical-scroll-proportion="0.85294116" vertical-offset="2775" max-vertical-offset="3196" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/sectional.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="355" selection-end="355" vertical-scroll-proportion="0.46448088" vertical-offset="0" max-vertical-offset="3009" />
+        <state vertical-scroll-proportion="0.85294116" vertical-offset="2775" max-vertical-offset="3196">
+          <caret line="182" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/layout/detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="83" selection-end="83" vertical-scroll-proportion="-0.0" vertical-offset="68" max-vertical-offset="340" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="68" max-vertical-offset="340">
+          <caret line="4" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/page/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="545" column="69" selection-start="24631" selection-end="24631" vertical-scroll-proportion="0.8476454" vertical-offset="8959" max-vertical-offset="9367" />
+        <state vertical-scroll-proportion="0.8476454" vertical-offset="8959" max-vertical-offset="9367">
+          <caret line="545" column="69" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="78" selection-end="78" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="527" />
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="527">
+          <caret line="2" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/config/directory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="96" selection-end="107" vertical-scroll-proportion="0.087478556" vertical-offset="0" max-vertical-offset="765" />
+        <state vertical-scroll-proportion="0.087478556" vertical-offset="0" max-vertical-offset="765">
+          <caret line="3" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="9" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.40823328" vertical-offset="629" max-vertical-offset="4488" />
+        <state vertical-scroll-proportion="0.40823328" vertical-offset="629" max-vertical-offset="4488">
+          <caret line="51" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/component/ckeditor/ckeditor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="394" selection-start="135898" selection-end="135898" vertical-scroll-proportion="0.20469798" vertical-offset="796" max-vertical-offset="1955" />
+        <state vertical-scroll-proportion="0.20469798" vertical-offset="796" max-vertical-offset="1955">
+          <caret line="57" column="394" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/layout/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="138" selection-end="138" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="425" />
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="425">
+          <caret line="7" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/common/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="40" selection-start="324" selection-end="335" vertical-scroll-proportion="-7.1923075" vertical-offset="68" max-vertical-offset="1632" />
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="68" max-vertical-offset="1632">
+          <caret line="15" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/common/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="37" selection-start="270" selection-end="270" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408" />
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+          <caret line="12" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/language/vietnam/vietnam.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="0" selection-start="6147" selection-end="6147" vertical-scroll-proportion="-42.03846" vertical-offset="1967" max-vertical-offset="3162" />
+        <state vertical-scroll-proportion="-42.03846" vertical-offset="1967" max-vertical-offset="3162">
+          <caret line="180" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="40" selection-start="8278" selection-end="8278" vertical-scroll-proportion="0.0" vertical-offset="5531" max-vertical-offset="14348" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5531" max-vertical-offset="14348">
+          <caret line="339" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/common/login.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="925" selection-end="925" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="544" />
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="544">
+          <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/category_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="152" selection-start="1843" selection-end="1975" vertical-scroll-proportion="-6.5384617" vertical-offset="476" max-vertical-offset="1564" />
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="476" max-vertical-offset="1564">
+          <caret line="38" column="152" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/category_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="66" selection-start="320" selection-end="320" vertical-scroll-proportion="0.23859648" vertical-offset="0" max-vertical-offset="2720" />
+        <state vertical-scroll-proportion="0.23859648" vertical-offset="0" max-vertical-offset="2720">
+          <caret line="8" column="66" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/addon/group.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1632" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1632">
+          <caret line="15" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/group_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1173" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1173">
+          <caret line="14" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/css/morris.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/css/sb-admin-2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7480" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7480">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2275" column="0" selection-start="37393" selection-end="37393" vertical-scroll-proportion="0.5486577" vertical-offset="38348" max-vertical-offset="114971">
-          <folding />
+        <state vertical-scroll-proportion="0.5486577" vertical-offset="38348" max-vertical-offset="114971">
+          <caret line="2275" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="1" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/group_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="54" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.50877196" vertical-offset="475" max-vertical-offset="1581" />
+        <state vertical-scroll-proportion="0.50877196" vertical-offset="475" max-vertical-offset="1581">
+          <caret line="45" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/layout/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="52" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1326" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1326">
+          <caret line="12" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/core/category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="3757" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="3757">
+          <caret line="4" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/core/category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="42" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="5049" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="5049">
+          <caret line="4" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/core/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="33" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.5" vertical-offset="204" max-vertical-offset="5950" />
+        <state vertical-scroll-proportion="-0.5" vertical-offset="204" max-vertical-offset="5950">
+          <caret line="1" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/page/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="379" selection-end="379" vertical-scroll-proportion="0.8636364" vertical-offset="0" max-vertical-offset="459" />
+        <state vertical-scroll-proportion="0.8636364" vertical-offset="0" max-vertical-offset="459">
+          <caret line="19" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/common/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="239" column="72" selection-start="12634" selection-end="12634" vertical-scroll-proportion="0.0" vertical-offset="3867" max-vertical-offset="5576">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3867" max-vertical-offset="5576">
+          <caret line="239" column="72" selection-start-line="239" selection-start-column="72" selection-end-line="239" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/core/items.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="41" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1700">
+        <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1700">
+          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="692" max-vertical-offset="1275">
+        <state vertical-scroll-proportion="0.0" vertical-offset="692" max-vertical-offset="1275">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/document.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="28" selection-start="2365" selection-end="2373" vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="4199">
-          <folding>
-            <marker date="1473608447074" expanded="true" signature="4778:4840" placeholder="SELECT $tabl..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="4199">
+          <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/addon/group.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="49" selection-start="3157" selection-end="3157" vertical-scroll-proportion="-52.5" vertical-offset="777" max-vertical-offset="2822" />
+        <state vertical-scroll-proportion="-52.5" vertical-offset="777" max-vertical-offset="2822">
+          <caret line="126" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/database/mysql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="46" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="3060">
-          <folding>
-            <marker date="1473608788579" expanded="true" signature="1632:1677" placeholder="SELECT max($..." />
-            <marker date="1473608788579" expanded="true" signature="1818:1882" placeholder="SELECT $tabl..." />
-            <marker date="1473608788579" expanded="true" signature="2336:2401" placeholder="SELECT $tabl..." />
-            <marker date="1473608788579" expanded="true" signature="4044:4081" placeholder="DELETE FROM ..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="3060">
+          <caret line="151" column="46" selection-start-line="151" selection-start-column="46" selection-end-line="151" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/core/items.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="69" selection-start="0" selection-end="3924" vertical-scroll-proportion="0.0" vertical-offset="1644" max-vertical-offset="2584">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1644" max-vertical-offset="2584">
+          <caret line="105" column="69" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/core/file.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="39" selection-start="2533" selection-end="2542" vertical-scroll-proportion="0.0" vertical-offset="883" max-vertical-offset="1479">
+        <state vertical-scroll-proportion="0.0" vertical-offset="883" max-vertical-offset="1479">
+          <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/file_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/items_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="54" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1649">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1649">
+          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/items_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="58" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.5974499" vertical-offset="1270" max-vertical-offset="2380">
+        <state vertical-scroll-proportion="0.98031497" vertical-offset="1270" max-vertical-offset="2380">
+          <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
           <folding />
         </state>
       </provider>
