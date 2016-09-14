@@ -108,15 +108,9 @@ class Pager
 		
 		for ($j = $start; $j <= $end; $j++) 
 		{
-			if($j==$page)
-			{
-				array_push($data_paginations,'<b>'.$j.'</b>');
-				
-			}
-			else
-			{
-				array_push($data_paginations, '<a href="#page='.$j.'" class="button pager" onclick="moveto(\''.$this->getURLQueryString('page', $j).'\',\''.$eid.'\')">'.$j.'</a>');
-			}
+
+			array_push($data_paginations, '<a href="#page='.$j.'" class="button pager" onclick="moveto(\''.$this->getURLQueryString('page', $j).'\',\''.$eid.'\')">'.$j.'</a>');
+
 		}
 		if($pager->numPages > 1 && $page<$pager->numPages )
 		{
@@ -124,17 +118,15 @@ class Pager
 			array_push($data_paginations, '<a href="#page='.$pager->numPages.'" class="button pager" onclick="moveto(\''.$this->getURLQueryString('page', $pager->numPages).'\',\''.$eid.'\')">>|</a>');
 		}
 		$data_pagenumber=$page."/".$pager->numPages;
-		$playout=" <div class='links'>";
+		$playout= "<ul class='pagination'>";
 		foreach($data_paginations as $val)
-			$playout.=$val;
-		$playout.=" </div>";
-		$txt = '<select onChange="moveto(\''.$this->getURLQueryString('page', '').'\''.'+this.value'.',\''.$eid.'\')">';
-		for($i=1;$i<=$pager->numPages;$i++)
-			$txt .=		'<option value="'.$i.'" '.($page==$i ?'selected':'').'>'.$i.'</option>';
-		$txt .='</select>';
-		$playout.='<div class="results">Page '.$txt.'/'.$pager->numPages.'</div>';
-		
+			$playout.="<li>".$val."</li>";
+		$playout.=" </ul>";
+
 		return $playout;
+
+
+
 	}
 	function pageLayoutWeb($numHits, $limit, $page,$uri)
 	{

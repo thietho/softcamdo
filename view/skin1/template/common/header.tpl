@@ -239,6 +239,9 @@
                                 <li>
                                     <a href="?route=core/items">Sản phẩm</a>
                                 </li>
+                                <li>
+                                    <a href="?route=core/card">Khách hàng</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

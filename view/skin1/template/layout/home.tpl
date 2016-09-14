@@ -49,6 +49,7 @@
     <script language="javascript">
         var HTTP_SERVER = '<?php echo HTTP_SERVER?>';
         var DIR_COMPONENT = '<?php echo HTTP_SERVER.DIR_COMPONENT?>';
+        var loading = '<div class="text-center"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>loading.gif"></div>';
     </script>
 </head>
 
