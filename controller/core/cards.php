@@ -1,30 +1,20 @@
 <?php
 /**
- * Class ControllerCoreCards
+ * Class ControllerCoreItems
  *
  * @property ModelCoreCards model_core_cards
-
+ *
  */
 class ControllerCoreCards extends Controller
 {
     private $error = array();
     function __construct()
     {
-
         $this->load->model("core/cards");
         $moduleid = $_GET['route'];
-        $this->document->title = "Quản lý sản phẩm";
+        $this->document->title = "Quản lý khách hàng";
 
-        $this->data['brand'] = array();
-        $this->model_core_category->getTree("brand",$this->data['brand']);
-        unset($this->data['brand'][0]);
 
-        $this->data['status'] = array();
-        $this->model_core_category->getTree("status",$this->data['status']);
-        unset($this->data['status'][0]);
-
-        $this->data['groups'] = array();
-        $this->data['groups'] = $this->model_addon_group->getList();
     }
     public function index()
     {
@@ -62,25 +52,55 @@ class ControllerCoreCards extends Controller
     {
         @$this->data['insert'] = @$this->url->http('core/cards/insert');
         @$this->data['delete'] = @$this->url->http('core/cards/delete');
+        $this->id='content';
+        $this->template="core/cards_list.tpl";
+        $this->layout="layout/home";
+        $this->render();
+    }
 
-        @$this->data['datas'] = array();
-        @$this->data['datas'] = @$this->model_core_items->getList();
+    public function getData()
+    {
+        $data = $this->request->get;
+        $where = "";
+        foreach($data as $key => $value)
+            $data[$key] = trim(urldecode($value));
 
-        for($i=0; $i <= count(@$this->data['datas'])-1 ; $i++)
+        if($data['fullname'] != "")
+            $where .= " AND `fullname` like '%".$data['fullname']."%'";
+        if($data['idnumber'] != "")
+            $where .= " AND `idnumber` = '".$data['idnumber']."'";
+        if($data['idlocation'] != "")
+            $where .= " AND `idlocation` = '".$data['idlocation']."'";
+
+
+        $this->data['datas'] = array();
+        $rows = @$this->model_core_cards->getList($where);
+        //Page
+        $page = @$this->request->get['page'];
+        $x=$page;
+        $limit = 20;
+        $total = count($rows);
+        // work out the pager values
+        $this->data['pager']  = @$this->pager->pageLayoutAjax($total, $limit, $page,"loadcardsdata");
+
+        $pager  = @$this->pager->getPagerData($total, $limit, $page);
+        $offset = $pager->offset;
+        $limit  = $pager->limit;
+        $page   = $pager->page;
+
+        for($i=$offset;$i < $offset + $limit && @count(@$rows[$i])>0;$i++)
         {
+            @$this->data['datas'][$i] = $rows[$i];
             @$this->data['datas'][$i]['link_edit'] = $this->url->http('core/cards/update&id='.@$this->data['datas'][$i]['id']);
             @$this->data['datas'][$i]['text_edit'] = "Sửa";
 
 
         }
-        @$this->data['refres']=$_SERVER['QUERY_STRING'];
-        @$this->id='content';
-        @$this->template="core/cards_list.tpl";
-        @$this->layout="layout/home";
-
-        @$this->render();
+        $this->data['refres']=$_SERVER['QUERY_STRING'];
+        $this->id='content';
+        $this->template="core/cards_table.tpl";
+        $this->render();
     }
-
 
     private function getForm()
     {
