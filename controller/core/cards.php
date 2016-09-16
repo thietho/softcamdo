@@ -11,10 +11,10 @@ class ControllerCoreCards extends Controller
     function __construct()
     {
         $this->load->model("core/cards");
-        $moduleid = $_GET['route'];
+        if (isset($moduleid)) {
+            $moduleid = $_GET['route'];
+        }
         $this->document->title = "Quản lý khách hàng";
-
-
     }
     public function index()
     {
@@ -52,6 +52,7 @@ class ControllerCoreCards extends Controller
     {
         @$this->data['insert'] = @$this->url->http('core/cards/insert');
         @$this->data['delete'] = @$this->url->http('core/cards/delete');
+
         $this->id='content';
         $this->template="core/cards_list.tpl";
         $this->layout="layout/home";
@@ -64,12 +65,11 @@ class ControllerCoreCards extends Controller
         $where = "";
         foreach($data as $key => $value)
             $data[$key] = trim(urldecode($value));
-
-        if($data['fullname'] != "")
+        if(@$data['fullname'] != "")
             $where .= " AND `fullname` like '%".$data['fullname']."%'";
-        if($data['idnumber'] != "")
+        if(@$data['idnumber'] != "")
             $where .= " AND `idnumber` = '".$data['idnumber']."'";
-        if($data['idlocation'] != "")
+        if(@$data['idlocation'] != "")
             $where .= " AND `idlocation` = '".$data['idlocation']."'";
 
 
@@ -107,7 +107,7 @@ class ControllerCoreCards extends Controller
         @$this->data['error'] = @$this->error;
 
         $id = $this->request->get['id'];
-        $this->data['item'] = @$this->model_core_items->getItem($id);
+        $this->data['item'] = @$this->model_core_cards->getItem($id);
         @$this->id='content';
         @$this->template='core/cards_form.tpl';
         @$this->layout="layout/home";
@@ -120,15 +120,17 @@ class ControllerCoreCards extends Controller
         $data = @$this->request->post;
         if($this->validateForm($data))
         {
-            $data['price'] = $this->string->toNumber($data['price']);
-            $this->model_core_items->save($data);
+            $arr = explode(" ",$data['fullname']);
+            $data['fistname'] = $arr[count($arr) - 1];
+            $data['lastname'] = $arr[0];
+            $this->model_core_cards->save($data);
             @$this->data['output'] = "true";
         }
         else
         {
             foreach(@$this->error as $item)
             {
-                $this->data['output'] .= $item."<br>";
+                @$this->data['output'] .= $item."<br>";
             }
         }
         $this->id='content';
@@ -138,9 +140,9 @@ class ControllerCoreCards extends Controller
 
     private function validateForm($data)
     {
-        if ((strlen($data['itemname']) == 0))
+        if ((strlen(@$data['fullname']) == 0))
         {
-            @$this->error['itemname'] = "Bạn chưa nhập tên sản phẩm";
+            @$this->error['fullname'] = "Bạn chưa nhập họ và tên";
         }
 
         if (count(@$this->error)==0) {
@@ -153,7 +155,7 @@ class ControllerCoreCards extends Controller
     public function getItems()
     {
         $id = @$this->request->get['id'];
-        $item = @$this->model_core_items->getItem($id);
+        $item = @$this->model_core_cards->getItem($id);
         @$this->data['output'] = json_encode($item);
 
         @$this->id="item";

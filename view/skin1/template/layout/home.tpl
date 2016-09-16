@@ -14,6 +14,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>bootstrap.css" rel="stylesheet">
+    <link href="<?php echo HTTP_SERVER.DIR_CSS?>bootstrap-datepicker.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>metisMenu.css" rel="stylesheet">
@@ -30,6 +31,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo HTTP_SERVER.DIR_JS?>bootstrap.js"></script>
+    <script src="<?php echo HTTP_SERVER.DIR_JS?>bootstrap-datepicker.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="<?php echo HTTP_SERVER.DIR_JS?>metisMenu.js"></script>
@@ -50,6 +52,7 @@
         var HTTP_SERVER = '<?php echo HTTP_SERVER?>';
         var DIR_COMPONENT = '<?php echo HTTP_SERVER.DIR_COMPONENT?>';
         var loading = '<div class="text-center"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>loading.gif"></div>';
+        $('.datepicker').datepicker();
     </script>
 </head>
 

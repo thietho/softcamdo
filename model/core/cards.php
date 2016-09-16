@@ -9,7 +9,7 @@ class ModelCoreCards extends Model
         'iddate',
         'idlocation',
         'phone',
-        'phone',
+
         'address',
         'email'
     );
