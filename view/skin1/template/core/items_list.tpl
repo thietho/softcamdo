@@ -87,7 +87,7 @@ function Items()
         var answer = confirm("Bạn có muốn xóa không?")
         if (answer)
         {
-            $.post("?route=addon/group/delete",
+            $.post("?route=core/items/delete",
                     $("#listitem").serialize(),
                     function(data)
                     {

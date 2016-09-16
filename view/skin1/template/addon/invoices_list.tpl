@@ -32,7 +32,7 @@
                         <input type="text" id="idlocation" name="idlocation" value="<?php echo @$item['idlocation']?>" class="form-control"/>
                     </div>
                     <div class="form-group pull-right">
-                        <button onclick="items.search()" type="button" class="btn btn-default btn-bg btn-success"><span class="fa fa-filter"></span> Tìm</button>
+                        <button onclick="invoices.search()" type="button" class="btn btn-default btn-bg btn-success"><span class="fa fa-filter"></span> Tìm</button>
                         <button onclick="" type="button" class="btn btn-default btn-bg btn-success">Tất cả</button>
                     </div>
 
@@ -47,7 +47,7 @@
             <div class="panel panel-default">
 
                 <div class="panel-body">
-                    <div id="loadcardsdata" class="dataTable_wrapper">
+                    <div id="loadinvoicesdata" class="dataTable_wrapper">
 
                     </div>
                     <!-- /.table-responsive -->
@@ -61,14 +61,14 @@
     </div>
 </div>
 <script language="JavaScript">
-    function Items()
+    function Invoices()
     {
         this.deleteitem = function()
         {
             var answer = confirm("Bạn có muốn xóa không?")
             if (answer)
             {
-                $.post("?route=core/cards/delete",
+                $.post("?route=addon/invoices/delete",
                         $("#listitem").serialize(),
                         function(data)
                         {
@@ -83,7 +83,7 @@
         }
         this.search = function()
         {
-            $.get("?route=core/cards/getData",
+            $.get("?route=addon/invoices/getData",
                     {
                         itemname:$('#frmsearchcards #fullname').val(),
                         brand:$('#frmsearchitems #idnumber').val(),
@@ -91,18 +91,18 @@
 
                     },
                     function(html){
-                        $('#loadcardsdata').html(html);
+                        $('#loadinvoicesdata').html(html);
                     });
         }
     }
-    var items = new Items();
+    var invoices = new Invoices();
     $(document).ready(function(){
-        items.search();
+        invoices.search();
         $('input').change(function(){
-            items.search()
+            invoices.search()
         });
         $('select').change(function(){
-            items.search();
+            invoices.search();
         });
     });
 </script>

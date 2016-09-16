@@ -19,9 +19,9 @@
                         <label>Số CMND</label>
                         <input type="text" name="idnumber" value="<?php echo @$item['idnumber']?>" class="form-control"/>
                     </div>
-                    <div class="form-group datepicker">
+                    <div class="form-group" >
                         <label>Ngày cấp</label>
-                        <input type="text" name="iddate" value="<?php echo @$item['iddate']?>" class="form-control "/><span class="add-on"><i class="icon-th"></i></span>
+                        <input type="text" name="iddate" value="<?php echo $this->date->formatMySQLDate(@$item['iddate'])?>" class="form-control datepicker"/>
                     </div>
                     <div class="form-group">
                         <label>Nơi cấp</label>

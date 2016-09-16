@@ -40,7 +40,7 @@ class ControllerCoreCards extends Controller
         if(count($listid))
         {
             foreach($listid as $id)
-                $this->model_addon_group->delete($id);
+                $this->model_core_cards->delete($id);
             @$this->data['output'] = "Xóa thành công";
         }
         @$this->id="content";
@@ -123,6 +123,7 @@ class ControllerCoreCards extends Controller
             $arr = explode(" ",$data['fullname']);
             $data['fistname'] = $arr[count($arr) - 1];
             $data['lastname'] = $arr[0];
+            $data['iddate'] = $this->date->formatViewDate($data['iddate']);
             $this->model_core_cards->save($data);
             @$this->data['output'] = "true";
         }
