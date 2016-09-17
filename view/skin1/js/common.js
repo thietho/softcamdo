@@ -311,9 +311,13 @@ function numberReady()
 		//alert(formateNumber($(this).val()))
 		$(this).val(formateNumber($(this).val()))
 		
-	});	
-	
-		
+	});
+
+    $('.datepicker').datepicker({
+        format: "dd/mm/yyyy",
+        todayBtn: "linked",
+        autoclose: true
+    });
 	
 }
 $(document).ready(function(){

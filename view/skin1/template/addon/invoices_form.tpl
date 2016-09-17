@@ -170,6 +170,8 @@
     $('#group').val("<?php echo $item['group']?>");
     $('#status').val("<?php echo $item['status']?>");
     $('#group').change(function(){
-        $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group="+this.value);
+        $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group="+this.value,function(){
+            numberReady();
+        });
     });
 </script>

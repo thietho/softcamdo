@@ -53,11 +53,7 @@
         var DIR_COMPONENT = '<?php echo HTTP_SERVER.DIR_COMPONENT?>';
         var loading = '<div class="text-center"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>loading.gif"></div>';
         $(document).ready(function(){
-            $('.datepicker').datepicker({
-                format: "dd/mm/yyyy",
-                todayBtn: "linked",
-                autoclose: true
-            });
+
         });
 
     </script>
