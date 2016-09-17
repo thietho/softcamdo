@@ -105,14 +105,14 @@ final class Document {
 	{
 		$query = $this->db->query("Select `category`.* 
 									from `category` 
-									where categoryid ='".$categoryid."' ");
+									where `categoryid` ='".$categoryid."' ");
 		return @$query->row[$name];	
 	}
-    public function getGroup($id,$name="groupname")
+    public function getGroup($groupid,$name="groupname")
     {
         $query = $this->db->query("Select `group`.*
 									from `group`
-									where id ='".$id."' ");
+									where `groupid` ='".$groupid."' ");
         return @$query->row[$name];
     }
 

@@ -33,7 +33,7 @@
                         <select id="group" name="group" class="form-control">
                             <option value=""></option>
                             <?php foreach($groups as $group){ ?>
-                            <option value="<?php echo @$group['id']?>"><?php echo @$group['groupname']?></option>
+                            <option value="<?php echo @$group['groupid']?>"><?php echo @$group['groupname']?></option>
                             <?php } ?>
                         </select>
                     </div>
