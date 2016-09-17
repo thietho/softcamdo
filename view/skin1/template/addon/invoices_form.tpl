@@ -99,6 +99,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4" id="iteminfo">
+
+                </div>
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -166,4 +169,7 @@
     $('#brand').val("<?php echo $item['brand']?>");
     $('#group').val("<?php echo $item['group']?>");
     $('#status').val("<?php echo $item['status']?>");
+    $('#group').change(function(){
+        $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group="+this.value);
+    });
 </script>

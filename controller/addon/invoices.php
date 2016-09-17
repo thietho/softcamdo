@@ -126,7 +126,14 @@ class ControllerAddonInvoices extends Controller
         $this->template="addon/invoices_table.tpl";
         $this->render();
     }
+    public function getItemGroupInfo()
+    {
+        $group = $this->request->get['group'];
 
+        $this->id='content';
+        $this->template="addon/invoices_group_".$group.".tpl";
+        $this->render();
+    }
     private function getForm()
     {
         @$this->data['error'] = @$this->error;
