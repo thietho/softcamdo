@@ -1,8 +1,15 @@
 <?php
+/**
+ * Class ControllerCoreItems
+ *
+ * @property db db
+ *
+ *
+ */
 class ModelAddonInvoices extends Model
 {
     private $arr_col = array(
-        'invoiceid',
+        'invoicenumber',
         'createdate',
         'createby',
         'itemid',
@@ -70,6 +77,11 @@ class ModelAddonInvoices extends Model
         $this->db->updateData("invoices",$field,$value,$where);
     }
 
+    private function createInvoiceNumber($prefix)
+    {
+        return $this->db->getNextIdVarChar('invoices',"invoicenumber",$prefix);
+    }
+
     public function save($data)
     {
         $invoices = $this->getItem($data['id']);
@@ -94,6 +106,8 @@ class ModelAddonInvoices extends Model
 
         if(count($invoices) == 0)
         {
+            $prefix = "CD".Date('Ymd',time());
+            $data['invoicenumber'] = $this->createInvoiceNumber($prefix);
             $data['id'] = $this->db->insertData("invoices",$field,$value);
         }
         else
@@ -108,7 +122,8 @@ class ModelAddonInvoices extends Model
     {
         $where="id = '".$id."'";
         $this->db->deleteData("invoices",$where);
-
+        $where="invoiceid = '".$id."'";
+        $this->db->deleteData("invoices",$where);
     }
 
     public function getInvoicesValue($invoiceid,$infoname)

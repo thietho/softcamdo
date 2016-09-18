@@ -23,6 +23,19 @@
             <td><?php echo $item['address']?></td>
             <td><?php echo $item['phone']?></td>
             <td class="text-center">
+                <?php if(@$_GET['type']!="popup"){ ?>
+                <button type="button"
+                        id="<?php echo @$item['id']?>"
+                        fullname="<?php echo $item['fullname']?>"
+                        idnumber="<?php echo $item['idnumber']?>"
+                        iddate="<?php echo $this->date->formatMySQLDate($item['iddate'])?>"
+                        idlocation="<?php echo $item['idlocation']?>"
+                        address="<?php echo $item['address']?>"
+                        phone="<?php echo $item['phone']?>"
+                        email="<?php echo $item['email']?>"
+                        data-dismiss="modal"
+                        class="btn btn-default btn-bg btn-success selectCustomer" ><span class="fa fa-check"></span> Chọn</button>
+                <?php } ?>
                 <button type="button" onClick="window.location = '<?php echo @$item['link_edit']?>'" class="btn btn-default btn-bg btn-success"><span class="fa pencil-square-o"></span> <?php echo @$item['text_edit']?></button>
             </td>
         </tr>
@@ -37,3 +50,6 @@
 
 
 </form>
+<script language="JavaScript">
+
+</script>

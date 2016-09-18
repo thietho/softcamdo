@@ -9,7 +9,7 @@
 
 
                 <input type="hidden" name="id" value="<?php echo @$item['id']?>"/>
-                <div id="error" class="error" style="display:none"></div>
+                <div id="error" class="alert alert-danger" style="display:none"></div>
                 <div>
                     <div class="form-group">
                         <label>Mã nhóm</label>

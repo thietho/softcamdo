@@ -1,5 +1,6 @@
+<?php if($_GET['type']!="popup"){ ?>
 <div id="page-wrapper">
-
+<?php } ?>
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">
@@ -9,7 +10,7 @@
 
 
                 <input type="hidden" name="id" value="<?php echo @$item['id']?>"/>
-                <div id="error" class="error" style="display:none"></div>
+                <div id="error" class="alert alert-danger" style="display:none"></div>
                 <div class="col-md-6 col-md-offset-3">
                     <div class="form-group">
                         <label>Họ và tên</label>
@@ -52,7 +53,9 @@
             </form>
         </div>
     </div>
+<?php if($_GET['type']!="popup"){ ?>
 </div>
+<?php } ?>
 <script language="javascript">
 function save()
 {

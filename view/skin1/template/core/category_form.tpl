@@ -13,7 +13,7 @@
     	<div class="col-lg-12">
             <form name="frm" id="frmCat" action="<?php echo @$action?>" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="id" value="<?php echo @$item['id']?>">
-                <div id="error" class="panel panel-danger" style="display:none">
+                <div id="error" class="alert alert-danger" style="display:none">
                 	<div class="panel-heading">
                         Errors
                     </div>

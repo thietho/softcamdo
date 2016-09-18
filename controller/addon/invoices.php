@@ -28,6 +28,10 @@ class ControllerAddonInvoices extends Controller
         $this->model_core_category->getTree("brand",$this->data['brand']);
         unset($this->data['brand'][0]);
 
+        $this->data['storage'] = array();
+        $this->model_core_category->getTree("storage",$this->data['storage']);
+        unset($this->data['storage'][0]);
+
         $this->data['status'] = array();
         $this->model_core_category->getTree("status",$this->data['status']);
         unset($this->data['status'][0]);
