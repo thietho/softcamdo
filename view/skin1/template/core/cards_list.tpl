@@ -61,7 +61,7 @@
         </div>
         <!-- /.col-lg-12 -->
     </div>
-    <?php if(@$_GET['type']!="popup"){ ?>
+<?php if(@$_GET['type']!="popup"){ ?>
 </div>
 <?php } ?>
 <script language="JavaScript">
@@ -88,15 +88,19 @@
         this.search = function()
         {
             $.get("?route=core/cards/getData",
-                    {
-                        itemname:$('#frmsearchcards #fullname').val(),
-                        brand:$('#frmsearchitems #idnumber').val(),
-                        group:$('#frmsearchitems #idlocation').val(),
+            {
+                <?php if(@$_GET['type']=="popup"){ ?>
+                type:"popup",
+                <?php } ?>
 
-                    },
-                    function(html){
-                        $('#loadcardsdata').html(html);
-                    });
+                fullname:$('#frmsearchcards #fullname').val(),
+                idnumber:$('#frmsearchcards #idnumber').val(),
+                idlocation:$('#frmsearchcards #idlocation').val()
+
+            },
+            function(html){
+                $('#loadcardsdata').html(html);
+            });
         }
     }
     var items = new Items();

@@ -23,7 +23,7 @@
             <td><?php echo $item['address']?></td>
             <td><?php echo $item['phone']?></td>
             <td class="text-center">
-                <?php if(@$_GET['type']!="popup"){ ?>
+                <?php if(@$_GET['type']=="popup"){ ?>
                 <button type="button"
                         id="<?php echo @$item['id']?>"
                         fullname="<?php echo $item['fullname']?>"

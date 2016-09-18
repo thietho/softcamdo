@@ -11,17 +11,17 @@
                 <input type="hidden" id="id" name="id" value="<?php echo @$item['id']?>"/>
                 <input type="hidden" id="invoicenumber" name="invoices[invoicenumber]" value="<?php echo @$item['invoicenumber']?>"/>
                 <div id="error" class="alert alert-danger" style="display:none"></div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Thông tin khách hàng
                         </div>
                         <div class="panel-body">
                             <div class="form-group input-group">
-                                <input type="hidden" name="cards[id]" value="<?php echo @$item['cardid']?>"/>
+                                <input type="hidden" id="cardid" name="cards[id]" value="<?php echo @$item['cardid']?>"/>
                                 <input type="text" id="fullname" name="cards[fullname]" value="<?php echo @$item['fullname']?>" class="form-control" placeholder="Họ và tên"/>
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" onclick="invoice.searchCustomer()"><i class="fa fa-search"></i>
+                                    <button class="btn btn-default" type="button" id="btnSearchCustomer"><i class="fa fa-search"></i>
                                     </button>
                                 </span>
                             </div>
@@ -29,7 +29,7 @@
 
                                 <input type="text" id="idnumber" name="cards[idnumber]" value="<?php echo @$item['idnumber']?>" class="form-control" placeholder="Số CMND"/>
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                                    <button class="btn btn-default" type="button" id="btnGetCustomerByIdNumber"><i class="fa fa-send"></i>
                                     </button>
                                 </span>
                             </div>
@@ -56,17 +56,17 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Thông tin tài sản
+                            Thông tin tài sản phẩm
                         </div>
                         <div class="panel-body">
                             <div class="form-group input-group">
                                 <input type="hidden" id="itemid" name="invoices[itemid]" value="<?php echo @$item['itemid']?>"/>
                                 <input type="text" id="itemname" name="invoices[itemname]" value="<?php echo @$item['itemname']?>" class="form-control" placeholder="Tên sản phẩm"/>
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                                    <button class="btn btn-default" type="button" id="btnSearchItems"><i class="fa fa-search"></i>
                                     </button>
                                 </span>
                             </div>
@@ -98,7 +98,7 @@
                             </div>
                             <div class="form-group">
 
-                                <select id="brand" name="invoices[brand]" class="form-control">
+                                <select id="status" name="invoices[status]" class="form-control">
                                     <option value="">Trạng thái</option>
                                     <?php foreach($status as $it){ ?>
                                     <option value="<?php echo @$it['categoryid']?>"><?php echo @$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo @$it['categoryname']?></option>
@@ -113,10 +113,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4" id="iteminfo">
-
+                <div class="col-lg-3" id="iteminfo">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Thông tin nhóm sản phẩm
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Thông tin phiếu
@@ -197,20 +201,49 @@
     $('#group').val("<?php echo $item['group']?>");
     $('#status').val("<?php echo $item['status']?>");
     $('#group').change(function(){
-        $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group="+this.value,function(){
-            numberReady();
-        });
+        if(this.value!="")
+        {
+            $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group="+this.value,function(){
+                numberReady();
+            });
+        }
+        else
+        {
+            $('#iteminfo').html('<div class="panel panel-default"><div class="panel-heading">Thông tin nhóm sản phẩm </div></div>')
+        }
     });
 function Invoices()
 {
+    this.searchItems = function ()
+    {
+        $("#customerpopup").modal({show: true});
+        $("#customerpopup .modal-dialog").css("width","80%");
+        $("#customerpopup .modal-body").html(loading);
+        $("#customerpopup .modal-body").load("?route=core/items&type=popup",function(){
+            $( document ).ajaxComplete(function(){
+                $(".selectItems").click(function(){
+                    $("#frmInvoices #itemid").val($(this).attr('id'));
+                    $("#frmInvoices #itemname").val($(this).attr('itemname'));
+                    $("#frmInvoices #valuenow").val($(this).attr('price'));
+                    $("#frmInvoices #brand").val($(this).attr('brand'));
+                    $("#frmInvoices #group").val($(this).attr('group')).change();
+                    $("#frmInvoices #link").val($(this).attr('link'));
+                    $("#frmInvoices #status").val($(this).attr('status'));
+                    numberReady();
+                });
+            });
+
+        });
+    }
     this.searchCustomer = function()
     {
-
         $("#customerpopup").modal({show: true});
-        $("#customerpopup .modal-dialog").css("width","80%")
+        $("#customerpopup .modal-dialog").css("width","80%");
+        $("#customerpopup .modal-body").html(loading);
         $("#customerpopup .modal-body").load("?route=core/cards&type=popup",function(){
             $( document ).ajaxComplete(function(){
                 $(".selectCustomer").click(function(){
+                    $("#frmInvoices #cardid").val($(this).attr('id'));
                     $("#frmInvoices #fullname").val($(this).attr('fullname'));
                     $("#frmInvoices #idnumber").val($(this).attr('idnumber'));
                     $("#frmInvoices #idlocation").val($(this).attr('idlocation'));
@@ -223,16 +256,50 @@ function Invoices()
 
         });
     }
+    this.getCustomerByIdNumber = function(idnumber)
+    {
+        $.getJSON("?route=core/cards/getCards&col=idnumber&val="+idnumber,function(data){
+            if(data.length>0) {
+                $("#frmInvoices #cardid").val(data[0].id);
+                $("#frmInvoices #fullname").val(data[0].fullname);
+                $("#frmInvoices #idnumber").val(data[0].idnumber);
+                $("#frmInvoices #idlocation").val(data[0].idlocation);
+                $("#frmInvoices #iddate").val(data[0].iddate);
+                $("#frmInvoices #phone").val(data[0].phone);
+                $("#frmInvoices #address").val(data[0].address);
+                $("#frmInvoices #email").val(data[0].email);
+            }
+            else
+            {
+                alert("Không tồn tại số chứng minh này");
+            }
+        });
+    }
+
 }
     var invoice = new Invoices();
+    $('#frmInvoices #btnSearchCustomer').click(function(){
+        invoice.searchCustomer();
+    });
+    $('#frmInvoices #btnGetCustomerByIdNumber').click(function(){
+        invoice.getCustomerByIdNumber($('#frmInvoices #idnumber').val());
+    });
+    $('#frmInvoices #idnumber').keyup(function(e){
 
+        if(e.keyCode == 13)
+        {
+            invoice.getCustomerByIdNumber(this.value);
+        }
+    });
+    $('#frmInvoices #btnSearchItems').click(function(){
+        invoice.searchItems();
+    });
 </script>
 <div class="modal fade" id="customerpopup" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-body">
-                <p>Modal content..</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

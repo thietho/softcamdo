@@ -24,6 +24,18 @@
             <td><?php echo $this->document->getGroup($item['group'])?></td>
             <td><?php echo $this->document->getCategory($item['status'])?></td>
             <td class="text-center">
+                <?php if(@$_GET['type']=="popup"){ ?>
+                <button type="button"
+                        id="<?php echo @$item['id']?>"
+                        itemname="<?php echo $item['itemname']?>"
+                        price="<?php echo $item['price']?>"
+                        brand="<?php echo $item['brand']?>"
+                        group="<?php echo $item['group']?>"
+                        link="<?php echo $item['link']?>"
+                        status="<?php echo $item['status']?>"
+                        data-dismiss="modal"
+                        class="btn btn-default btn-bg btn-success selectItems" ><span class="fa fa-check"></span> Chọn</button>
+                <?php } ?>
                 <button type="button" onClick="window.location = '<?php echo @$item['link_edit']?>'" class="btn btn-default btn-bg btn-success"><span class="fa pencil-square-o"></span> <?php echo @$item['text_edit']?></button>
             </td>
         </tr>

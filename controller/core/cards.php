@@ -71,9 +71,9 @@ class ControllerCoreCards extends Controller
         if(@$data['fullname'] != "")
             $where .= " AND `fullname` like '%".$data['fullname']."%'";
         if(@$data['idnumber'] != "")
-            $where .= " AND `idnumber` = '".$data['idnumber']."'";
+            $where .= " AND `idnumber` like '%".$data['idnumber']."%'";
         if(@$data['idlocation'] != "")
-            $where .= " AND `idlocation` = '".$data['idlocation']."'";
+            $where .= " AND `idlocation` like '%".$data['idlocation']."%'";
 
 
         $this->data['datas'] = array();
@@ -156,11 +156,17 @@ class ControllerCoreCards extends Controller
         }
     }
     //Cac ham xu ly tren form
-    public function getItems()
+    public function getCards()
     {
-        $id = @$this->request->get['id'];
-        $item = @$this->model_core_cards->getItem($id);
-        @$this->data['output'] = json_encode($item);
+        $col = @$this->request->get['col'];
+        $val = @$this->request->get['val'];
+        $where = " AND `$col` = '$val'";
+        $data = @$this->model_core_cards->getList($where);
+        foreach($data as $key => $item)
+        {
+            $data[$key]['iddate'] = $this->date->formatMySQLDate($item['iddate']);
+        }
+        @$this->data['output'] = json_encode($data);
 
         @$this->id="item";
         @$this->template="common/output.tpl";

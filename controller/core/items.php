@@ -68,6 +68,9 @@ class ControllerCoreItems extends Controller
         $this->id='content';
         $this->template="core/items_list.tpl";
         $this->layout="layout/home";
+        @$type = $this->request->get['type'];
+        if($type=='popup')
+            $this->layout="";
         $this->render();
     }
 

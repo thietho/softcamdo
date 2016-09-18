@@ -1,4 +1,6 @@
+<?php if(@$_GET['type']!="popup"){ ?>
 <div id="page-wrapper">
+<?php } ?>
 
     <div class="row">
         <div class="col-lg-12">
@@ -78,7 +80,9 @@
         </div>
         <!-- /.col-lg-12 -->
     </div>
+<?php if(@$_GET['type']!="popup"){ ?>
 </div>
+<?php } ?>
 <script language="JavaScript">
 function Items()
 {
@@ -104,6 +108,10 @@ function Items()
     {
         $.get("?route=core/items/getData",
                 {
+
+                    <?php if(@$_GET['type']=="popup"){ ?>
+                    type:"popup",
+                    <?php } ?>
                     itemname:$('#frmsearchitems #itemname').val(),
                     brand:$('#frmsearchitems #brand').val(),
                     group:$('#frmsearchitems #group').val(),
