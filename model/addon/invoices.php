@@ -3,6 +3,7 @@
  * Class ControllerCoreItems
  *
  * @property db db
+ * @property date date
  *
  *
  */
@@ -13,6 +14,7 @@ class ModelAddonInvoices extends Model
         'createdate',
         'createby',
         'itemid',
+        'cardid',
         'fistname',
         'lastname',
         'fullname',
@@ -20,9 +22,13 @@ class ModelAddonInvoices extends Model
         'iddate',
         'idlocation',
         'phone',
+        'address',
+        'email',
         'group',
+        'pricenow',
         'amount',
         'rate',
+        'itemname',
         'itemnumber',
         'deallinedate',
         'numberexpirydate',
@@ -96,7 +102,12 @@ class ModelAddonInvoices extends Model
             }
             $data = $invoices;
         }
-
+        else
+        {
+            $prefix = "CD".Date('Ymd',time());
+            $data['invoicenumber'] = $this->createInvoiceNumber($prefix);
+            $data['status'] = "new";
+        }
         foreach($this->arr_col as $col)
         {
             $value[] = $this->db->escape(@$data[$col]);
@@ -106,9 +117,13 @@ class ModelAddonInvoices extends Model
 
         if(count($invoices) == 0)
         {
-            $prefix = "CD".Date('Ymd',time());
-            $data['invoicenumber'] = $this->createInvoiceNumber($prefix);
+
             $data['id'] = $this->db->insertData("invoices",$field,$value);
+            //Ghi log
+            $log['invoiceid'] = $data['id'];
+            $log['status'] = $data['status'];
+            $log['notes'] = $data['notes'];
+            $this->writelog($log);
         }
         else
         {
@@ -190,6 +205,22 @@ class ModelAddonInvoices extends Model
         $sql.=$where;
         $query = $this->db->query($sql);
         return $query->rows;
+    }
+    public function writelog($data)
+    {
+        $field = array(
+            'invoiceid',
+            'status',
+            'notes',
+            'datelog'
+        );
+        $value = array(
+            $data['invoiceid'],
+            $data['status'],
+            $data['notes'],
+            $this->date->getToday()
+        );
+        @$this->db->insertData("invoices_log",$field,$value);
     }
 }
 ?>

@@ -76,17 +76,9 @@
                             </div>
                             <div class="form-group">
                                 <label>Giá hiện tại</label>
-                                <input type="text" id="valuenow" name="invoices[valuenow]" value="<?php echo @$item['valuenow']?>" class="form-control number"/>
+                                <input type="text" id="pricenow" name="invoices[pricenow]" value="<?php echo @$item['pricenow']?>" class="form-control number"/>
                             </div>
-                            <div class="form-group">
 
-                                <select id="brand" name="invoices[brand]" class="form-control">
-                                    <option value="">Hảng sản xuất</option>
-                                    <?php foreach($brand as $it){ ?>
-                                    <option value="<?php echo @$it['categoryid']?>"><?php echo @$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo @$it['categoryname']?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
                             <div class="form-group">
 
                                 <select id="group" name="invoices[group]" class="form-control">
@@ -128,19 +120,28 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Từ ngày</label>
-                                <input type="text" id="createdate" name="invoices[createdate]" value="<?php echo @$item['createdate']?>" class="form-control datepicker"/>
+                                <input type="text" id="createdate" name="invoices[createdate]" value="<?php echo $this->date->formatMySQLDate(@$item['createdate'])?>" class="form-control datepicker"/>
                             </div>
                             <div class="form-group">
                                 <label>Đến ngày</label>
                                 <input type="text" id="deallinedate" name="invoices[deallinedate]" value="<?php echo $this->date->formatMySQLDate(@$item['deallinedate'])?>" class="form-control datepicker"/>
                             </div>
-                            <div class="form-group" >
-                                <label>Lãi xuất</label>
+                            <label>Lãi xuất</label>
+                            <div class="form-group input-group" >
+
                                 <input type="text" id="rate" name="invoices[rate]" value="<?php echo @$item['rate']?>" class="form-control number"/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="fa fa-percent"></i>
+                                    </button>
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label>Số tiền cầm</label>
                                 <input type="text" id="amount" name="invoices[amount]" value="<?php echo @$item['amount']?>" class="form-control number"/>
+                            </div>
+                            <div class="form-group">
+                                <label>Số tiền cầm</label>
+                                <input type="text" id="numberexpirydate" name="invoices[numberexpirydate]" value="<?php echo @$item['numberexpirydate']?>" class="form-control number"/>
                             </div>
                             <div class="form-group">
                                 <label>Ghi chú</label>
@@ -162,7 +163,8 @@
                 <div class="col-md-12">
 
                     <div class="form-group text-center">
-                        <button type="button" onClick="save()" class="btn btn-default btn-bg btn-success"><span class="fa fa-floppy-o"></span> Save</button>
+                        <button type="button" onClick="save('')" class="btn btn-default btn-bg btn-success"><span class="fa fa-floppy-o"></span> Save</button>
+                        <button type="button" onClick="save('print')" class="btn btn-default btn-bg btn-success"><span class="fa fa-print"></span> Print</button>
                         <button type="button" onclick="window.location = '?route=addon/invoices'" class="btn btn-default btn-bg btn-success"><span class="fa fa-undo  "></span> Quay lại</button>
                     </div>
                 </div>
@@ -174,22 +176,39 @@
         </div>
     </div>
 </div>
-
+<?php if($item['itemid'] != ""){ ?>
+<script language="JavaScript">
+    $.getJSON("?route=core/items/getItems&id=<?php echo $item['itemid'] ?>", function (data) {
+        $('#frmInvoices #status').val(data.status);
+        $('#frmInvoices #link').val(data.link);
+    });
+</script>
+<?php } ?>
 <script language="javascript">
-    function save()
+    function save(type)
     {
         $.blockUI({ message: "<h1>Please wait...</h1>" });
-
-        $.post("?route=addon/invoices/save", $("#frm").serialize(),
+        $.post("?route=addon/invoices/save", $("#frmInvoices").serialize(),
                 function(data){
-                    if(data == "true")
+                    var obj = $.parseJSON(data);
+                    if(obj.error == "")
                     {
-                        window.location = "?route=addon/invoices";
+                        switch(type)
+                        {
+                            case "":
+                                window.location = "?route=addon/invoices";
+                                break;
+                            case "print":
+                                invoice.print(obj.id);
+
+                                break;
+                        }
+
                     }
                     else
                     {
 
-                        $('#error').html(data).show('slow');
+                        $('#error').html(obj.error).show('slow');
                         $.unblockUI();
 
                     }
@@ -200,12 +219,17 @@
     $('#brand').val("<?php echo $item['brand']?>");
     $('#group').val("<?php echo $item['group']?>");
     $('#status').val("<?php echo $item['status']?>");
+
     $('#group').change(function(){
         if(this.value!="")
         {
-            $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group="+this.value,function(){
+            $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group="+this.value+"&invoiceid=<?php echo $item['id']?>",function(){
                 numberReady();
             });
+            $.getJSON("?route=addon/group/getGroup&groupid="+this.value, function (data) {
+                $('#frmInvoices #rate').val(data.rate);
+            });
+
         }
         else
         {
@@ -224,8 +248,8 @@ function Invoices()
                 $(".selectItems").click(function(){
                     $("#frmInvoices #itemid").val($(this).attr('id'));
                     $("#frmInvoices #itemname").val($(this).attr('itemname'));
-                    $("#frmInvoices #valuenow").val($(this).attr('price'));
-                    $("#frmInvoices #brand").val($(this).attr('brand'));
+                    $("#frmInvoices #pricenow").val($(this).attr('price'));
+
                     $("#frmInvoices #group").val($(this).attr('group')).change();
                     $("#frmInvoices #link").val($(this).attr('link'));
                     $("#frmInvoices #status").val($(this).attr('status'));
@@ -254,6 +278,16 @@ function Invoices()
                 });
             });
 
+        });
+    }
+    this.print = function(id)
+    {
+        $("#invoiceviewpopup").modal({show: true});
+        $("#invoiceviewpopup .modal-dialog").css("width","80%");
+        $("#invoiceviewpopup .modal-body").html(loading);
+        $("#invoiceviewpopup .modal-body").load("?route=addon/invoices/view&id="+id+"&type=popup");
+        $("#invoiceviewpopup").on('hidden.bs.modal', function () {
+            $.unblockUI();
         });
     }
     this.getCustomerByIdNumber = function(idnumber)
@@ -294,8 +328,25 @@ function Invoices()
     $('#frmInvoices #btnSearchItems').click(function(){
         invoice.searchItems();
     });
+    $("#frmInvoices #group").val("<?php echo $item['group']?>").change();
+    $("#frmInvoices #storage").val("<?php echo $item['storage']?>");
+
+
 </script>
 <div class="modal fade" id="customerpopup" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="invoiceviewpopup" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">

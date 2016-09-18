@@ -149,8 +149,8 @@ class ControllerAddonGroup extends Controller
     //Cac ham xu ly tren form
     public function getGroup()
     {
-        $id = @$this->request->get['id'];
-        $item = @$this->model_addon_group->getItem($id);
+        $groupid = @$this->request->get['groupid'];
+        $item = @$this->model_addon_group->getItemById($groupid);
         @$this->data['output'] = json_encode($item);
 
         @$this->id="item";

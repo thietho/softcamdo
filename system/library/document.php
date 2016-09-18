@@ -19,18 +19,11 @@ final class Document {
 	public $text = array();
 	public $setting = array();
 	public $setup = array();
-	public $productdisplay = array(
-						   '' => "Chi tiết",
-						   'compact' => "Rút gọn",
-						   
-						   );
-	public $status = array(
-						   'new' => "Đơn hàng mới",
-						   'wait' => "Đang xử lý",
-						   'pending' => "Xát với khách hàng không được",
-						   'confirmed' => "Đã xát nhận",
-						   'completed' => "Hoàn thành",
-						   'cancel' => "Hủy đơn hàng"
+
+	public $invoicesstatus = array(
+						   'new' => "Biên nhận mới",
+						   'completed' => "Đã chuột",
+						   'liquidated' => "Đã thanh lý"
 						   );
 
 	public function toVND($value,$donvi)

@@ -13,6 +13,14 @@ class ModelAddonGroup extends Model
 									where id ='".$id."' ");
 		return $query->row;
 	}
+
+    public function getItemById($groupid)
+    {
+        $query = $this->db->query("Select `group`.*
+									from `group`
+									where groupid ='".$groupid."' ");
+        return $query->row;
+    }
 	
 	public function getList($where="", $from=0, $to=0)
 	{

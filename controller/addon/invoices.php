@@ -55,7 +55,24 @@ class ControllerAddonInvoices extends Controller
         @$this->data['readonly'] = 'readonly="readonly"';
         @$this->getForm();
     }
+    public function view()
+    {
+        $id = $this->request->get['id'];
 
+        if($id!='')
+        {
+            $this->data['item'] = @$this->model_addon_invoices->getItem($id);
+
+        }
+        else
+        {
+
+        }
+        @$this->id='content';
+        @$this->template='addon/invoices_view.tpl';
+
+        @$this->render();
+    }
 
     public function delete()
     {
@@ -133,7 +150,12 @@ class ControllerAddonInvoices extends Controller
     public function getItemGroupInfo()
     {
         $group = $this->request->get['group'];
-
+        $invoiceid = $this->request->get['invoiceid'];
+        $data_info = $this->model_addon_invoices->getInvoices($invoiceid);
+        foreach($data_info as $key => $item)
+        {
+            $this->data['info'][$item['infoname']] = $item['infovalue'];
+        }
         $this->id='content';
         $this->template="addon/invoices_group_".$group.".tpl";
         $this->render();
@@ -143,7 +165,16 @@ class ControllerAddonInvoices extends Controller
         @$this->data['error'] = @$this->error;
 
         $id = $this->request->get['id'];
-        $this->data['item'] = @$this->model_core_cards->getItem($id);
+        if($id!='')
+        {
+            $this->data['item'] = @$this->model_addon_invoices->getItem($id);
+
+        }
+        else
+        {
+            $this->data['item']['createdate'] = date('Y-m-d',time());
+            $this->data['item']['deallinedate'] = date('Y-m-d',time()+24*60*60*30);
+        }
         @$this->id='content';
         @$this->template='addon/invoices_form.tpl';
         @$this->layout="layout/home";
@@ -156,21 +187,60 @@ class ControllerAddonInvoices extends Controller
         $data = @$this->request->post;
         if($this->validateForm($data))
         {
-            $arr = explode(" ",$data['fullname']);
-            $data['fistname'] = $arr[count($arr) - 1];
-            $data['lastname'] = $arr[0];
-            $data['iddate'] = $this->date->formatViewDate($data['iddate']);
-            $data['createdate'] = $this->date->formatViewDate($data['createdate']);
-            $data['deallinedate'] = $this->date->formatViewDate($data['deallinedate']);
-            $this->model_addon_invoices->save($data);
-            @$this->data['output'] = "true";
+            //Luu thong tin khach hang
+            $cards = $data['cards'];
+            $arr = explode(" ",$cards['fullname']);
+            $cards['fistname'] = $arr[count($arr) - 1];
+            $cards['lastname'] = $arr[0];
+            $cards['iddate'] = $this->date->formatViewDate($cards['iddate']);
+            $cards=$this->model_core_cards->save($cards);
+
+            //Luu thong tin invoices
+            $invoices = array();
+            $invoices['id'] = $data['id'];
+            @$invoices['invoicenumber'] = $data['invoicenumber'];
+            $invoices['createdate'] = $this->date->formatViewDate($data['invoices']['createdate']);
+            $invoices['createby'] = $this->user->getUserName();
+            @$invoices['itemid'] = $data['invoices']['itemid'];
+            $invoices['cardid'] = $cards['id'];
+            $invoices['fistname'] = $cards['fistname'];
+            $invoices['lastname'] = $cards['lastname'];
+            $invoices['fullname'] = $cards['fullname'];
+            $invoices['idnumber'] = $cards['idnumber'];
+            $invoices['iddate'] = $cards['iddate'];
+            $invoices['idlocation'] = $cards['idlocation'];
+            $invoices['phone'] = $cards['phone'];
+            $invoices['address'] = $cards['address'];
+            $invoices['email'] = $cards['email'];
+            $invoices['group'] = $data['invoices']['group'];
+            $invoices['pricenow'] = $this->string->toNumber($data['invoices']['pricenow']);
+            $invoices['amount'] = $this->string->toNumber($data['invoices']['amount']);
+            $invoices['rate'] = $this->string->toNumber($data['invoices']['rate']);
+            $invoices['itemname'] = $data['invoices']['itemname'];
+            $invoices['itemnumber'] = $data['invoices']['itemnumber'];
+            $invoices['deallinedate'] = $this->date->formatViewDate($data['invoices']['deallinedate']);
+            $invoices['numberexpirydate'] = $this->string->toNumber($data['invoices']['numberexpirydate']);
+            $invoices['notes'] = $data['invoices']['notes'];
+            $invoices['storage'] = $data['invoices']['storage'];
+
+            $invoices = $this->model_addon_invoices->save($invoices);
+
+            //Luu thong tin info
+            $info = $data['info'];
+            foreach($info as $key => $val)
+            {
+                $this->model_addon_invoices->saveInvoicesInfo($invoices['id'],$key,$val);
+            }
+            $invoices['error'] = '';
+            @$this->data['output'] = json_encode($invoices);
         }
         else
         {
             foreach(@$this->error as $item)
             {
-                @$this->data['output'] .= $item."<br>";
+                $data['error'] .= $item."<br>";
             }
+            @$this->data['output'] = json_encode($data);
         }
         $this->id='content';
         $this->template='common/output.tpl';
@@ -179,7 +249,7 @@ class ControllerAddonInvoices extends Controller
 
     private function validateForm($data)
     {
-        if ((strlen(@$data['fullname']) == 0))
+        if ((strlen(@$data['cards']['fullname']) == 0))
         {
             @$this->error['fullname'] = "Bạn chưa nhập họ và tên";
         }

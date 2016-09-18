@@ -18,12 +18,12 @@
         <?php foreach($datas as $item){ ?>
         <tr>
             <td><input class="inputchk" type="checkbox" name="delete[<?php echo @$item['id']?>]" value="<?php echo @$item['id']?>" ></td>
-            <td><?php echo $item['invoiceid']?></td>
+            <td><?php echo $item['invoicenumber']?></td>
             <td><?php echo $this->date->formatMySQLDate($item['createdate'])?></td>
             <td><?php echo $this->date->formatMySQLDate($item['deallinedate'])?></td>
-            <td><?php echo $item['amount']?></td>
-            <td><?php echo $item['rate']?></td>
-            <td></td>
+            <td class="number"><?php echo $this->string->numberFormate($item['amount'])?></td>
+            <td class="number"><?php echo $this->string->numberFormate($item['rate'])?></td>
+            <td><?php echo $item['itemname']?> - <?php echo $item['itemnumber']?></td>
             <td>
                 Tên: <?php echo $item['fullname']?><br>
                 Số CMNDL<?php echo $item['idnumber']?><br>
