@@ -18,7 +18,7 @@
         <?php foreach($datas as $item){ ?>
         <tr>
             <td><input class="inputchk" type="checkbox" name="delete[<?php echo @$item['id']?>]" value="<?php echo @$item['id']?>" ></td>
-            <td><?php echo $item['invoicenumber']?></td>
+            <td><button type="button" class="btn btn-default btn-bg btn-success" onclick="invoices.view(<?php echo @$item['id']?>)"><?php echo $item['invoicenumber']?></button></td>
             <td><?php echo $this->date->formatMySQLDate($item['createdate'])?></td>
             <td><?php echo $this->date->formatMySQLDate($item['deallinedate'])?></td>
             <td class="number"><?php echo $this->string->numberFormate($item['amount'])?></td>

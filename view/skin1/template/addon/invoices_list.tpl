@@ -94,6 +94,21 @@
                         $('#loadinvoicesdata').html(html);
                     });
         }
+        this.view = function(id)
+        {
+            $("#invoiceviewpopup").modal({show: true});
+            $("#invoiceviewpopup #btnPrint").attr('invoiceid',id);
+            $("#invoiceviewpopup .modal-dialog").css("width","80%");
+            $("#invoiceviewpopup .modal-body").html(loading);
+            $("#invoiceviewpopup .modal-body").load("?route=addon/invoices/view&id="+id+"&type=popup");
+            $("#invoiceviewpopup").on('hidden.bs.modal', function () {
+
+            });
+        }
+        this.print = function(id)
+        {
+            openDialog("?route=addon/invoices/view&id="+id+"&type=print",800,500);
+        }
     }
     var invoices = new Invoices();
     $(document).ready(function(){
@@ -106,3 +121,21 @@
         });
     });
 </script>
+<div class="modal fade" id="invoiceviewpopup" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="btnPayRate">Đóng lãi</button>
+                <button type="button" class="btn btn-default" id="btnGetBack">Chuộc</button>
+                <button type="button" class="btn btn-default" id="btnPayOff">Thanh lý</button>
+
+                <button type="button" class="btn btn-default" id="btnPrint" onclick="invoices.print($(this).attr('invoiceid'));">In phiếu</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

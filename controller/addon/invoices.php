@@ -62,7 +62,14 @@ class ControllerAddonInvoices extends Controller
         if($id!='')
         {
             $this->data['item'] = @$this->model_addon_invoices->getItem($id);
-
+            $info = $this->model_addon_invoices->getInvoicesValue($id,'info');
+            $data_info = json_decode(base64_decode($info),true);
+            $arr = array();
+            foreach($data_info as $key => $val)
+            {
+                $arr[] = $key.': '.$val;
+            }
+            $this->data['item']['info'] = implode(' - ',$arr);
         }
         else
         {
@@ -70,7 +77,12 @@ class ControllerAddonInvoices extends Controller
         }
         @$this->id='content';
         @$this->template='addon/invoices_view.tpl';
-
+        $this->layout="layout/home";
+        @$type = $this->request->get['type'];
+        if($type=='popup')
+            $this->layout="";
+        if($type=='print')
+            $this->layout="layout/print";
         @$this->render();
     }
 
@@ -151,13 +163,24 @@ class ControllerAddonInvoices extends Controller
     {
         $group = $this->request->get['group'];
         $invoiceid = $this->request->get['invoiceid'];
-        $data_info = $this->model_addon_invoices->getInvoices($invoiceid);
-        foreach($data_info as $key => $item)
+
+        $objgroup = $this->model_addon_group->getItemById($group);
+        $strinfo = $this->model_addon_invoices->getInvoicesValue($invoiceid,'info');
+        $this->data['group'] = $objgroup;
+        if($strinfo == "")
         {
-            $this->data['info'][$item['infoname']] = $item['infovalue'];
+            $arr = explode('-',$objgroup['infodes']);
+            foreach($arr as $val)
+            $this->data['infos'][trim($val)] = '';
         }
+        else
+        {
+            $data = json_decode(base64_decode($strinfo),true);
+            $this->data['infos'] = $data;
+        }
+
         $this->id='content';
-        $this->template="addon/invoices_group_".$group.".tpl";
+        $this->template="addon/invoices_group_info.tpl";
         $this->render();
     }
     private function getForm()
@@ -226,11 +249,9 @@ class ControllerAddonInvoices extends Controller
             $invoices = $this->model_addon_invoices->save($invoices);
 
             //Luu thong tin info
-            $info = $data['info'];
-            foreach($info as $key => $val)
-            {
-                $this->model_addon_invoices->saveInvoicesInfo($invoices['id'],$key,$val);
-            }
+            $info = base64_encode(json_encode($data['info']));
+
+            $this->model_addon_invoices->saveInvoicesInfo($invoices['id'],'info',$info);
             $invoices['error'] = '';
             @$this->data['output'] = json_encode($invoices);
         }

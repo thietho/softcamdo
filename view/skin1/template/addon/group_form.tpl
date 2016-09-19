@@ -23,7 +23,10 @@
                         <label>Lãi xuất</label>
                         <input type="text" name="rate" value="<?php echo @$item['rate']?>" class="form-control"/>
                     </div>
-
+                    <div class="form-group">
+                        <label>Thông tin cần lưu</label>
+                        <textarea class="form-control" name="infodes"><?php echo @$item['infodes']?></textarea>
+                    </div>
                 </div>
                 <center>
                     <button type="button" onClick="save()" class="btn btn-default btn-bg btn-success"><span class="fa fa-floppy-o"></span> Save</button>
@@ -49,12 +52,9 @@
                     }
                     else
                     {
-
                         $('#error').html(data).show('slow');
-                        $.unblockUI();
-
                     }
-
+                    $.unblockUI();
                 }
         );
     }

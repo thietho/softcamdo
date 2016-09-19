@@ -140,7 +140,7 @@
                                 <input type="text" id="amount" name="invoices[amount]" value="<?php echo @$item['amount']?>" class="form-control number"/>
                             </div>
                             <div class="form-group">
-                                <label>Số tiền cầm</label>
+                                <label>Số quá hạn</label>
                                 <input type="text" id="numberexpirydate" name="invoices[numberexpirydate]" value="<?php echo @$item['numberexpirydate']?>" class="form-control number"/>
                             </div>
                             <div class="form-group">
@@ -193,13 +193,14 @@
                     var obj = $.parseJSON(data);
                     if(obj.error == "")
                     {
+                        $("#frmInvoices #id").val(obj.id);
                         switch(type)
                         {
                             case "":
                                 window.location = "?route=addon/invoices";
                                 break;
                             case "print":
-                                invoice.print(obj.id);
+                                invoice.view(obj.id);
 
                                 break;
                         }
@@ -280,7 +281,7 @@ function Invoices()
 
         });
     }
-    this.print = function(id)
+    this.view = function(id)
     {
         $("#invoiceviewpopup").modal({show: true});
         $("#invoiceviewpopup .modal-dialog").css("width","80%");
@@ -289,6 +290,10 @@ function Invoices()
         $("#invoiceviewpopup").on('hidden.bs.modal', function () {
             $.unblockUI();
         });
+    }
+    this.print = function(id)
+    {
+        openDialog("?route=addon/invoices/view&id="+id+"&type=print",800,500);
     }
     this.getCustomerByIdNumber = function(idnumber)
     {
@@ -353,6 +358,7 @@ function Invoices()
             <div class="modal-body">
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="btnPrint" onclick="invoice.print($('#frmInvoices #id').val());">In phiếu</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>

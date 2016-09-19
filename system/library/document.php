@@ -21,9 +21,11 @@ final class Document {
 	public $setup = array();
 
 	public $invoicesstatus = array(
-						   'new' => "Biên nhận mới",
-						   'completed' => "Đã chuột",
-						   'liquidated' => "Đã thanh lý"
+						    'new' => "Biên nhận mới",
+                            'payrate' => 'Đóng lãi',
+						    'getback' => "Đã chuột",
+						    'payoff' => "Đã thanh lý",
+                            'cancel' => "Hủy"
 						   );
 
 	public function toVND($value,$donvi)

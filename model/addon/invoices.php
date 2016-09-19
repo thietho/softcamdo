@@ -147,10 +147,10 @@ class ModelAddonInvoices extends Model
                 FROM  `invoices_info`
                 WHERE `invoiceid` = '$invoiceid' AND `infoname` = '$infoname'";
         $query = $this->db->query($sql);
-        return $query->row['infovalue'];
+        return @$query->row['infovalue'];
     }
 
-    public function getInvoices($invoiceid)
+    public function getInvoiceInfoList($invoiceid)
     {
         $sql = "SELECT *
                 FROM  `invoices_info`

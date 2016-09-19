@@ -4,7 +4,8 @@ class ModelAddonGroup extends Model
 	private $arr_col = array(
 							'groupid',
 							'groupname',
-							'rate'
+							'rate',
+                            'infodes'
 							);
 	public function getItem($id)
 	{
