@@ -109,6 +109,12 @@
         {
             openDialog("?route=addon/invoices/view&id="+id+"&type=print",800,500);
         }
+        this.payRate = function(id)
+        {
+            $('#invoiceactionpopup').modal({show:true});
+            $('#invoiceactionpopup .modal-body').html(loading);
+            $("#invoiceactionpopup .modal-body").load("?route=addon/invoices/payRate&id="+id+"&type=popup");
+        }
     }
     var invoices = new Invoices();
     $(document).ready(function(){
@@ -128,12 +134,26 @@
             <div class="modal-body">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" id="btnPayRate">Đóng lãi</button>
+                <button type="button" class="btn btn-default" id="btnPayRate" onclick="invoices.payRate($('#btnPrint').attr('invoiceid'))">Đóng lãi</button>
                 <button type="button" class="btn btn-default" id="btnGetBack">Chuộc</button>
                 <button type="button" class="btn btn-default" id="btnPayOff">Thanh lý</button>
 
                 <button type="button" class="btn btn-default" id="btnPrint" onclick="invoices.print($(this).attr('invoiceid'));">In phiếu</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="invoiceactionpopup" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="btnSave" onclick="">Đóng lãi</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
             </div>
         </div>
 

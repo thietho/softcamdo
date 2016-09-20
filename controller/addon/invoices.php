@@ -281,6 +281,20 @@ class ControllerAddonInvoices extends Controller
             return FALSE;
         }
     }
+    public function payRate()
+    {
+        $id = $this->request->get['id'];
+        $this->data['item'] = @$this->model_addon_invoices->getItem($id);
+        //$this->date->
+        $intcreatedate = strtotime($this->data['item']['createdate']);
+        $datenow = date('Y-m-d',time());
+        $intnow = strtotime($datenow);
+        $this->data['numdate'] = ($intnow - $intcreatedate)/(24*60*60) ;
+
+        @$this->id="item";
+        @$this->template="addon/invoices_payrate.tpl";
+        @$this->render();
+    }
     //Cac ham xu ly tren form
     public function getItems()
     {

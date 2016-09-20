@@ -242,6 +242,9 @@
                                 <li>
                                     <a href="?route=core/cards">Khách hàng</a>
                                 </li>
+                                <li>
+                                    <a href="?route=core/accounts">Danh mục tài khoản</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
