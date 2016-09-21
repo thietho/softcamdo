@@ -19,7 +19,10 @@ final class Document {
 	public $text = array();
 	public $setting = array();
 	public $setup = array();
-
+    public $billtype = array(
+        'collect' => 'Thu',
+        'pay' => 'Chi'
+    );
 	public $invoicesstatus = array(
 						    'new' => "Biên nhận mới",
                             'payrate' => 'Đóng lãi',
@@ -103,11 +106,18 @@ final class Document {
 									where `categoryid` ='".$categoryid."' ");
 		return @$query->row[$name];	
 	}
+    public function getAccounts($accountid,$name="accountname")
+    {
+        $query = $this->db->query("Select `accounts`.*
+									from `accounts`
+									where `accountid` ='$accountid' ");
+        return @$query->row[$name];
+    }
     public function getGroup($groupid,$name="groupname")
     {
         $query = $this->db->query("Select `group`.*
 									from `group`
-									where `groupid` ='".$groupid."' ");
+									where `groupid` ='$groupid' ");
         return @$query->row[$name];
     }
 

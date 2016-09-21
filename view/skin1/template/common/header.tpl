@@ -245,6 +245,9 @@
                                 <li>
                                     <a href="?route=core/accounts">Danh mục tài khoản</a>
                                 </li>
+                                <li>
+                                    <a href="?route=core/bills">Phiếu thu chi</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
