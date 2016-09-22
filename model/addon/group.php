@@ -2,11 +2,12 @@
 class ModelAddonGroup extends Model
 { 
 	private $arr_col = array(
-							'groupid',
-							'groupname',
-							'rate',
-                            'infodes'
-							);
+        'groupid',
+        'groupname',
+        'rate',
+        'infodes',
+        'period'
+    );
 	public function getItem($id)
 	{
 		$query = $this->db->query("Select `group`.*

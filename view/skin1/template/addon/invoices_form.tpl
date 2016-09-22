@@ -118,13 +118,14 @@
                             Thông tin phiếu
                         </div>
                         <div class="panel-body">
+
                             <div class="form-group">
                                 <label>Từ ngày</label>
-                                <input type="text" id="createdate" name="invoices[createdate]" value="<?php echo $this->date->formatMySQLDate(@$item['createdate'])?>" class="form-control datepicker"/>
+                                <input type="text" id="startdate" name="invoices[startdate]" value="<?php echo $this->date->formatMySQLDate(@$item['startdate'])?>" class="form-control datepicker"/>
                             </div>
                             <div class="form-group">
                                 <label>Đến ngày</label>
-                                <input type="text" id="deallinedate" name="invoices[deallinedate]" value="<?php echo $this->date->formatMySQLDate(@$item['deallinedate'])?>" class="form-control datepicker"/>
+                                <input type="text" id="enddate" name="invoices[enddate]" value="<?php echo $this->date->formatMySQLDate(@$item['enddate'])?>" class="form-control datepicker"/>
                             </div>
                             <label>Lãi xuất</label>
                             <div class="form-group input-group" >
@@ -229,6 +230,12 @@
             });
             $.getJSON("?route=addon/group/getGroup&groupid="+this.value, function (data) {
                 $('#frmInvoices #rate').val(data.rate);
+                if($('#frmInvoices #invoicenumber').val() == '') {
+                    var startdate = "<?php echo @$item['startdate'];?>";
+                    var dt = new Date(startdate);
+                    dt.setDate(dt.getDate() + Number(data.period));
+                    $('#frmInvoices #enddate').val(intToDate(dt));
+                }
             });
 
         }

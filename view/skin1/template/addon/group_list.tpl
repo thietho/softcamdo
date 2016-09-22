@@ -44,7 +44,7 @@
                                     <td><?php echo @$item['groupid']?></td>
                                     <td><?php echo @$item['groupname']?></td>
                                     <td class="number"><?php echo @$item['rate']?>%</td>
-
+                                    <td class="number"><?php echo @$item['period']?> ngày</td>
                                     <td>
                                         <button type="button" onClick="window.location = '<?php echo @$item['link_edit']?>'" class="btn btn-default btn-bg btn-success"><span class="fa pencil-square-o"></span> <?php echo @$item['text_edit']?></button>
                                     </td>

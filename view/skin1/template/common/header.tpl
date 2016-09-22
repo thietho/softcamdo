@@ -6,7 +6,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="?route=addon/dashboard">SB Admin v2.0</a>
+                <a class="navbar-brand" href="<?php echo HTTP_SERVER?>">Cầm đồ Phương Nghi</a>
             </div>
             <!-- /.navbar-header -->
 

@@ -4,6 +4,7 @@
  *
  * @property db db
  * @property date date
+ * @property user user
  *
  *
  */
@@ -30,7 +31,8 @@ class ModelAddonInvoices extends Model
         'rate',
         'itemname',
         'itemnumber',
-        'deallinedate',
+        'startdate',
+        'enddate',
         'numberexpirydate',
         'notes',
         'storage',
@@ -107,6 +109,8 @@ class ModelAddonInvoices extends Model
             $prefix = "CD".Date('Ymd',time());
             $data['invoicenumber'] = $this->createInvoiceNumber($prefix);
             $data['status'] = "new";
+            $invoices['createdate'] = $this->date->getToday();
+            $invoices['createby'] = $this->user->getUserName();
         }
         foreach($this->arr_col as $col)
         {

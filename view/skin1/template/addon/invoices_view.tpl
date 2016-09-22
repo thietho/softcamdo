@@ -20,7 +20,7 @@
     Số tiền cầm: <?php echo $this->string->numberFormate($item['amount'])?>/VNĐ - <?php echo $this->string->doc_so($item['amount'])?> đồng
 </p>
 <p>
-    Từ ngày: <?php echo $this->date->formatMySQLDate($item['createdate'])?> Đến ngày: <?php echo $this->date->formatMySQLDate($item['deallinedate'])?> Hết hạn
+    Từ ngày: <?php echo $this->date->formatMySQLDate($item['startdate'])?> Đến ngày: <?php echo $this->date->formatMySQLDate($item['enddate'])?> Hết hạn
 </p>
 <p>
     Lãi xuất: <?php echo $item['rate']?>. Số tiền cầm, và thời gian đã được thông báo khi đến cầm và đồng ý.

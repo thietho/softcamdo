@@ -102,7 +102,7 @@
             $("#invoiceviewpopup .modal-body").html(loading);
             $("#invoiceviewpopup .modal-body").load("?route=addon/invoices/view&id="+id+"&type=popup");
             $("#invoiceviewpopup").on('hidden.bs.modal', function () {
-
+                invoices.search();
             });
         }
         this.print = function(id)
@@ -111,9 +111,41 @@
         }
         this.payRate = function(id)
         {
-            $('#invoiceactionpopup').modal({show:true});
-            $('#invoiceactionpopup .modal-body').html(loading);
-            $("#invoiceactionpopup .modal-body").load("?route=addon/invoices/payRate&id="+id+"&type=popup");
+            $('#invoicepayratepopup').modal({show:true});
+            $('#invoicepayratepopup .modal-body').html(loading);
+            $("#invoicepayratepopup .modal-body").load("?route=addon/invoices/payRate&id="+id+"&type=popup");
+        }
+        this.payRateAction = function()
+        {
+            $.post("?route=addon/invoices/payRateAction",$('#frmPayRate').serialize(), function (data) {
+                var obj = $.parseJSON(data);
+                $('#invoicepayratepopup').modal('hide');
+                invoices.view(obj.id);
+
+
+            });
+        }
+        this.getBack = function(id)
+        {
+            $.get('?route=addon/invoices/getBack&id='+id, function (data) {
+
+            })
+        }
+        this.payOff = function(id)
+        {
+            $('#invoicepayoffpopup').modal({show:true});
+            $('#invoicepayoffpopup .modal-body').html(loading);
+            $("#invoicepayoffpopup .modal-body").load("?route=addon/invoices/payOff&id="+id+"&type=popup");
+        }
+        this.payOffAction = function()
+        {
+            $.post("?route=addon/invoices/payOffAction",$('#frmPayOff').serialize(), function (data) {
+                var obj = $.parseJSON(data);
+                $('#invoicepayoffpopup').modal('hide');
+                $('#invoiceviewpopup').modal('hide');
+
+
+            });
         }
     }
     var invoices = new Invoices();
@@ -135,8 +167,8 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" id="btnPayRate" onclick="invoices.payRate($('#btnPrint').attr('invoiceid'))">Đóng lãi</button>
-                <button type="button" class="btn btn-default" id="btnGetBack">Chuộc</button>
-                <button type="button" class="btn btn-default" id="btnPayOff">Thanh lý</button>
+                <button type="button" class="btn btn-default" id="btnGetBack" onclick="invoices.getBack($('#btnPrint').attr('invoiceid'))">Chuộc</button>
+                <button type="button" class="btn btn-default" id="btnPayOff" onclick="invoices.payOff($('#btnPrint').attr('invoiceid'))">Thanh lý</button>
 
                 <button type="button" class="btn btn-default" id="btnPrint" onclick="invoices.print($(this).attr('invoiceid'));">In phiếu</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
@@ -145,14 +177,28 @@
 
     </div>
 </div>
-<div class="modal fade" id="invoiceactionpopup" role="dialog">
+<div class="modal fade" id="invoicepayratepopup" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-body">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" id="btnSave" onclick="">Đóng lãi</button>
+                <button type="button" class="btn btn-default" id="btnPayRateAction" onclick="invoices.payRateAction()">Đóng lãi</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="invoicepayoffpopup" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="btnPayOffAction" onclick="invoices.payOffAction()">Thanh lý</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
             </div>
         </div>

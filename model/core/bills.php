@@ -67,7 +67,7 @@ class ModelCoreBills extends Model
     }
     public function save($data)
     {
-        $item = $this->getItem($data['id']);
+        @$item = $this->getItem($data['id']);
 
         $value = array();
         if(count($item))

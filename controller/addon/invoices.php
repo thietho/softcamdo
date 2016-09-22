@@ -7,6 +7,7 @@
  * @property ModelCoreCategory model_core_category
  * @property ModelAddonGroup model_addon_group
  * @property ModelAddonInvoices model_addon_invoices
+ * @property ModelCoreBills model_core_bills
  *
  */
 class ControllerAddonInvoices extends Controller
@@ -19,6 +20,7 @@ class ControllerAddonInvoices extends Controller
         $this->load->model("core/items");
         $this->load->model("core/cards");
         $this->load->model("addon/invoices");
+        $this->load->model("core/bills");
         if (isset($moduleid)) {
             $moduleid = $_GET['route'];
         }
@@ -195,8 +197,8 @@ class ControllerAddonInvoices extends Controller
         }
         else
         {
-            $this->data['item']['createdate'] = date('Y-m-d',time());
-            $this->data['item']['deallinedate'] = date('Y-m-d',time()+24*60*60*30);
+            $this->data['item']['startdate'] = date('Y-m-d',time());
+            $this->data['item']['enddate'] = date('Y-m-d',time()+24*60*60*30);
         }
         @$this->id='content';
         @$this->template='addon/invoices_form.tpl';
@@ -222,8 +224,6 @@ class ControllerAddonInvoices extends Controller
             $invoices = array();
             $invoices['id'] = $data['id'];
             @$invoices['invoicenumber'] = $data['invoicenumber'];
-            $invoices['createdate'] = $this->date->formatViewDate($data['invoices']['createdate']);
-            $invoices['createby'] = $this->user->getUserName();
             @$invoices['itemid'] = $data['invoices']['itemid'];
             $invoices['cardid'] = $cards['id'];
             $invoices['fistname'] = $cards['fistname'];
@@ -241,7 +241,8 @@ class ControllerAddonInvoices extends Controller
             $invoices['rate'] = $this->string->toNumber($data['invoices']['rate']);
             $invoices['itemname'] = $data['invoices']['itemname'];
             $invoices['itemnumber'] = $data['invoices']['itemnumber'];
-            $invoices['deallinedate'] = $this->date->formatViewDate($data['invoices']['deallinedate']);
+            $invoices['startdate'] = $this->date->formatViewDate($data['invoices']['startdate']);
+            $invoices['enddate'] = $this->date->formatViewDate($data['invoices']['enddate']);
             $invoices['numberexpirydate'] = $this->string->toNumber($data['invoices']['numberexpirydate']);
             $invoices['notes'] = $data['invoices']['notes'];
             $invoices['storage'] = $data['invoices']['storage'];
@@ -286,14 +287,125 @@ class ControllerAddonInvoices extends Controller
         $id = $this->request->get['id'];
         $this->data['item'] = @$this->model_addon_invoices->getItem($id);
         //$this->date->
-        $intcreatedate = strtotime($this->data['item']['createdate']);
+        $intstartdate = strtotime($this->data['item']['startdate']);
         $datenow = date('Y-m-d',time());
         $intnow = strtotime($datenow);
-        $this->data['numdate'] = ($intnow - $intcreatedate)/(24*60*60) ;
+        $this->data['numdate'] = ($intnow - $intstartdate)/(24*60*60) ;
 
         @$this->id="item";
         @$this->template="addon/invoices_payrate.tpl";
         @$this->render();
+    }
+    public function payRateAction()
+    {
+        $data = $this->request->post;
+        $invoice = $this->model_addon_invoices->getItem($data['id']);
+        //Tao phieu thu tien lai
+        $bill = array();
+        $bill['billtype'] = 'collect';
+        $bill['createdate'] = $this->date->getToday();
+        $bill['createby'] = $this->user->getUserName();
+        $bill['accountid'] = '111';
+        $bill['amount'] = $this->string->toNumber($data['amount']);
+        $bill['notes'] = 'Đóng tiền lãi phiếu '.$invoice['invoicenumber']." - ".$invoice['itemname']." - ".$invoice['itemnumber'];
+        $bill['invoiceid'] = $invoice['id'];
+        $bill['cardid'] = $invoice['cardid'];
+        $bill['fullname'] = $invoice['fullname'];
+        $this->model_core_bills->save($bill);
+        //Cap nhat startdate va enddate
+        $group = $this->model_addon_group->getItemById($invoice['group']);
+        $startdate = $this->date->addday($invoice['startdate'],$data['numday']);
+        $enddate = $this->date->addday($startdate,$group['period']);
+        $this->model_addon_invoices->updateCol($invoice['id'],'startdate',$startdate);
+        $this->model_addon_invoices->updateCol($invoice['id'],'enddate',$enddate);
+        //Cập nhật trạng thái
+        $this->model_addon_invoices->updateCol($invoice['id'],'status','payrate');
+          //Ghi log
+        $log = array();
+        $log['invoiceid'] = $invoice['id'];
+        $log['status'] = 'payrate';
+        $log['notes'] = $data['notes'];
+        $log['datelog'] = $this->date->getToday();
+        $this->model_addon_invoices->writelog($log);
+        $this->data['output'] = json_encode($invoice);
+        $this->id='content';
+        $this->template='common/output.tpl';
+        $this->render();
+    }
+    public function getBack()
+    {
+        $id = $this->request->get['id'];
+        $invoice = $this->model_addon_invoices->getItem($id);
+        //Tao phieu thu tien chuoc
+        $bill = array();
+        $bill['billtype'] = 'collect';
+        $bill['createdate'] = $this->date->getToday();
+        $bill['createby'] = $this->user->getUserName();
+        $bill['accountid'] = '111';
+        $bill['amount'] = $this->string->toNumber($invoice['amount']);
+        $bill['notes'] = 'Đóng tiền chuột phiếu '.$invoice['invoicenumber']." - ".$invoice['itemname']." - ".$invoice['itemnumber'];
+        $bill['invoiceid'] = $invoice['id'];
+        $bill['cardid'] = $invoice['cardid'];
+        $bill['fullname'] = $invoice['fullname'];
+        $this->model_core_bills->save($bill);
+        //Cập nhật trạng thái
+        $this->model_addon_invoices->updateCol($id,'status','getback');
+        //
+        //Ghi log
+        $log = array();
+        $log['invoiceid'] = $id;
+        $log['status'] = 'getback';
+        $log['notes'] = '';
+        $log['datelog'] = $this->date->getToday();
+        $this->model_addon_invoices->writelog($log);
+
+        $this->id='content';
+        $this->template='common/output.tpl';
+        $this->render();
+    }
+    public function payOff()
+    {
+        $id = $this->request->get['id'];
+        $this->data['item'] = @$this->model_addon_invoices->getItem($id);
+        $intstartdate = strtotime($this->data['item']['startdate']);
+        $datenow = date('Y-m-d',time());
+        $intnow = strtotime($datenow);
+        $this->data['numdate'] = ($intnow - $intstartdate)/(24*60*60) ;
+
+        @$this->id="item";
+        @$this->template="addon/invoices_payoff.tpl";
+        @$this->render();
+    }
+    public function payOffAction()
+    {
+        $data = $this->request->post;
+        $invoice = $this->model_addon_invoices->getItem($data['id']);
+        //Tao phieu thu tien lai
+        $bill = array();
+        $bill['billtype'] = 'collect';
+        $bill['createdate'] = $this->date->getToday();
+        $bill['createby'] = $this->user->getUserName();
+        $bill['accountid'] = '111';
+        $bill['amount'] = $this->string->toNumber($data['amount']);
+        $bill['notes'] = 'Thanh lý phiếu '.$invoice['invoicenumber']." - ".$invoice['itemname']." - ".$invoice['itemnumber'];
+        $bill['invoiceid'] = $invoice['id'];
+        $bill['cardid'] = $invoice['cardid'];
+        $bill['fullname'] = $invoice['fullname'];
+        $this->model_core_bills->save($bill);
+
+        //Cập nhật trạng thái
+        $this->model_addon_invoices->updateCol($invoice['id'],'status','payoff');
+        //Ghi log
+        $log = array();
+        $log['invoiceid'] = $invoice['id'];
+        $log['status'] = 'payoff';
+        $log['notes'] = $data['notes'];
+        $log['datelog'] = $this->date->getToday();
+        $this->model_addon_invoices->writelog($log);
+        $this->data['output'] = json_encode($invoice);
+        $this->id='content';
+        $this->template='common/output.tpl';
+        $this->render();
     }
     //Cac ham xu ly tren form
     public function getItems()

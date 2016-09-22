@@ -10,7 +10,7 @@
             <th>Lãi xuất</th>
             <th>Tài sản cầm</th>
             <th>Khách hàng</th>
-
+            <th>Trạng thái</th>
             <th>Control</th>
         </tr>
         </thead>
@@ -19,8 +19,8 @@
         <tr>
             <td><input class="inputchk" type="checkbox" name="delete[<?php echo @$item['id']?>]" value="<?php echo @$item['id']?>" ></td>
             <td><button type="button" class="btn btn-default btn-bg btn-success" onclick="invoices.view(<?php echo @$item['id']?>)"><?php echo $item['invoicenumber']?></button></td>
-            <td><?php echo $this->date->formatMySQLDate($item['createdate'])?></td>
-            <td><?php echo $this->date->formatMySQLDate($item['deallinedate'])?></td>
+            <td><?php echo $this->date->formatMySQLDate($item['startdate'])?></td>
+            <td><?php echo $this->date->formatMySQLDate($item['enddate'])?></td>
             <td class="number"><?php echo $this->string->numberFormate($item['amount'])?></td>
             <td class="number"><?php echo $this->string->numberFormate($item['rate'])?></td>
             <td><?php echo $item['itemname']?> - <?php echo $item['itemnumber']?></td>
@@ -31,7 +31,7 @@
                 Nơi cấp: <?php echo $item['idlocation']?><br>
                 Điện thoại: <?php echo $item['phone']?>
             </td>
-
+            <td><?php echo $this->document->invoicesstatus[$item['status']]?></td>
             <td class="text-center">
                 <button type="button" onClick="window.location = '<?php echo @$item['link_edit']?>'" class="btn btn-default btn-bg btn-success"><span class="fa pencil-square-o"></span> <?php echo @$item['text_edit']?></button>
             </td>
