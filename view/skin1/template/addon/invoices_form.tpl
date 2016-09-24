@@ -246,7 +246,7 @@ function Invoices()
                 $(".selectItems").click(function(){
                     $("#frmInvoices #itemid").val($(this).attr('id'));
                     $("#frmInvoices #itemname").val($(this).attr('itemname'));
-                    $("#frmInvoices #pricenow").val($(this).attr('price'));
+                    //$("#frmInvoices #pricenow").val($(this).attr('price'));
 
                     $("#frmInvoices #group").val($(this).attr('group')).change();
                     $("#frmInvoices #link").val($(this).attr('link'));

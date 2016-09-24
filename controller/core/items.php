@@ -125,6 +125,7 @@ class ControllerCoreItems extends Controller
 
         $id = $this->request->get['id'];
         $this->data['item'] = @$this->model_core_items->getItem($id);
+        $this->data['data_info'] = $this->model_core_items->getItemInfoList($id);
         @$this->id='content';
         @$this->template='core/items_form.tpl';
         @$this->layout="layout/home";
@@ -135,10 +136,17 @@ class ControllerCoreItems extends Controller
     {
 
         $data = @$this->request->post;
+        print_r($data);
         if($this->validateForm($data))
         {
             $data['price'] = $this->string->toNumber($data['price']);
-            $this->model_core_items->save($data);
+            $obj = $this->model_core_items->save($data);
+
+            foreach($data['infoname'] as $key => $infoname)
+            {
+                $infovalue = $data['infovalue'][$key];
+                $this->model_core_items->saveItemInfo($obj['id'],$infoname,$infovalue);
+            }
             @$this->data['output'] = "true";
         }
         else

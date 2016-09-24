@@ -72,7 +72,7 @@ class ModelCoreItems extends Model
 		
 		$field=$this->arr_col;
 		
-		if(count($item) == 0)
+		if($data['id'] == '')
 		{
 			$data['id'] = $this->db->insertData("items",$field,$value);
 		}
@@ -90,6 +90,51 @@ class ModelCoreItems extends Model
 		$this->db->deleteData("items",$where);
 		
 	}
-	
+    public function getItemValue($itemid,$infoname)
+    {
+        $sql = "SELECT *
+                FROM  `items_info`
+                WHERE `itemid` = '$itemid' AND `infoname` = '$infoname'";
+        $query = $this->db->query($sql);
+        return @$query->row['infovalue'];
+    }
+
+    public function getItemInfoList($itemid)
+    {
+        $sql = "SELECT *
+                FROM  `items_info`
+                WHERE `itemid` = '$itemid'";
+        $query = $this->db->query($sql);
+        return $query->rows;
+    }
+
+    public function saveItemInfo($itemid,$infoname,$infovalue)
+    {
+        $sql = "SELECT *
+                FROM  `items_info`
+                WHERE `itemid` = '$itemid' AND `infoname` = '$infoname'";
+        $query = $this->db->query($sql);
+        $info = $query->row;
+        $field=array(
+            "itemid",
+            "infoname",
+            "infovalue"
+        );
+
+        $value=array(
+            $itemid,
+            $infoname,
+            $infovalue,
+        );
+        if(count($info) > 0)
+        {
+            $where="itemid = '".$itemid."' AND infoname = '".$infoname."'";
+            @$this->db->updateData('items_info',$field,$value,$where);
+        }
+        else
+        {
+            @$this->db->insertData("items_info",$field,$value);
+        }
+    }
 }
 ?>

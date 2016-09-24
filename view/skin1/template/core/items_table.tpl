@@ -4,7 +4,7 @@
         <tr>
             <th width="1%"><input class="inputchk" type="checkbox" onclick="$('input[name*=\'delete\']').attr('checked', this.checked);"></th>
             <th>Tên sản phẩm</th>
-            <th>Giá</th>
+            <!--<th>Giá</th>-->
             <th>Hảng sản xuất</th>
             <th>Nhóm</th>
             <th>Tình trạng</th>
@@ -19,7 +19,7 @@
         <tr>
             <td><input class="inputchk" type="checkbox" name="delete[<?php echo @$item['id']?>]" value="<?php echo @$item['id']?>" ></td>
             <td><?php echo @$item['itemname']?></td>
-            <td class="number"><?php echo $this->string->numberFormate($item['price'])?></td>
+            <!--<td class="number"><?php echo $this->string->numberFormate($item['price'])?></td>-->
             <td><?php echo $this->document->getCategory($item['brand'])?></td>
             <td><?php echo $this->document->getGroup($item['group'])?></td>
             <td><?php echo $this->document->getCategory($item['status'])?></td>

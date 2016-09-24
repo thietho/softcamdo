@@ -10,24 +10,7 @@
 
                 <input type="hidden" name="id" value="<?php echo @$item['id']?>"/>
                 <div id="error" class="error" style="display:none"></div>
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="form-group">
-                        <label>Tên sản phẩm</label>
-                        <input type="text" name="itemname" value="<?php echo @$item['itemname']?>" class="form-control"/>
-                    </div>
-                    <div class="form-group">
-                        <label>Giá</label>
-                        <input type="text" name="price" value="<?php echo @$item['price']?>" class="form-control number"/>
-                    </div>
-                    <div class="form-group">
-                        <label>Hảng sản xuất</label>
-                        <select id="brand" name="brand" class="form-control">
-                            <option value=""></option>
-                            <?php foreach($brand as $it){ ?>
-                            <option value="<?php echo @$it['categoryid']?>"><?php echo @$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo @$it['categoryname']?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
+                <div class="col-md-6">
                     <div class="form-group">
                         <label>Nhóm sản phẩm</label>
                         <select id="group" name="group" class="form-control">
@@ -37,6 +20,21 @@
                             <?php } ?>
                         </select>
                     </div>
+                    <div class="form-group">
+                        <label>Tên sản phẩm</label>
+                        <input type="text" name="itemname" value="<?php echo @$item['itemname']?>" class="form-control"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hảng sản xuất</label>
+                        <select id="brand" name="brand" class="form-control">
+                            <option value=""></option>
+                            <?php foreach($brand as $it){ ?>
+                            <option value="<?php echo @$it['categoryid']?>"><?php echo @$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo @$it['categoryname']?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+
                     <div class="form-group">
                         <label>Link thao khảo</label>
                         <input type="text" name="link" value="<?php echo @$item['link']?>" class="form-control"/>
@@ -50,13 +48,25 @@
                             <?php } ?>
                         </select>
                     </div>
-                    <div class="form-group text-center">
-                        <button type="button" onClick="save()" class="btn btn-default btn-bg btn-success"><span class="fa fa-floppy-o"></span> Save</button>
-                        <button type="button" onclick="window.location = '?route=addon/group'" class="btn btn-default btn-bg btn-success"><span class="fa fa-undo  "></span> Quay lại</button>
-                    </div>
+
                 </div>
-
-
+                <div class="col-md-6">
+                    <div id="iteminfo">
+                        <?php foreach($data_info as $info){ ?>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="infoname[]" class="form-control" value="<?php echo $info['infoname']?>" placeholder="Tiêu đề"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="infovalue[]" class="form-control" value="<?php echo $info['infovalue']?>" placeholder="Nội dung"/>
+                        </div>
+                        <?php } ?>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btnAddInfo"><span class="fa fa-plus"></span> Thêm thông tin</button>
+                </div>
+                <div class="form-group text-center col-md-12">
+                    <button type="button" onClick="save()" class="btn btn-default btn-bg btn-success"><span class="fa fa-floppy-o"></span> Save</button>
+                    <button type="button" onclick="window.location = '?route=addon/group'" class="btn btn-default btn-bg btn-success"><span class="fa fa-undo  "></span> Quay lại</button>
+                </div>
 
 
             </form>
@@ -78,14 +88,25 @@ function save()
                 {
 
                     $('#error').html(data).show('slow');
-                    $.unblockUI();
+
 
                 }
-
+                $.unblockUI();
             }
     );
 }
+$('#btnAddInfo').click(function () {
+    $('#iteminfo').append($('#infotemplate').html());
+})
 $('#brand').val("<?php echo $item['brand']?>");
 $('#group').val("<?php echo $item['group']?>");
 $('#status').val("<?php echo $item['status']?>");
 </script>
+<div id="infotemplate" style="display: none">
+    <div class="form-group col-md-6">
+        <input type="text" name="infoname[]" class="form-control" placeholder="Tiêu đề"/>
+    </div>
+    <div class="form-group col-md-6">
+        <input type="text" name="infovalue[]" class="form-control" placeholder="Nội dung"/>
+    </div>
+</div>
