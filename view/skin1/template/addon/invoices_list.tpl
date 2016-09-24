@@ -142,7 +142,26 @@
             $("#invoiceviewpopup #btnPrint").attr('invoiceid',id);
             $("#invoiceviewpopup .modal-dialog").css("width","80%");
             $("#invoiceviewpopup .modal-body").html(loading);
-            $("#invoiceviewpopup .modal-body").load("?route=addon/invoices/view&id="+id+"&type=popup");
+            $("#invoiceviewpopup .modal-body").load("?route=addon/invoices/view&id="+id+"&type=popup", function () {
+                $.getJSON("?route=addon/invoices/getInvoices&id="+id, function (data)
+                {
+                    $("#invoiceviewpopup #btnStatus").html(data.statustext);
+                    switch(data.status)
+                    {
+                        case 'new':
+                            break;
+                        case 'payrate':
+                            break;
+                        case 'getback':
+                        case 'payoff':
+                            $('#invoiceviewpopup #btnPayRate').hide();
+                            $('#invoiceviewpopup #btnGetBack').hide();
+                            $('#invoiceviewpopup #btnPayOff').hide();
+                            break;
+
+                    }
+                })
+            });
             $("#invoiceviewpopup").on('hidden.bs.modal', function () {
                 invoices.search();
             });
@@ -189,6 +208,12 @@
 
             });
         }
+        this.history = function(id)
+        {
+            $('#invoicehistorypopup').modal({show:true});
+            $('#invoicehistorypopup .modal-body').html(loading);
+            $("#invoicehistorypopup .modal-body").load("?route=addon/invoices/history&id="+id+"&type=popup");
+        }
     }
     var invoices = new Invoices();
     $(document).ready(function(){
@@ -208,6 +233,7 @@
             <div class="modal-body">
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-success" id="btnStatus" onclick="invoices.history($('#btnPrint').attr('invoiceid'))"></button>
                 <button type="button" class="btn btn-default" id="btnPayRate" onclick="invoices.payRate($('#btnPrint').attr('invoiceid'))">Đóng lãi</button>
                 <button type="button" class="btn btn-default" id="btnGetBack" onclick="invoices.getBack($('#btnPrint').attr('invoiceid'))">Chuộc</button>
                 <button type="button" class="btn btn-default" id="btnPayOff" onclick="invoices.payOff($('#btnPrint').attr('invoiceid'))">Thanh lý</button>
@@ -241,6 +267,19 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" id="btnPayOffAction" onclick="invoices.payOffAction()">Thanh lý</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="invoicehistorypopup" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
             </div>
         </div>

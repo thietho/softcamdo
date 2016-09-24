@@ -196,7 +196,8 @@ class ModelAddonInvoices extends Model
     {
         $sql = "SELECT *
                 FROM  `invoices_log`
-                WHERE `id` = '$id'";
+                WHERE `id` = '$id'
+                ORDER BY `datelog` DESC ";
         $query = $this->db->query($sql);
         return $query->row;
     }

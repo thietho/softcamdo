@@ -88,6 +88,24 @@ class ControllerAddonInvoices extends Controller
         @$this->render();
     }
 
+    public function history()
+    {
+        $id = $this->request->get['id'];
+        $this->data['item'] = @$this->model_addon_invoices->getItem($id);
+        $where = " AND invoiceid = ".$id;
+        $this->data['data_log'] = $this->model_addon_invoices->getInvoicesLogList($where);
+        $this->data['data_bills'] = $this->model_core_bills->getList($where);
+        @$this->id='content';
+        @$this->template='addon/invoices_history.tpl';
+        $this->layout="layout/home";
+        @$type = $this->request->get['type'];
+        if($type=='popup')
+            $this->layout="";
+        if($type=='print')
+            $this->layout="layout/print";
+        @$this->render();
+    }
+
     public function delete()
     {
         $listid=@$this->request->post['delete'];
@@ -148,7 +166,7 @@ class ControllerAddonInvoices extends Controller
             $where .= " AND `phone` = '%".$data['phone']."%'";
         if(@$data['address'] != "")
             $where .= " AND `address` like '%".$data['address']."%'";
-        
+
         $this->data['datas'] = array();
         $rows = @$this->model_addon_invoices->getList($where);
         //Page
@@ -424,10 +442,11 @@ class ControllerAddonInvoices extends Controller
         $this->render();
     }
     //Cac ham xu ly tren form
-    public function getItems()
+    public function getInvoices()
     {
         $id = @$this->request->get['id'];
-        $item = @$this->model_core_cards->getItem($id);
+        $item = @$this->model_addon_invoices->getItem($id);
+        $item['statustext'] = $this->document->invoicesstatus[$item['status']];
         @$this->data['output'] = json_encode($item);
 
         @$this->id="item";
