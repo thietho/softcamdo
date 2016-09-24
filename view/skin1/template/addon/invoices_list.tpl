@@ -5,7 +5,7 @@
             <h1 class="page-header">
                 <?php echo @$this->document->title?>
 
-                <button onclick="window.location.href='<?php echo @$insert?>'" type="button" class="btn btn-default btn-bg btn-success"><span class="fa fa-plus"></span> Thêm</button>
+
                 <button type="button" class="btn btn-default btn-bg btn-danger" onclick="items.deleteitem()"><span class="fa fa-trash"></span> Xóa</button>
 
 
@@ -188,9 +188,20 @@
         }
         this.getBack = function(id)
         {
-            $.get('?route=addon/invoices/getBack&id='+id, function (data) {
+            $('#invoicegetbackpopup').modal({show:true});
+            $('#invoicegetbackpopup .modal-body').html(loading);
+            $("#invoicegetbackpopup .modal-body").load("?route=addon/invoices/getBack&id="+id+"&type=popup");
 
-            })
+        }
+        this.getBackAction = function()
+        {
+            $.post("?route=addon/invoices/getBackAction",$('#frmGetBack').serialize(), function (data) {
+                var obj = $.parseJSON(data);
+                $('#invoicegetbackpopup').modal('hide');
+                $('#invoicegetbackpopup').modal('hide');
+
+
+            });
         }
         this.payOff = function(id)
         {
@@ -253,6 +264,20 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" id="btnPayRateAction" onclick="invoices.payRateAction()">Đóng lãi</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="invoicegetbackpopup" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="btnGetBackAction" onclick="invoices.getBackAction()">Chuộc</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
             </div>
         </div>

@@ -119,7 +119,7 @@ class ModelAddonInvoices extends Model
 
         $field=$this->arr_col;
 
-        if(count($invoices) == 0)
+        if($data['id'] == '')
         {
 
             $data['id'] = $this->db->insertData("invoices",$field,$value);

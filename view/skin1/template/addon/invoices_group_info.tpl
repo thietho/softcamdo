@@ -1,8 +1,4 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <?php echo $group['groupname']?>
-    </div>
-    <div class="panel-body">
+
         <?php foreach($infos as $key => $val){ ?>
         <div class="form-group">
             <?php $arr = explode(':',$key)?>
@@ -10,6 +6,3 @@
         </div>
         <?php } ?>
 
-    </div>
-
-</div>

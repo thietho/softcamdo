@@ -11,7 +11,7 @@
                 <input type="hidden" id="id" name="id" value="<?php echo @$item['id']?>"/>
                 <input type="hidden" id="invoicenumber" name="invoices[invoicenumber]" value="<?php echo @$item['invoicenumber']?>"/>
                 <div id="error" class="alert alert-danger" style="display:none"></div>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Thông tin khách hàng
@@ -56,13 +56,15 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Thông tin tài sản phẩm
                         </div>
                         <div class="panel-body">
+
                             <div class="form-group input-group">
+                                <input type="hidden" id="group" name="invoices[group]" value="<?php echo @$item['group']?>"/>
                                 <input type="hidden" id="itemid" name="invoices[itemid]" value="<?php echo @$item['itemid']?>"/>
                                 <input type="text" id="itemname" name="invoices[itemname]" value="<?php echo @$item['itemname']?>" class="form-control" placeholder="Tên sản phẩm"/>
                                 <span class="input-group-btn">
@@ -79,15 +81,7 @@
                                 <input type="text" id="pricenow" name="invoices[pricenow]" value="<?php echo @$item['pricenow']?>" class="form-control number"/>
                             </div>
 
-                            <div class="form-group">
 
-                                <select id="group" name="invoices[group]" class="form-control">
-                                    <option value="">Nhóm sản phẩm</option>
-                                    <?php foreach($groups as $group){ ?>
-                                    <option value="<?php echo @$group['groupid']?>"><?php echo @$group['groupname']?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
                             <div class="form-group">
 
                                 <select id="status" name="invoices[status]" class="form-control">
@@ -101,18 +95,14 @@
 
                                 <input type="text" id="link" name="invoices[link]" value="<?php echo @$item['link']?>" class="form-control" placeholder="Link thao khảo"/>
                             </div>
+                            <div id="iteminfo">
 
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3" id="iteminfo">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Thông tin nhóm sản phẩm
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
+
+                <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Thông tin phiếu
@@ -166,7 +156,7 @@
                     <div class="form-group text-center">
                         <button type="button" onClick="save('')" class="btn btn-default btn-bg btn-success"><span class="fa fa-floppy-o"></span> Save</button>
                         <button type="button" onClick="save('print')" class="btn btn-default btn-bg btn-success"><span class="fa fa-print"></span> Print</button>
-                        <button type="button" onclick="window.location = '?route=addon/invoices'" class="btn btn-default btn-bg btn-success"><span class="fa fa-undo  "></span> Quay lại</button>
+                        <button type="button" onclick="window.location = '?route=addon/invoices/getList'" class="btn btn-default btn-bg btn-success"><span class="fa fa-undo  "></span> Quay lại</button>
                     </div>
                 </div>
 
@@ -198,7 +188,7 @@
                         switch(type)
                         {
                             case "":
-                                window.location = "?route=addon/invoices";
+                                window.location = "?route=addon/invoices/getList";
                                 break;
                             case "print":
                                 invoice.view(obj.id);
@@ -296,6 +286,7 @@ function Invoices()
         $("#invoiceviewpopup .modal-body").load("?route=addon/invoices/view&id="+id+"&type=popup");
         $("#invoiceviewpopup").on('hidden.bs.modal', function () {
             $.unblockUI();
+            window.location = '?route=addon/invoices/getList';
         });
     }
     this.print = function(id)

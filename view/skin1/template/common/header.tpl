@@ -251,7 +251,7 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li><a href="?route=addon/invoices">Phiếu cầm đồ</a></li>
+                        <li><a href="?route=addon/invoices">Cầm đồ</a></li>
 
                     </ul>
                 </div>

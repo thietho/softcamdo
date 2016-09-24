@@ -46,26 +46,30 @@
         <th>STT</th>
         <th>Thời gian</th>
         <th>Mã Phiếu</th>
-        <th>Số tiền</th>
+        <th>Thu</th>
+        <th>Chi</th>
         <th>Ghi chú</th>
     </tr>
     </thead>
     <tbody>
-    <?php $sum=0;?>
+    <?php $sumcollect=0;?>
+    <?php $sumpay=0;?>
     <?php foreach($data_bills as $key => $bill ){ ?>
     <tr>
         <td class="text-center"><?php echo $key + 1?></td>
         <td><?php echo $this->date->formatMySQLDate($bill['createdate'])?></td>
         <td><?php echo $bill['billnumber']?></td>
-        <td class="number"><?php echo $this->string->numberFormate($bill['amount'])?></td>
+        <td class="number"><?php if($bill['billtype'] == 'collect'){ echo $this->string->numberFormate($bill['amount']);$sumcollect +=$bill['amount']; } ?></td>
+        <td class="number"><?php if($bill['billtype'] == 'pay'){ echo $this->string->numberFormate($bill['amount']);$sumpay +=$bill['amount']; }?></td>
         <td><?php echo $bill['notes']?></td>
-        <?php $sum +=$bill['amount'];?>
+
     </tr>
     <?php } ?>
     </tbody>
     <tfoot>
         <td colspan="3" class="text-right">Tổng cộng</td>
-        <td class="number"><?php echo $this->string->numberFormate($sum)?></td>
-        <td></td>
+        <td class="number"><?php echo $this->string->numberFormate($sumcollect)?></td>
+        <td class="number"><?php echo $this->string->numberFormate($sumpay)?></td>
+        <td class="number"><?php echo $this->string->numberFormate($sumcollect - $sumpay)?></td>
     </tfoot>
 </table>
