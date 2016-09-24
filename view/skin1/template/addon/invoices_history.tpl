@@ -66,5 +66,6 @@
     <tfoot>
         <td colspan="3" class="text-right">Tổng cộng</td>
         <td class="number"><?php echo $this->string->numberFormate($sum)?></td>
+        <td></td>
     </tfoot>
 </table>
