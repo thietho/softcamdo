@@ -17,26 +17,68 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-default">
-                <div id="frmsearchcards" class="panel-body">
-
-                    <div class="form-group col-md-4">
+                <form id="frmsearchinvoices" class="panel-body">
+                    <div class="form-group col-md-3">
+                        <label>Mã phiếu</label>
+                        <input type="text" id="invoicenumber" name="invoicenumber" class="form-control"/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Tên tài sản</label>
+                        <input type="text" id="itemname" name="itemname" class="form-control"/>
+                    </div><div class="form-group col-md-3">
+                        <label>Số imei</label>
+                        <input type="text" id="itemnumber" name="itemnumber" class="form-control"/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Giá trị cầm</label>
+                        <input type="text" id="amount" name="amount" class="form-control number"/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Từ ngày cầm</label>
+                        <input type="text" id="formstartdate" name="formstartdate" class="form-control datepicker"/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Đến ngày cầm</label>
+                        <input type="text" id="tostartdate" name="tostartdate" class="form-control datepicker"/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Từ ngày hết hạn</label>
+                        <input type="text" id="formenddate" name="formenddate" class="form-control datepicker"/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Đến ngày hết hạn</label>
+                        <input type="text" id="toenddate" name="toenddate" class="form-control datepicker"/>
+                    </div>
+                    <div class="form-group col-md-2">
                         <label>Tên khách hàng</label>
-                        <input type="text" id="fullname" name="fullname" value="<?php echo @$item['fullname']?>" class="form-control"/>
+                        <input type="text" id="fullname" name="fullname" class="form-control"/>
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-2">
                         <label>Số CMND</label>
-                        <input type="text" id="idnumber" name="idnumber" value="<?php echo @$item['idnumber']?>" class="form-control"/>
+                        <input type="text" id="idnumber" name="idnumber" class="form-control"/>
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-2">
                         <label>Nơi cấp</label>
-                        <input type="text" id="idlocation" name="idlocation" value="<?php echo @$item['idlocation']?>" class="form-control"/>
+                        <input type="text" id="idlocation" name="idlocation" class="form-control"/>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Ngày cấp</label>
+                        <input type="text" id="iddate" name="iddate" class="form-control datepicker"/>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Số điện thoại</label>
+                        <input type="text" id="phone" name="phone" class="form-control"/>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Địa chỉ</label>
+                        <input type="text" id="address" name="address" class="form-control"/>
                     </div>
                     <div class="form-group pull-right">
                         <button onclick="invoices.search()" type="button" class="btn btn-default btn-bg btn-success"><span class="fa fa-filter"></span> Tìm</button>
-                        <button onclick="" type="button" class="btn btn-default btn-bg btn-success">Tất cả</button>
+                        <button onclick="invoices.showAll()" type="button" class="btn btn-default btn-bg btn-success">Tất cả</button>
                     </div>
 
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -84,15 +126,15 @@
         this.search = function()
         {
             $.get("?route=addon/invoices/getData",
-                    {
-                        itemname:$('#frmsearchcards #fullname').val(),
-                        brand:$('#frmsearchitems #idnumber').val(),
-                        group:$('#frmsearchitems #idlocation').val(),
-
-                    },
+                    $('#frmsearchinvoices').serialize(),
                     function(html){
                         $('#loadinvoicesdata').html(html);
                     });
+        }
+        this.showAll = function()
+        {
+            $('input').val('');
+            this.search();
         }
         this.view = function(id)
         {

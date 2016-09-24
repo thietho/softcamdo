@@ -119,20 +119,36 @@ class ControllerAddonInvoices extends Controller
         $where = "";
         foreach($data as $key => $value)
             $data[$key] = trim(urldecode($value));
-        if(@$data['invoiceid'] != "")
-            $where .= " AND `invoiceid` like '%".$data['invoiceid']."%'";
+        if(@$data['invoicenumber'] != "")
+            $where .= " AND `invoicenumber` like '%".$data['invoicenumber']."%'";
+        if(@$data['itemname'] != "")
+            $where .= " AND `itemname` like '%".$data['itemname']."%'";
+        if(@$data['itemnumber'] != "")
+            $where .= " AND `itemnumber` like '%".$data['itemnumber']."%'";
+        if(@$data['amount'] != 0)
+            $where .= " AND `amount` like '%".$this->string->toNumber($data['amount'])."%'";
+        if(@$data['formstartdate'] != "")
+            $where .= " AND `startdate` >= '".$this->date->formatViewDate($data['formstartdate'])."'";
+        if(@$data['tostartdate'] != "")
+            $where .= " AND `startdate` <= '".$this->date->formatViewDate($data['tostartdate'])."'";
+        if(@$data['formenddate'] != "")
+            $where .= " AND `enddate` >= '".$this->date->formatViewDate($data['formenddate'])."'";
+        if(@$data['toenddate'] != "")
+            $where .= " AND `enddate` <= '".$this->date->formatViewDate($data['toenddate'])."'";
+
         if(@$data['fullname'] != "")
             $where .= " AND `fullname` like '%".$data['fullname']."%'";
         if(@$data['idnumber'] != "")
             $where .= " AND `idnumber` = '%".$data['idnumber']."%'";
         if(@$data['idlocation'] != "")
             $where .= " AND `idlocation` = '%".$data['idlocation']."%'";
+        if(@$data['iddate'] != "")
+            $where .= " AND `iddate` = '".$this->date->formatViewDate($data['iddate'])."'";
         if(@$data['phone'] != "")
             $where .= " AND `phone` = '%".$data['phone']."%'";
-        if(@$data['idlocation'] != "")
-            $where .= " AND `idlocation` = '%".$data['idlocation']."%'";
-
-
+        if(@$data['address'] != "")
+            $where .= " AND `address` like '%".$data['address']."%'";
+        
         $this->data['datas'] = array();
         $rows = @$this->model_addon_invoices->getList($where);
         //Page

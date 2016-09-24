@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Cầm đồ Phương Nghi</title>
     <link href="<?php echo HTTP_SERVER.DIR_CSS?>style.css" rel="stylesheet">
 
     <!-- Bootstrap Core CSS -->

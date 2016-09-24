@@ -30,6 +30,7 @@
                 Ngày cấp: <?php echo $this->date->formatMySQLDate($item['iddate'])?><br>
                 Nơi cấp: <?php echo $item['idlocation']?><br>
                 Điện thoại: <?php echo $item['phone']?>
+                Địa chỉ: <?php echo $item['address']?>
             </td>
             <td><?php echo $this->document->invoicesstatus[$item['status']]?></td>
             <td class="text-center">
