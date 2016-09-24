@@ -25,78 +25,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="items_form.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/core/items_form.tpl">
+      <file leaf-file-name="invoices_home.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.153847" vertical-offset="587" max-vertical-offset="2006">
-              <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items_table.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/core/items_table.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="969">
-              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="714">
+              <caret line="17" column="30" selection-start-line="15" selection-start-column="20" selection-end-line="17" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invoices_form.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl">
+      <file leaf-file-name="invoices_list.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4975728" vertical-offset="3806" max-vertical-offset="6290">
-              <caret line="248" column="22" selection-start-line="248" selection-start-column="22" selection-end-line="248" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.18567961" vertical-offset="0" max-vertical-offset="5457">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/core/items.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.5301204" vertical-offset="1634" max-vertical-offset="2465">
-              <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-              <folding>
-                <marker date="1474739862226" expanded="true" signature="341:408" placeholder="Select `item..." />
-                <marker date="1474739862226" expanded="true" signature="508:566" placeholder="Select `item..." />
-                <marker date="1474739862226" expanded="true" signature="1805:1920" placeholder="SELECT * FRO..." />
-                <marker date="1474739862226" expanded="true" signature="2080:2166" placeholder="SELECT * FRO..." />
-                <marker date="1474739862226" expanded="true" signature="2331:2446" placeholder="SELECT * FRO..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/core/items.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.769231" vertical-offset="1879" max-vertical-offset="3298">
-              <caret line="127" column="30" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/addon/invoices.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-38.73077" vertical-offset="2257" max-vertical-offset="4012">
-              <caret line="192" column="5" selection-start-line="147" selection-start-column="4" selection-end-line="192" selection-end-column="5" />
-              <folding>
-                <marker date="1474731750742" expanded="true" signature="779:852" placeholder="Select `invo..invoices..." />
-                <marker date="1474731750742" expanded="true" signature="1081:1144" placeholder="Select `invo..invoices..." />
-                <marker date="1474731750742" expanded="true" signature="3489:3613" placeholder="SELECT * FRO..invoices_info..." />
-                <marker date="1474731750742" expanded="true" signature="3779:3874" placeholder="SELECT * FRO..invoices_info..." />
-                <marker date="1474731750742" expanded="true" signature="4046:4170" placeholder="SELECT * FRO..invoices_info..." />
-                <marker date="1474731750742" expanded="true" signature="4828:4948" placeholder="SELECT * FRO..invoices_log..." />
-                <marker date="1474731750742" expanded="true" signature="5097:5168" placeholder="Select `invo..invoices_log..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -159,12 +103,12 @@
         <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_history.tpl" />
         <option value="$PROJECT_DIR$/controller/addon/invoices.php" />
         <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_getback.tpl" />
-        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl" />
         <option value="$PROJECT_DIR$/model/core/items.php" />
         <option value="$PROJECT_DIR$/controller/core/items.php" />
         <option value="$PROJECT_DIR$/view/skin1/template/core/items_form.tpl" />
         <option value="$PROJECT_DIR$/view/skin1/template/core/items_table.tpl" />
         <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl" />
+        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl" />
       </list>
     </option>
   </component>
@@ -481,15 +425,15 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -523,13 +467,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -580,7 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="5695">
           <caret line="26" column="20" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.8846154" vertical-offset="9930" max-vertical-offset="12206">
           <caret line="587" column="19" selection-start-line="587" selection-start-column="13" selection-end-line="587" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -659,7 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3757">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="1802">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="884">
           <caret line="19" column="57" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,7 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="9367">
           <caret line="32" column="10" selection-start-line="2" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,15 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.961538" vertical-offset="3704" max-vertical-offset="4522">
           <caret line="253" column="70" selection-start-line="253" selection-start-column="70" selection-end-line="253" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32497013" vertical-offset="0" max-vertical-offset="837">
-          <caret line="16" column="113" selection-start-line="16" selection-start-column="113" selection-end-line="16" selection-end-column="113" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16504854" vertical-offset="0" max-vertical-offset="824">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3655914" vertical-offset="85" max-vertical-offset="4250">
           <caret line="23" column="12" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4854369" vertical-offset="0" max-vertical-offset="1377">
           <caret line="72" column="81" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="0" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10611735" vertical-offset="6953" max-vertical-offset="8704">
           <caret line="414" column="33" selection-start-line="414" selection-start-column="20" selection-end-line="414" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,17 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="0" column="20" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3420724" vertical-offset="3126" max-vertical-offset="5423">
-          <caret line="200" column="39" selection-start-line="200" selection-start-column="39" selection-end-line="200" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,46 +797,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0967742" vertical-offset="255" max-vertical-offset="2040">
           <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-          <folding>
-            <marker date="1474561014899" expanded="true" signature="-1:-1" placeholder="Select `bill..." />
-            <marker date="1474561014899" expanded="true" signature="-1:-1" placeholder="Select `bill..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/addon/invoices.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.73077" vertical-offset="2257" max-vertical-offset="4012">
+        <state vertical-scroll-proportion="1.2031063" vertical-offset="2257" max-vertical-offset="4012">
           <caret line="192" column="5" selection-start-line="147" selection-start-column="4" selection-end-line="192" selection-end-column="5" />
           <folding>
-            <marker date="1474731750742" expanded="true" signature="779:852" placeholder="Select `invo..invoices..." />
-            <marker date="1474731750742" expanded="true" signature="1081:1144" placeholder="Select `invo..invoices..." />
-            <marker date="1474731750742" expanded="true" signature="3489:3613" placeholder="SELECT * FRO..invoices_info..." />
-            <marker date="1474731750742" expanded="true" signature="3779:3874" placeholder="SELECT * FRO..invoices_info..." />
-            <marker date="1474731750742" expanded="true" signature="4046:4170" placeholder="SELECT * FRO..invoices_info..." />
-            <marker date="1474731750742" expanded="true" signature="4828:4948" placeholder="SELECT * FRO..invoices_log..." />
-            <marker date="1474731750742" expanded="true" signature="5097:5168" placeholder="Select `invo..invoices_log..." />
+            <marker date="1474731750742" expanded="true" signature="-1:-1" placeholder="Select `invo..invoices..." />
+            <marker date="1474731750742" expanded="true" signature="-1:-1" placeholder="Select `invo..invoices..." />
+            <marker date="1474731750742" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..invoices_info..." />
+            <marker date="1474731750742" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..invoices_info..." />
+            <marker date="1474731750742" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..invoices_info..." />
+            <marker date="1474731750742" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..invoices_log..." />
+            <marker date="1474731750742" expanded="true" signature="-1:-1" placeholder="Select `invo..invoices_log..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/core/items.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.5301204" vertical-offset="1634" max-vertical-offset="2465">
+        <state vertical-scroll-proportion="-0.44205496" vertical-offset="1628" max-vertical-offset="2465">
           <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
           <folding>
-            <marker date="1474739862226" expanded="true" signature="341:408" placeholder="Select `item..." />
-            <marker date="1474739862226" expanded="true" signature="508:566" placeholder="Select `item..." />
-            <marker date="1474739862226" expanded="true" signature="1805:1920" placeholder="SELECT * FRO..." />
-            <marker date="1474739862226" expanded="true" signature="2080:2166" placeholder="SELECT * FRO..." />
-            <marker date="1474739862226" expanded="true" signature="2331:2446" placeholder="SELECT * FRO..." />
+            <marker date="1474739862226" expanded="true" signature="-1:-1" placeholder="Select `item..." />
+            <marker date="1474739862226" expanded="true" signature="-1:-1" placeholder="Select `item..." />
+            <marker date="1474739862226" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1474739862226" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1474739862226" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/core/items.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.769231" vertical-offset="1879" max-vertical-offset="3298">
+        <state vertical-scroll-proportion="0.3345281" vertical-offset="1879" max-vertical-offset="3298">
           <caret line="127" column="30" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="30" />
           <folding />
         </state>
@@ -931,17 +840,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/items_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.153847" vertical-offset="587" max-vertical-offset="2006">
+        <state vertical-scroll-proportion="0.0" vertical-offset="587" max-vertical-offset="2006">
           <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/items_table.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="969">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="969">
           <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
           <folding />
         </state>
@@ -951,6 +858,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4975728" vertical-offset="3806" max-vertical-offset="6290">
           <caret line="248" column="22" selection-start-line="248" selection-start-column="22" selection-end-line="248" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="714">
+          <caret line="17" column="30" selection-start-line="15" selection-start-column="20" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18567961" vertical-offset="0" max-vertical-offset="5457">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding />
         </state>
       </provider>

@@ -5,7 +5,9 @@
             <h1 class="page-header">
                 <?php echo @$this->document->title?>
 
-
+                <?php foreach($groups as $group){ ?>
+                <button class="btn btn-primary" onclick="window.location='?route=addon/invoices/insert&group=<?php echo $group['groupid']?>'"><span class="fa fa-plus"></span> <?php echo $group['groupname']?></button>
+                <?php } ?>
                 <button type="button" class="btn btn-default btn-bg btn-danger" onclick="items.deleteitem()"><span class="fa fa-trash"></span> Xóa</button>
 
 
