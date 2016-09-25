@@ -43,7 +43,20 @@
                                     <td><input class="inputchk" type="checkbox" name="delete[<?php echo @$item['id']?>]" value="<?php echo @$item['id']?>" ></td>
                                     <td><?php echo @$item['groupid']?></td>
                                     <td><?php echo @$item['groupname']?></td>
-                                    <td class="number"><?php echo @$item['rate']?>%</td>
+                                    <td class="number">
+                                        <?php if(count($item['arrlistrate'])){ ?>
+                                        <?php
+                                        $arr = array();
+                                        foreach($item['arrlistrate'] as $amount => $rate)
+                                        {
+                                            $arr[] = ">=".$this->string->numberFormate($amount)."=".$rate."%";
+                                        }
+                                        echo implode("<br>",$arr);
+                                        ?>
+                                        <?php }else{ ?>
+                                        <?php echo @$item['rate']?>%
+                                        <?php } ?>
+                                    </td>
                                     <td class="number"><?php echo @$item['period']?> ngày</td>
                                     <td>
                                         <button type="button" onClick="window.location = '<?php echo @$item['link_edit']?>'" class="btn btn-default btn-bg btn-success"><span class="fa pencil-square-o"></span> <?php echo @$item['text_edit']?></button>

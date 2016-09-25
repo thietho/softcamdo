@@ -6,7 +6,8 @@ class ModelAddonGroup extends Model
         'groupname',
         'rate',
         'infodes',
-        'period'
+        'period',
+        'listrate'
     );
 	public function getItem($id)
 	{

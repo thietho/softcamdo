@@ -61,6 +61,8 @@ class ControllerAddonGroup extends Controller
         for($i=0; $i <= count(@$this->data['datas'])-1 ; $i++)
         {
             //@$this->data['datas'][$i] = $rows[$i];
+            @$this->data['datas'][$i]['arrlistrate'] = json_decode(base64_decode(@$this->data['datas'][$i]['listrate']),true);
+            //if(count($this->data['datas'][$i]['arrlistrate'])) echo count($this->data['datas'][$i]['arrlistrate']);
             @$this->data['datas'][$i]['link_edit'] = $this->url->http('addon/group/update&id='.@$this->data['datas'][$i]['id']);
             @$this->data['datas'][$i]['text_edit'] = "Sửa";
 
@@ -81,8 +83,7 @@ class ControllerAddonGroup extends Controller
 
         $id = $this->request->get['id'];
         $this->data['item'] = @$this->model_addon_group->getItem($id);
-
-
+        $this->data['listrate'] = json_decode(base64_decode($this->data['item']['listrate']),true);
 
         @$this->id='content';
         @$this->template='addon/group_form.tpl';
@@ -97,7 +98,14 @@ class ControllerAddonGroup extends Controller
         $data = @$this->request->post;
         if($this->validateForm($data))
         {
-
+            $listamount = $data['listamount'];
+            $listrate = $data['listrate'];
+            $arrlistrate = array();
+            foreach($listamount as $key =>$amount)
+            {
+                $arrlistrate[$this->string->toNumber($amount)] = $listrate[$key];
+            }
+            $data['listrate'] = base64_encode(json_encode($arrlistrate));
             $this->model_addon_group->save($data);
             @$this->data['output'] = "true";
         }
@@ -151,6 +159,8 @@ class ControllerAddonGroup extends Controller
     {
         $groupid = @$this->request->get['groupid'];
         $item = @$this->model_addon_group->getItemById($groupid);
+        $item['arrlistrate'] = json_decode(base64_decode($item['listrate']),true);
+        $item['coutlistrate'] = count($item['arrlistrate']);
         @$this->data['output'] = json_encode($item);
 
         @$this->id="item";

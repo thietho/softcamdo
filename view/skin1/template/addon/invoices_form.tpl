@@ -117,6 +117,10 @@
                                 <label>Đến ngày</label>
                                 <input type="text" id="enddate" name="invoices[enddate]" value="<?php echo $this->date->formatMySQLDate(@$item['enddate'])?>" class="form-control datepicker"/>
                             </div>
+                            <div class="form-group">
+                                <label>Số tiền cầm</label>
+                                <input type="text" id="amount" name="invoices[amount]" value="<?php echo @$item['amount']?>" class="form-control number"/>
+                            </div>
                             <label>Lãi xuất</label>
                             <div class="form-group input-group" >
 
@@ -126,10 +130,7 @@
                                     </button>
                                 </span>
                             </div>
-                            <div class="form-group">
-                                <label>Số tiền cầm</label>
-                                <input type="text" id="amount" name="invoices[amount]" value="<?php echo @$item['amount']?>" class="form-control number"/>
-                            </div>
+
                             <div class="form-group">
                                 <label>Số quá hạn</label>
                                 <input type="text" id="numberexpirydate" name="invoices[numberexpirydate]" value="<?php echo @$item['numberexpirydate']?>" class="form-control number"/>
@@ -211,7 +212,17 @@
     $('#brand').val("<?php echo $item['brand']?>");
     $('#group').val("<?php echo $item['group']?>");
     $('#status').val("<?php echo $item['status']?>");
-
+    $('#amount').keyup(function () {
+        if(invoice.coutlistrate>0) {
+            var amount = stringtoNumber($(this).val());
+            for (i in invoice.listrate) {
+                if(Number(amount) >= Number(i))
+                {
+                    $('#rate').val(invoice.listrate[i]);
+                }
+            }
+        }
+    })
     $('#group').change(function(){
         if(this.value!="")
         {
@@ -219,7 +230,17 @@
                 numberReady();
             });
             $.getJSON("?route=addon/group/getGroup&groupid="+this.value, function (data) {
-                $('#frmInvoices #rate').val(data.rate);
+                if(data.listrate=='') {
+                    $('#frmInvoices #rate').val(data.rate);
+                }
+                else
+                {
+                    invoice.listrate = data.arrlistrate;
+                    invoice.coutlistrate = data.coutlistrate;
+
+
+                }
+
                 if($('#frmInvoices #invoicenumber').val() == '') {
                     var startdate = "<?php echo @$item['startdate'];?>";
                     var dt = new Date(startdate);
@@ -236,6 +257,8 @@
     });
 function Invoices()
 {
+    this.listrate = new Object();
+    this.coutlistrate = 0;
     this.searchItems = function ()
     {
         $("#customerpopup").modal({show: true});
