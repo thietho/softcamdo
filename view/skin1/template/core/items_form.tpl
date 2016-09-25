@@ -5,7 +5,7 @@
             <h1 class="page-header">
                 <?php echo @$this->document->title?>
             </h1>
-            <form name="frm" id="frm" method="post" enctype="multipart/form-data">
+            <form name="frmItem" id="frmGroup" method="post" enctype="multipart/form-data">
 
 
                 <input type="hidden" name="id" value="<?php echo @$item['id']?>"/>
@@ -53,15 +53,24 @@
                 <div class="col-md-6">
                     <div id="iteminfo">
                         <?php foreach($data_info as $info){ ?>
-                        <div class="form-group col-md-6">
-                            <input type="text" name="infoname[]" class="form-control" value="<?php echo $info['infoname']?>" placeholder="Tiêu đề"/>
+                        <div class="info" infoid="<?php echo $info['id']?>">
+                            <div class="form-group col-md-5">
+                                <input type="text" name="infoname[]" class="form-control" value="<?php echo $info['infoname']?>" placeholder="Tiêu đề"/>
+                            </div>
+                            <div class="form-group col-md-5">
+                                <input type="text" name="infovalue[]" class="form-control" value="<?php echo $info['infovalue']?>" placeholder="Nội dung"/>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <button type="button" class="btn btn-danger form-control btnRemove"><span class="fa fa-trash"></span></button>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" name="infovalue[]" class="form-control" value="<?php echo $info['infovalue']?>" placeholder="Nội dung"/>
-                        </div>
+
+
+
                         <?php } ?>
                     </div>
                     <button type="button" class="btn btn-primary" id="btnAddInfo"><span class="fa fa-plus"></span> Thêm thông tin</button>
+                    <input type="hidden" id="delinfoid" name="delinfoid">
                 </div>
                 <div class="form-group text-center col-md-12">
                     <button type="button" onClick="save()" class="btn btn-default btn-bg btn-success"><span class="fa fa-floppy-o"></span> Save</button>
@@ -78,7 +87,7 @@ function save()
 {
     $.blockUI({ message: "<h1>Please wait...</h1>" });
 
-    $.post("?route=core/items/save", $("#frm").serialize(),
+    $.post("?route=core/items/save", $("#frmItem").serialize(),
             function(data){
                 if(data == "true")
                 {
@@ -98,15 +107,27 @@ function save()
 $('#btnAddInfo').click(function () {
     $('#iteminfo').append($('#infotemplate').html());
 })
+$('#frmItem .btnRemove').click(function () {
+
+    $('#delinfoid').val($('#delinfoid').val() + $(this).parents('.info').attr('infoid'));
+    alert($('#delinfoid').val());
+});
 $('#brand').val("<?php echo $item['brand']?>");
 $('#group').val("<?php echo $item['group']?>");
 $('#status').val("<?php echo $item['status']?>");
+
 </script>
 <div id="infotemplate" style="display: none">
-    <div class="form-group col-md-6">
-        <input type="text" name="infoname[]" class="form-control" placeholder="Tiêu đề"/>
+    <div class="info">
+        <div class="form-group col-md-5">
+            <input type="text" name="infoname[]" class="form-control" placeholder="Tiêu đề"/>
+        </div>
+        <div class="form-group col-md-5">
+            <input type="text" name="infovalue[]" class="form-control" placeholder="Nội dung"/>
+        </div>
+        <div class="form-group col-md-2">
+            <button type="button" class="btn btn-danger form-control btnRemove"><span class="fa fa-trash"></span></button>
+        </div>
     </div>
-    <div class="form-group col-md-6">
-        <input type="text" name="infovalue[]" class="form-control" placeholder="Nội dung"/>
-    </div>
+
 </div>
