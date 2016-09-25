@@ -88,8 +88,15 @@ class ModelCoreItems extends Model
 	{
 		$where="id = '".$id."'";
 		$this->db->deleteData("items",$where);
-		
+        $where="itemid = '".$id."'";
+        $this->db->deleteData("items_info",$where);
 	}
+    public function deleteInfo($id)
+    {
+        $where="id = '".$id."'";
+        $this->db->deleteData("items_info",$where);
+
+    }
     public function getItemValue($itemid,$infoname)
     {
         $sql = "SELECT *

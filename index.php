@@ -1,5 +1,6 @@
 <?php
 ini_set("memory_limit","1500M");
+date_default_timezone_set('Asia/Ho_Chi_Minh');
 include('system/config/directory.php');
 include(DIR_SYSTEM.'config/config.php');
 include(DIR_SYSTEM.'config/startup.php');

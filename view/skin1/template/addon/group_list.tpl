@@ -30,7 +30,7 @@
                                     <th>Mã nhóm</th>
                                     <th>Tên nhóm</th>
                                     <th>Lãi xuất</th>
-
+                                    <th>Chu kỳ</th>
                                     <th>Control</th>
                                 </tr>
                                 </thead>

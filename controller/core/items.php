@@ -136,10 +136,10 @@ class ControllerCoreItems extends Controller
     {
 
         $data = @$this->request->post;
-        print_r($data);
+
         if($this->validateForm($data))
         {
-            $data['price'] = $this->string->toNumber($data['price']);
+            //$data['price'] = $this->string->toNumber($data['price']);
             $obj = $this->model_core_items->save($data);
 
             foreach($data['infoname'] as $key => $infoname)
@@ -147,6 +147,14 @@ class ControllerCoreItems extends Controller
                 $infovalue = $data['infovalue'][$key];
                 $this->model_core_items->saveItemInfo($obj['id'],$infoname,$infovalue);
             }
+            //Xoa info
+            $listiddelinfo = explode(',',$data['delinfoid']);
+            foreach($listiddelinfo as $infoid)
+            {
+                if($infoid)
+                    $this->model_core_items->deleteInfo($infoid);
+            }
+
             @$this->data['output'] = "true";
         }
         else

@@ -5,7 +5,7 @@
             <h1 class="page-header">
                 <?php echo @$this->document->title?>
             </h1>
-            <form name="frmItem" id="frmGroup" method="post" enctype="multipart/form-data">
+            <form name="frmItem" id="frmItem" method="post" enctype="multipart/form-data">
 
 
                 <input type="hidden" name="id" value="<?php echo @$item['id']?>"/>
@@ -108,9 +108,10 @@ $('#btnAddInfo').click(function () {
     $('#iteminfo').append($('#infotemplate').html());
 })
 $('#frmItem .btnRemove').click(function () {
-
-    $('#delinfoid').val($('#delinfoid').val() + $(this).parents('.info').attr('infoid'));
+    var infoid = $(this).parents('.info').attr('infoid');
+    $('#delinfoid').val($('#delinfoid').val() + "," +infoid );
     alert($('#delinfoid').val());
+    $(this).parents('.info').remove();
 });
 $('#brand').val("<?php echo $item['brand']?>");
 $('#group').val("<?php echo $item['group']?>");
