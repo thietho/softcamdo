@@ -195,7 +195,7 @@ class ControllerAddonInvoices extends Controller
                             AND status in('new','payrate') ";
                 break;
         }
-        
+
         $this->data['datas'] = array();
         $rows = @$this->model_addon_invoices->getList($where);
         //Page

@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invoices.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="invoices.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5730337" vertical-offset="2890" max-vertical-offset="9129">
-              <caret line="197" column="8" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="8" />
+            <state vertical-scroll-proportion="-17.653847" vertical-offset="2890" max-vertical-offset="9129">
+              <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invoices.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="invoices.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/addon/invoices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.846154" vertical-offset="2155" max-vertical-offset="4131">
+            <state vertical-scroll-proportion="0.5061425" vertical-offset="2155" max-vertical-offset="4131">
               <caret line="151" column="36" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
               <folding>
                 <marker date="1474908582236" expanded="true" signature="779:852" placeholder="Select `invo..invoices..." />
@@ -1007,22 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/addon/invoices.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.846154" vertical-offset="2155" max-vertical-offset="4131">
-          <caret line="151" column="36" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
-          <folding>
-            <marker date="1474908582236" expanded="true" signature="779:852" placeholder="Select `invo..invoices..." />
-            <marker date="1474908582236" expanded="true" signature="1081:1144" placeholder="Select `invo..invoices..." />
-            <marker date="1474908582236" expanded="true" signature="3731:3855" placeholder="SELECT * FRO..invoices_info..." />
-            <marker date="1474908582236" expanded="true" signature="4021:4116" placeholder="SELECT * FRO..invoices_info..." />
-            <marker date="1474908582236" expanded="true" signature="4288:4412" placeholder="SELECT * FRO..invoices_info..." />
-            <marker date="1474908582236" expanded="true" signature="5070:5190" placeholder="SELECT * FRO..invoices_log..." />
-            <marker date="1474908582236" expanded="true" signature="5339:5410" placeholder="Select `invo..invoices_log..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/group_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.730769" vertical-offset="187" max-vertical-offset="1802">
@@ -1055,9 +1039,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5730337" vertical-offset="2890" max-vertical-offset="9129">
-          <caret line="197" column="8" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="8" />
+        <state vertical-scroll-proportion="-17.653847" vertical-offset="2890" max-vertical-offset="9129">
+          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/addon/invoices.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5061425" vertical-offset="2155" max-vertical-offset="4131">
+          <caret line="151" column="36" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
+          <folding>
+            <marker date="1474908582236" expanded="true" signature="779:852" placeholder="Select `invo..invoices..." />
+            <marker date="1474908582236" expanded="true" signature="1081:1144" placeholder="Select `invo..invoices..." />
+            <marker date="1474908582236" expanded="true" signature="3731:3855" placeholder="SELECT * FRO..invoices_info..." />
+            <marker date="1474908582236" expanded="true" signature="4021:4116" placeholder="SELECT * FRO..invoices_info..." />
+            <marker date="1474908582236" expanded="true" signature="4288:4412" placeholder="SELECT * FRO..invoices_info..." />
+            <marker date="1474908582236" expanded="true" signature="5070:5190" placeholder="SELECT * FRO..invoices_log..." />
+            <marker date="1474908582236" expanded="true" signature="5339:5410" placeholder="Select `invo..invoices_log..." />
+          </folding>
         </state>
       </provider>
     </entry>
