@@ -116,7 +116,7 @@ class ControllerAddonInvoices extends Controller
         if(count($listid))
         {
             foreach($listid as $id)
-                $this->model_core_cards->delete($id);
+                $this->model_addon_invoices->delete($id);
             @$this->data['output'] = "Xóa thành công";
         }
         @$this->id="content";
@@ -170,7 +170,32 @@ class ControllerAddonInvoices extends Controller
             $where .= " AND `phone` = '%".$data['phone']."%'";
         if(@$data['address'] != "")
             $where .= " AND `address` like '%".$data['address']."%'";
-
+        if(@$data['group'] != "")
+            $where .= " AND `group` like '".$data['group']."'";
+        if(@$data['storage'] != "")
+            $where .= " AND `storage` like '%".$data['storage']."%'";
+        if(@$data['status'] != "")
+            $where .= " AND `status` like '%".$data['status']."%'";
+        switch($data['statustime'])
+        {
+            case "upcoming":
+                $where.= " AND DATE_ADD(  `enddate` , INTERVAL -5 DAY ) - DATE( NOW( ) ) < 0
+                            AND status in('new','payrate') ";
+                break;
+            case "deadline":
+                $where.= " AND DATE(`enddate`) = DATE(NOW( ))
+                            AND status in('new','payrate') ";
+                break;
+            case "expired":
+                $where.= " AND DATE_ADD(  `enddate` , INTERVAL numberexpirydate DAY ) - DATE( NOW( ) ) < 0
+                            AND status in('new','payrate') ";
+                break;
+            case "liquidation":
+                $where.= " AND DATE_ADD(  `enddate` , INTERVAL numberexpirydate DAY ) - DATE( NOW( ) ) > 0
+                            AND status in('new','payrate') ";
+                break;
+        }
+        
         $this->data['datas'] = array();
         $rows = @$this->model_addon_invoices->getList($where);
         //Page

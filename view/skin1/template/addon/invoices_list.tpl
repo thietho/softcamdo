@@ -8,7 +8,7 @@
                 <?php foreach($groups as $group){ ?>
                 <button class="btn btn-primary" onclick="window.location='?route=addon/invoices/insert&group=<?php echo $group['groupid']?>'"><span class="fa fa-plus"></span> <?php echo $group['groupname']?></button>
                 <?php } ?>
-                <button type="button" class="btn btn-default btn-bg btn-danger" onclick="items.deleteitem()"><span class="fa fa-trash"></span> Xóa</button>
+                <button type="button" class="btn btn-default btn-bg btn-danger" onclick="invoices.deleteitem()"><span class="fa fa-trash"></span> Xóa</button>
 
 
             </h1>
@@ -75,6 +75,42 @@
                         <label>Địa chỉ</label>
                         <input type="text" id="address" name="address" class="form-control"/>
                     </div>
+                    <div class="form-group col-md-2">
+                        <label>Nhóm tài sản</label>
+                        <select class="form-control" id="group" name="group">
+                            <option value=""></option>
+                            <?php foreach($groups as $group){ ?>
+                            <option value="<?php echo $group['groupid']?>"><?php echo $group['groupname']?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Lưu trữ</label>
+                        <select id="storage" name="storage" class="form-control">
+                            <option value="">Chọn tủ</option>
+                            <?php foreach($storage as $it){ ?>
+                            <option value="<?php echo @$it['categoryid']?>"><?php echo @$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo @$it['categoryname']?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Trạng thái</label>
+                        <select id="status" name="status" class="form-control">
+                            <option value=""></option>
+                            <?php foreach($this->document->invoicesstatus as $status => $statusname){ ?>
+                            <option value="<?php echo $status?>"><?php echo $statusname?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label>Thời hạn</label>
+                        <select id="statustime" name="statustime" class="form-control">
+                            <option value=""></option>
+                            <?php foreach($this->document->invoicestime as $status => $statusname){ ?>
+                            <option value="<?php echo $status?>"><?php echo $statusname?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
                     <div class="form-group pull-right">
                         <button onclick="invoices.search()" type="button" class="btn btn-default btn-bg btn-success"><span class="fa fa-filter"></span> Tìm</button>
                         <button onclick="invoices.showAll()" type="button" class="btn btn-default btn-bg btn-success">Tất cả</button>
@@ -136,6 +172,7 @@
         this.showAll = function()
         {
             $('input').val('');
+            $('select').val('');
             this.search();
         }
         this.view = function(id)

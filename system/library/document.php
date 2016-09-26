@@ -27,9 +27,16 @@ final class Document {
 						    'new' => "Biên nhận mới",
                             'payrate' => 'Đóng lãi',
 						    'getback' => "Đã chuột",
-						    'payoff' => "Đã thanh lý",
-                            'cancel' => "Hủy"
+						    'payoff' => "Đã thanh lý"
+
 						   );
+    public $invoicestime = array(
+        'upcoming' => "Sắp đến hạn",
+        'deadline' => 'Đến hạn',
+        'expired' => "Quá hạn",
+        'liquidation' => 'Cần thanh lý'
+
+    );
 
 	public function toVND($value,$donvi)
 	{

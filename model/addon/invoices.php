@@ -141,8 +141,15 @@ class ModelAddonInvoices extends Model
     {
         $where="id = '".$id."'";
         $this->db->deleteData("invoices",$where);
+        //Xoa info
         $where="invoiceid = '".$id."'";
-        $this->db->deleteData("invoices",$where);
+        $this->db->deleteData("invoices_info",$where);
+        //Xoa log
+        $where="invoiceid = '".$id."'";
+        $this->db->deleteData("invoices_log",$where);
+        //Xoa bill
+        $where="invoiceid = '".$id."'";
+        $this->db->deleteData("bills",$where);
     }
 
     public function getInvoicesValue($invoiceid,$infoname)

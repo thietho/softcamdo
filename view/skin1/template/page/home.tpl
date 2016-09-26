@@ -18,7 +18,7 @@
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge">26</div>
-                        <div>New Comments!</div>
+                        <div>Phiếu mới</div>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge">12</div>
-                        <div>New Tasks!</div>
+                        <div>Phiếu sắp đến hạn!</div>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge">124</div>
-                        <div>New Orders!</div>
+                        <div>Phiếu đến hạn!</div>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge">13</div>
-                        <div>Support Tickets!</div>
+                        <div>Phiếu quá hạn!</div>
                     </div>
                 </div>
             </div>
