@@ -9,12 +9,13 @@
 </div>
 <!-- /.row -->
 <div class="row">
+
     <div class="col-lg-3 col-md-6">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-comments fa-5x"></i>
+                        <img src="<?php echo HTTP_SERVER.DIR_IMAGE?>upcoming.png">
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge"><?php echo $this->string->numberFormate(count($upcoming))?></div>
@@ -36,7 +37,7 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-tasks fa-5x"></i>
+                        <img src="<?php echo HTTP_SERVER.DIR_IMAGE?>deadline.png">
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge"><?php echo $this->string->numberFormate(count($deadline))?></div>
@@ -58,7 +59,7 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-shopping-cart fa-5x"></i>
+                        <img src="<?php echo HTTP_SERVER.DIR_IMAGE?>expired.png">
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge"><?php echo $this->string->numberFormate(count($expired))?></div>
@@ -80,7 +81,7 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-support fa-5x"></i>
+                        <img src="<?php echo HTTP_SERVER.DIR_IMAGE?>liquidation.png">
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge"><?php echo $this->string->numberFormate(count($liquidation))?></div>
