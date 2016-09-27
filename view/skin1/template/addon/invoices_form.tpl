@@ -74,7 +74,7 @@
                             </div>
                             <div class="form-group">
 
-                                <input type="text" id="itemnumber" name="invoices[itemnumber]" value="<?php echo @$item['itemnumber']?>" class="form-control" placeholder="Số IMEI"/>
+                                <input type="text" id="itemnumber" name="invoices[itemnumber]" value="<?php echo @$item['itemnumber']?>" class="form-control" placeholder="Số Serial"/>
                             </div>
                             <div class="form-group">
                                 <label>Giá hiện tại</label>

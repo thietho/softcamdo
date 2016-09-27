@@ -25,22 +25,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="group_list.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/group_list.tpl">
+      <file leaf-file-name="invoices.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.730769" vertical-offset="187" max-vertical-offset="1802">
-              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+            <state vertical-scroll-proportion="-22.23077" vertical-offset="1632" max-vertical-offset="9384">
+              <caret line="130" column="51" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="invoices.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/addon/invoices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="544">
-              <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-              <folding />
+            <state vertical-scroll-proportion="-25.653847" vertical-offset="3770" max-vertical-offset="4607">
+              <caret line="261" column="60" selection-start-line="261" selection-start-column="60" selection-end-line="261" selection-end-column="60" />
+              <folding>
+                <marker date="1474986836704" expanded="true" signature="779:852" placeholder="Select `invo..invoices..." />
+                <marker date="1474986836704" expanded="true" signature="1081:1144" placeholder="Select `invo..invoices..." />
+                <marker date="1474986836704" expanded="true" signature="3731:3855" placeholder="SELECT * FRO..invoices_info..." />
+                <marker date="1474986836704" expanded="true" signature="4021:4116" placeholder="SELECT * FRO..invoices_info..." />
+                <marker date="1474986836704" expanded="true" signature="4288:4412" placeholder="SELECT * FRO..invoices_info..." />
+                <marker date="1474986836704" expanded="true" signature="5070:5190" placeholder="SELECT * FRO..invoices_log..." />
+                <marker date="1474986836704" expanded="true" signature="5339:5410" placeholder="Select `invo..invoices_log..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,77 +56,19 @@
       <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/page/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="459">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="884">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="group_form.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/group_form.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.961538" vertical-offset="1454" max-vertical-offset="2482">
-              <caret line="113" column="39" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847" vertical-offset="2890" max-vertical-offset="9129">
-              <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/page/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.576923" vertical-offset="153" max-vertical-offset="9367">
-              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.8046116" vertical-offset="867" max-vertical-offset="9367">
+              <caret line="90" column="73" selection-start-line="90" selection-start-column="73" selection-end-line="90" selection-end-column="73" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices_list.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.615385" vertical-offset="2448" max-vertical-offset="6086">
-              <caret line="174" column="21" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices_table.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_table.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="153" max-vertical-offset="1003">
-              <caret line="28" column="88" selection-start-line="28" selection-start-column="88" selection-end-line="28" selection-end-column="88" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model/addon/invoices.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5061425" vertical-offset="2155" max-vertical-offset="4131">
-              <caret line="151" column="36" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
-              <folding>
-                <marker date="1474908582236" expanded="true" signature="779:852" placeholder="Select `invo..invoices..." />
-                <marker date="1474908582236" expanded="true" signature="1081:1144" placeholder="Select `invo..invoices..." />
-                <marker date="1474908582236" expanded="true" signature="3731:3855" placeholder="SELECT * FRO..invoices_info..." />
-                <marker date="1474908582236" expanded="true" signature="4021:4116" placeholder="SELECT * FRO..invoices_info..." />
-                <marker date="1474908582236" expanded="true" signature="4288:4412" placeholder="SELECT * FRO..invoices_info..." />
-                <marker date="1474908582236" expanded="true" signature="5070:5190" placeholder="SELECT * FRO..invoices_log..." />
-                <marker date="1474908582236" expanded="true" signature="5339:5410" placeholder="Select `invo..invoices_log..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -126,15 +76,9 @@
       <file leaf-file-name="document.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/library/document.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="136" max-vertical-offset="4369">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="36" />
-              <folding>
-                <marker date="1474909061037" expanded="true" signature="2303:2396" placeholder="Select `cate..." />
-                <marker date="1474909061037" expanded="true" signature="2540:2625" placeholder="Select `acco..." />
-                <marker date="1474909061037" expanded="true" signature="2770:2845" placeholder="Select `grou..." />
-                <marker date="1474909061037" expanded="true" signature="2961:3036" placeholder="Select `user..." />
-                <marker date="1474909061037" expanded="true" signature="5118:5180" placeholder="SELECT :_tab..." />
-              </folding>
+            <state vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="4369">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/system/library/pager.php" />
         <option value="$PROJECT_DIR$/model/core/cards.php" />
         <option value="$PROJECT_DIR$/controller/core/invoices.php" />
         <option value="$PROJECT_DIR$/view/skin1/template/core/category_form.tpl" />
@@ -196,13 +139,14 @@
         <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" />
         <option value="$PROJECT_DIR$/view/skin1/template/addon/group_list.tpl" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/view/skin1/template/page/home.tpl" />
-        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl" />
-        <option value="$PROJECT_DIR$/model/addon/invoices.php" />
         <option value="$PROJECT_DIR$/system/library/document.php" />
         <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_table.tpl" />
-        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl" />
+        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl" />
+        <option value="$PROJECT_DIR$/model/addon/invoices.php" />
+        <option value="$PROJECT_DIR$/controller/page/home.php" />
         <option value="$PROJECT_DIR$/controller/addon/invoices.php" />
+        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl" />
+        <option value="$PROJECT_DIR$/view/skin1/template/page/home.tpl" />
       </list>
     </option>
   </component>
@@ -595,15 +539,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -637,13 +581,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -664,7 +608,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -925,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="2380">
           <caret line="111" column="37" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,13 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2584">
           <caret line="96" column="41" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
-          <folding>
-            <marker date="1474800754559" expanded="true" signature="-1:-1" placeholder="Select `item..." />
-            <marker date="1474800754559" expanded="true" signature="-1:-1" placeholder="Select `item..." />
-            <marker date="1474800754559" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1474800754559" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1474800754559" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.730769" vertical-offset="2066" max-vertical-offset="3434">
           <caret line="141" column="14" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,53 +890,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="884">
           <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="544">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="544">
           <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/page/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin1/template/page/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.576923" vertical-offset="153" max-vertical-offset="9367">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/group_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.961538" vertical-offset="1454" max-vertical-offset="2482">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1454" max-vertical-offset="2482">
           <caret line="113" column="39" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.957553" vertical-offset="1766" max-vertical-offset="6681">
-          <caret line="149" column="34" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_table.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="153" max-vertical-offset="1003">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1003">
           <caret line="28" column="88" selection-start-line="28" selection-start-column="88" selection-end-line="28" selection-end-column="88" />
           <folding />
         </state>
@@ -1009,55 +919,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/group_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769" vertical-offset="187" max-vertical-offset="1802">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1802">
           <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/library/document.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="136" max-vertical-offset="4369">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <marker date="1474909061037" expanded="true" signature="2303:2396" placeholder="Select `cate..." />
-            <marker date="1474909061037" expanded="true" signature="2540:2625" placeholder="Select `acco..." />
-            <marker date="1474909061037" expanded="true" signature="2770:2845" placeholder="Select `grou..." />
-            <marker date="1474909061037" expanded="true" signature="2961:3036" placeholder="Select `user..." />
-            <marker date="1474909061037" expanded="true" signature="5118:5180" placeholder="SELECT :_tab..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.615385" vertical-offset="2448" max-vertical-offset="6086">
-          <caret line="174" column="21" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847" vertical-offset="2890" max-vertical-offset="9129">
-          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/addon/invoices.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5061425" vertical-offset="2155" max-vertical-offset="4131">
-          <caret line="151" column="36" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
+        <state vertical-scroll-proportion="-25.653847" vertical-offset="3770" max-vertical-offset="4607">
+          <caret line="261" column="60" selection-start-line="261" selection-start-column="60" selection-end-line="261" selection-end-column="60" />
           <folding>
-            <marker date="1474908582236" expanded="true" signature="779:852" placeholder="Select `invo..invoices..." />
-            <marker date="1474908582236" expanded="true" signature="1081:1144" placeholder="Select `invo..invoices..." />
-            <marker date="1474908582236" expanded="true" signature="3731:3855" placeholder="SELECT * FRO..invoices_info..." />
-            <marker date="1474908582236" expanded="true" signature="4021:4116" placeholder="SELECT * FRO..invoices_info..." />
-            <marker date="1474908582236" expanded="true" signature="4288:4412" placeholder="SELECT * FRO..invoices_info..." />
-            <marker date="1474908582236" expanded="true" signature="5070:5190" placeholder="SELECT * FRO..invoices_log..." />
-            <marker date="1474908582236" expanded="true" signature="5339:5410" placeholder="Select `invo..invoices_log..." />
+            <marker date="1474986836704" expanded="true" signature="779:852" placeholder="Select `invo..invoices..." />
+            <marker date="1474986836704" expanded="true" signature="1081:1144" placeholder="Select `invo..invoices..." />
+            <marker date="1474986836704" expanded="true" signature="3731:3855" placeholder="SELECT * FRO..invoices_info..." />
+            <marker date="1474986836704" expanded="true" signature="4021:4116" placeholder="SELECT * FRO..invoices_info..." />
+            <marker date="1474986836704" expanded="true" signature="4288:4412" placeholder="SELECT * FRO..invoices_info..." />
+            <marker date="1474986836704" expanded="true" signature="5070:5190" placeholder="SELECT * FRO..invoices_log..." />
+            <marker date="1474986836704" expanded="true" signature="5339:5410" placeholder="Select `invo..invoices_log..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/page/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="884">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.23077" vertical-offset="1632" max-vertical-offset="9384">
+          <caret line="130" column="51" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-54.576923" vertical-offset="1063" max-vertical-offset="6154">
+          <caret line="146" column="57" selection-start-line="146" selection-start-column="57" selection-end-line="146" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10315534" vertical-offset="0" max-vertical-offset="6681">
+          <caret line="5" column="52" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/document.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="4369">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin1/template/page/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8046116" vertical-offset="867" max-vertical-offset="9367">
+          <caret line="90" column="73" selection-start-line="90" selection-start-column="73" selection-end-line="90" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>

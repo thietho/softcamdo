@@ -128,7 +128,7 @@ class ControllerAddonInvoices extends Controller
     {
         @$this->data['insert'] = @$this->url->http('addon/invoices/insert');
         @$this->data['delete'] = @$this->url->http('addon/invoices/delete');
-
+        $this->data['search'] = $this->request->get;
         $this->id='content';
         $this->template="addon/invoices_list.tpl";
         $this->layout="layout/home";
@@ -179,20 +179,16 @@ class ControllerAddonInvoices extends Controller
         switch($data['statustime'])
         {
             case "upcoming":
-                $where.= " AND DATE_ADD(  `enddate` , INTERVAL -5 DAY ) - DATE( NOW( ) ) < 0
-                            AND status in('new','payrate') ";
+                $where.= $this->model_addon_invoices->whereUpComing();
                 break;
             case "deadline":
-                $where.= " AND DATE(`enddate`) = DATE(NOW( ))
-                            AND status in('new','payrate') ";
+                $where.= $this->model_addon_invoices->whereDeadLine();
                 break;
             case "expired":
-                $where.= " AND DATE_ADD(  `enddate` , INTERVAL numberexpirydate DAY ) - DATE( NOW( ) ) < 0
-                            AND status in('new','payrate') ";
+                $where.= $this->model_addon_invoices->whereExpired();
                 break;
             case "liquidation":
-                $where.= " AND DATE_ADD(  `enddate` , INTERVAL numberexpirydate DAY ) - DATE( NOW( ) ) > 0
-                            AND status in('new','payrate') ";
+                $where.= $this->model_addon_invoices->whereLiquidation();
                 break;
         }
 
@@ -337,13 +333,32 @@ class ControllerAddonInvoices extends Controller
             {
                 $where = " AND invoiceid = ".$data['id']." AND billtype = 'pay'";
                 $data_bill = $this->model_core_bills->getList($where);
-                $bill = $data_bill[0];
-                $bill['amount'] = $this->string->toNumber($invoices['amount']);
-                $bill['notes'] = 'Cầm '.$invoices['invoicenumber']." - ".$invoices['itemname']." - ".$invoices['itemnumber'];
-                $bill['invoiceid'] = $invoices['id'];
-                $bill['cardid'] = $invoices['cardid'];
-                $bill['fullname'] = $invoices['fullname'];
-                $this->model_core_bills->save($bill);
+                if(count($data_bill))
+                {
+                    $bill = $data_bill[0];
+                    $bill['amount'] = $this->string->toNumber($invoices['amount']);
+                    $bill['notes'] = 'Cầm '.$invoices['invoicenumber']." - ".$invoices['itemname']." - ".$invoices['itemnumber'];
+                    $bill['invoiceid'] = $invoices['id'];
+                    $bill['cardid'] = $invoices['cardid'];
+                    $bill['fullname'] = $invoices['fullname'];
+                    $this->model_core_bills->save($bill);
+                }
+                else
+                {
+                    //Them phiêu moi tạo phieu chi cho phiêu cầm đồ
+                    $bill = array();
+                    $bill['billtype'] = 'pay';
+                    $bill['createdate'] = $this->date->getToday();
+                    $bill['createby'] = $this->user->getUserName();
+                    $bill['accountid'] = '111';
+                    $bill['amount'] = $this->string->toNumber($invoices['amount']);
+                    $bill['notes'] = 'Cầm '.$invoices['invoicenumber']." - ".$invoices['itemname']." - ".$invoices['itemnumber'];
+                    $bill['invoiceid'] = $invoices['id'];
+                    $bill['cardid'] = $invoices['cardid'];
+                    $bill['fullname'] = $invoices['fullname'];
+                    $this->model_core_bills->save($bill);
+                }
+
             }
             $invoices['error'] = '';
             @$this->data['output'] = json_encode($invoices);

@@ -234,5 +234,33 @@ class ModelAddonInvoices extends Model
         );
         @$this->db->insertData("invoices_log",$field,$value);
     }
+
+    public function whereUpComing()
+    {
+        $where = " AND DATE_ADD(  `enddate` , INTERVAL -5 DAY ) - DATE( NOW( ) ) < 0
+                            AND DATE(`enddate`) - DATE( NOW( ) ) > 0
+                            AND status in('new','payrate') ";
+        return $where;
+    }
+    public function whereDeadLine()
+    {
+        $where = " AND DATE(`enddate`) = DATE(NOW( ))
+                            AND status in('new','payrate') ";
+        return $where;
+    }
+    public function whereExpired()
+    {
+        $where = " AND DATE_ADD(  `enddate` , INTERVAL numberexpirydate DAY ) - DATE( NOW( ) ) > 0
+                            AND DATE(`enddate`) - DATE( NOW( ) ) < 0
+                            AND status in('new','payrate') ";
+        return $where;
+    }
+    public function whereLiquidation()
+    {
+        $where = " AND DATE_ADD(  `enddate` , INTERVAL numberexpirydate DAY ) - DATE( NOW( ) ) < 0
+                            AND DATE(`enddate`) - DATE( NOW( ) ) < 0
+                            AND status in('new','payrate') ";
+        return $where;
+    }
 }
 ?>

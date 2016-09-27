@@ -22,58 +22,58 @@
                 <form id="frmsearchinvoices" class="panel-body">
                     <div class="form-group col-md-3">
                         <label>Mã phiếu</label>
-                        <input type="text" id="invoicenumber" name="invoicenumber" class="form-control"/>
+                        <input type="text" id="invoicenumber" name="invoicenumber" value="<?php echo @$search['invoicenumber']?>" class="form-control"/>
                     </div>
                     <div class="form-group col-md-3">
                         <label>Tên tài sản</label>
-                        <input type="text" id="itemname" name="itemname" class="form-control"/>
+                        <input type="text" id="itemname" name="itemname" value="<?php echo @$search['itemname']?>" class="form-control"/>
                     </div><div class="form-group col-md-3">
                         <label>Số imei</label>
-                        <input type="text" id="itemnumber" name="itemnumber" class="form-control"/>
+                        <input type="text" id="itemnumber" name="itemnumber" value="<?php echo @$search['itemnumber']?>" class="form-control"/>
                     </div>
                     <div class="form-group col-md-3">
                         <label>Giá trị cầm</label>
-                        <input type="text" id="amount" name="amount" class="form-control number"/>
+                        <input type="text" id="amount" name="amount" value="<?php echo @$search['amount']?>" class="form-control number"/>
                     </div>
                     <div class="form-group col-md-3">
                         <label>Từ ngày cầm</label>
-                        <input type="text" id="formstartdate" name="formstartdate" class="form-control datepicker"/>
+                        <input type="text" id="formstartdate" name="formstartdate" value="<?php echo @$search['formstartdate']?>" class="form-control datepicker"/>
                     </div>
                     <div class="form-group col-md-3">
                         <label>Đến ngày cầm</label>
-                        <input type="text" id="tostartdate" name="tostartdate" class="form-control datepicker"/>
+                        <input type="text" id="tostartdate" name="tostartdate" value="<?php echo @$search['tostartdate']?>" class="form-control datepicker"/>
                     </div>
                     <div class="form-group col-md-3">
                         <label>Từ ngày hết hạn</label>
-                        <input type="text" id="formenddate" name="formenddate" class="form-control datepicker"/>
+                        <input type="text" id="formenddate" name="formenddate" value="<?php echo @$search['formenddate']?>" class="form-control datepicker"/>
                     </div>
                     <div class="form-group col-md-3">
                         <label>Đến ngày hết hạn</label>
-                        <input type="text" id="toenddate" name="toenddate" class="form-control datepicker"/>
+                        <input type="text" id="toenddate" name="toenddate" value="<?php echo @$search['toenddate']?>" class="form-control datepicker"/>
                     </div>
                     <div class="form-group col-md-2">
                         <label>Tên khách hàng</label>
-                        <input type="text" id="fullname" name="fullname" class="form-control"/>
+                        <input type="text" id="fullname" name="fullname" value="<?php echo @$search['fullname']?>" class="form-control"/>
                     </div>
                     <div class="form-group col-md-2">
                         <label>Số CMND</label>
-                        <input type="text" id="idnumber" name="idnumber" class="form-control"/>
+                        <input type="text" id="idnumber" name="idnumber" value="<?php echo @$search['idnumber']?>" class="form-control"/>
                     </div>
                     <div class="form-group col-md-2">
                         <label>Nơi cấp</label>
-                        <input type="text" id="idlocation" name="idlocation" class="form-control"/>
+                        <input type="text" id="idlocation" name="idlocation" value="<?php echo @$search['idlocation']?>" class="form-control"/>
                     </div>
                     <div class="form-group col-md-2">
                         <label>Ngày cấp</label>
-                        <input type="text" id="iddate" name="iddate" class="form-control datepicker"/>
+                        <input type="text" id="iddate" name="iddate" value="<?php echo @$search['iddate']?>" class="form-control datepicker"/>
                     </div>
                     <div class="form-group col-md-2">
                         <label>Số điện thoại</label>
-                        <input type="text" id="phone" name="phone" class="form-control"/>
+                        <input type="text" id="phone" name="phone" value="<?php echo @$search['phone']?>" class="form-control"/>
                     </div>
                     <div class="form-group col-md-2">
                         <label>Địa chỉ</label>
-                        <input type="text" id="address" name="address" class="form-control"/>
+                        <input type="text" id="address" name="address" value="<?php echo @$search['address']?>" class="form-control"/>
                     </div>
                     <div class="form-group col-md-2">
                         <label>Nhóm tài sản</label>
@@ -141,6 +141,10 @@
     </div>
 </div>
 <script language="JavaScript">
+    $('#frmsearchinvoices #group').val("<?php echo @$search['group']?>");
+    $('#frmsearchinvoices #storage').val("<?php echo @$search['storage']?>");
+    $('#frmsearchinvoices #status').val("<?php echo @$search['status']?>");
+    $('#frmsearchinvoices #statustime').val("<?php echo @$search['statustime']?>");
     function Invoices()
     {
         this.deleteitem = function()
