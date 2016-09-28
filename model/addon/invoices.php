@@ -109,8 +109,8 @@ class ModelAddonInvoices extends Model
             $prefix = "CD".Date('Ymd',time());
             $data['invoicenumber'] = $this->createInvoiceNumber($prefix);
             $data['status'] = "new";
-            $invoices['createdate'] = $this->date->getToday();
-            $invoices['createby'] = $this->user->getUserName();
+            $data['createdate'] = $this->date->getToday();
+            $data['createby'] = $this->user->getUserName();
         }
         foreach($this->arr_col as $col)
         {
