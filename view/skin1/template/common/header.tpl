@@ -25,7 +25,7 @@
                             <a href="?route=addon/invoices/getList&statustime=<?php echo $key?>">
                                 <div>
                                     <img src="<?php echo HTTP_SERVER.DIR_IMAGE?><?php echo $key?>.png" width="14px"> <?php echo $statustime?>
-                                    <span class="pull-right text-muted small"><?php echo $this->string->numberFormate(count($upcoming))?></span>
+                                    <span class="pull-right text-muted small"><?php echo $this->string->numberFormate(count($status[$key]))?></span>
                                 </div>
                             </a>
                         </li>

@@ -84,7 +84,7 @@
 
                             <div class="form-group">
 
-                                <select id="status" name="invoices[status]" class="form-control">
+                                <select id="status" name="invoices[status]" class="form-control" disabled>
                                     <option value="">Trạng thái</option>
                                     <?php foreach($status as $it){ ?>
                                     <option value="<?php echo @$it['categoryid']?>"><?php echo @$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo @$it['categoryname']?></option>
@@ -92,8 +92,9 @@
                                 </select>
                             </div>
                             <div class="form-group">
+                                <label>Link tham khảo</label>
+                                <a id="link" target="_blank"></a>
 
-                                <input type="text" id="link" name="invoices[link]" value="<?php echo @$item['link']?>" class="form-control" placeholder="Link thao khảo"/>
                             </div>
                             <div id="iteminfo">
 
@@ -172,7 +173,8 @@
 <script language="JavaScript">
     $.getJSON("?route=core/items/getItems&id=<?php echo $item['itemid'] ?>", function (data) {
         $('#frmInvoices #status').val(data.status);
-        $('#frmInvoices #link').val(data.link);
+        $('#frmInvoices #link').html(data.link);
+        $('#frmInvoices #link').attr('href',data.link);
     });
 </script>
 <?php } ?>
@@ -272,7 +274,8 @@ function Invoices()
                     //$("#frmInvoices #pricenow").val($(this).attr('price'));
 
                     $("#frmInvoices #group").val($(this).attr('group')).change();
-                    $("#frmInvoices #link").val($(this).attr('link'));
+                    $("#frmInvoices #link").html($(this).attr('link'));
+                    $('#frmInvoices #link').attr('href',$(this).attr('link'));
                     $("#frmInvoices #status").val($(this).attr('status'));
                     numberReady();
                 });

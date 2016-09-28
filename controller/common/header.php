@@ -25,11 +25,19 @@ class ControllerCommonHeader extends Controller
     }
 	public function index()
 	{
-        foreach($this->document->invoicestime as $key => $statustime)
-        {
-            $where = $this->model_addon_invoices->whereUpComing();
-            $this->data[$key] = $this->model_addon_invoices->getList($where);
-        }
+        //Sắp đến hạn
+        $where = $this->model_addon_invoices->whereUpComing();
+        $this->data['status']['upcoming'] = $this->model_addon_invoices->getList($where);
+        //Den hang
+        $where = $this->model_addon_invoices->whereDeadLine();
+        $this->data['status']['deadline'] = $this->model_addon_invoices->getList($where);
+        //Quá hạn
+        $where = $this->model_addon_invoices->whereExpired();
+        $this->data['status']['expired'] = $this->model_addon_invoices->getList($where);
+        //Cần thanh lý
+        $where = $this->model_addon_invoices->whereLiquidation();
+        $this->data['status']['liquidation'] = $this->model_addon_invoices->getList($where);
+
 
         $this->id="header";
 		$this->template="common/header.tpl";
