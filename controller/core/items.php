@@ -65,6 +65,8 @@ class ControllerCoreItems extends Controller
     {
         @$this->data['insert'] = @$this->url->http('core/items/insert');
         @$this->data['delete'] = @$this->url->http('core/items/delete');
+        $this->data['search'] = $this->request->get;
+
         $this->id='content';
         $this->template="core/items_list.tpl";
         $this->layout="layout/home";

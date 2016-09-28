@@ -2,12 +2,9 @@
 /**
  * Class ControllerCoreItems
  *
- * @property ModelCoreItems model_core_items
- * @property ModelCoreCategory model_core_category
- * @property ModelAddonGroup model_addon_group
  *
  */
-class ControllerCoreItems extends Controller
+class ControllerCoreFile extends Controller
 {
     private $error = array();
     function __construct()

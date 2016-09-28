@@ -23,7 +23,7 @@
     Từ ngày: <?php echo $this->date->formatMySQLDate($item['startdate'])?> Đến ngày: <?php echo $this->date->formatMySQLDate($item['enddate'])?> Hết hạn
 </p>
 <p>
-    Lãi suất: <?php echo $item['rate']?>. Số tiền cầm, và thời gian đã được thông báo khi đến cầm và đồng ý.
+    Lãi suất: <?php echo $item['rate']?>%. Số tiền cầm, và thời gian đã được thông báo khi đến cầm và đồng ý.
 </p>
 <p>
     Giờ mở cửa: Từ 08 giờ sáng đến 20 giờ 30 tối. LS/ tối thiểu/T.1/>[20K].T.2/>[30K.>40K]

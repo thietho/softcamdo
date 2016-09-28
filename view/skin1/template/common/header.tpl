@@ -91,7 +91,19 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li><a href="?route=addon/invoices">Cầm đồ</a></li>
+                        <li>
+                            <a href="#">Báo cáo thống kê<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Thông kê cầm đồ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Báo báo thu chi</a>
+                                </li>
 
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

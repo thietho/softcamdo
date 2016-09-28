@@ -266,7 +266,7 @@ function Invoices()
         $("#customerpopup").modal({show: true});
         $("#customerpopup .modal-dialog").css("width","80%");
         $("#customerpopup .modal-body").html(loading);
-        $("#customerpopup .modal-body").load("?route=core/items&type=popup",function(){
+        $("#customerpopup .modal-body").load("?route=core/items&type=popup&group="+$('#frmInvoices #group').val(),function(){
             $( document ).ajaxComplete(function(){
                 $(".selectItems").click(function(){
                     $("#frmInvoices #itemid").val($(this).attr('id'));

@@ -23,7 +23,7 @@
 
                     <div class="form-group col-md-3">
                         <label>Tên sản phẩm</label>
-                        <input type="text" id="itemname" name="itemname" value="<?php echo @$item['itemname']?>" class="form-control"/>
+                        <input type="text" id="itemname" name="itemname" value="<?php echo @$search['itemname']?>" class="form-control"/>
                     </div>
                     <div class="form-group col-md-3">
                         <label>Hảng sản xuất</label>
@@ -84,6 +84,9 @@
 </div>
 <?php } ?>
 <script language="JavaScript">
+    $('#frmsearchitems #brand').val("<?php echo @$search['brand']?>");
+    $('#frmsearchitems #group').val("<?php echo @$search['group']?>");
+    $('#frmsearchitems #status').val("<?php echo @$search['status']?>");
 function Items()
 {
     this.deleteitem = function()
