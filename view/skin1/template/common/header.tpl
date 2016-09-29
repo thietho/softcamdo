@@ -95,7 +95,7 @@
                             <a href="#">Báo cáo thống kê<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Thông kê cầm đồ</a>
+                                    <a href="?route=reports/profitdate">Thông kê lợi nhận theo ngày</a>
                                 </li>
                                 <li>
                                     <a href="#">Báo báo thu chi</a>

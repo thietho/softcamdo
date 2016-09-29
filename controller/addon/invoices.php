@@ -191,7 +191,7 @@ class ControllerAddonInvoices extends Controller
                 $where.= $this->model_addon_invoices->whereLiquidation();
                 break;
         }
-
+        $where .= " ORDER BY `id` DESC ";
         $this->data['datas'] = array();
         $rows = @$this->model_addon_invoices->getList($where);
         //Page
@@ -325,6 +325,7 @@ class ControllerAddonInvoices extends Controller
                 $bill['amount'] = $this->string->toNumber($invoices['amount']);
                 $bill['notes'] = 'Cầm '.$invoices['invoicenumber']." - ".$invoices['itemname']." - ".$invoices['itemnumber'];
                 $bill['invoiceid'] = $invoices['id'];
+                $bill['invoicestatus'] = 'new';
                 $bill['cardid'] = $invoices['cardid'];
                 $bill['fullname'] = $invoices['fullname'];
                 $this->model_core_bills->save($bill);
@@ -416,6 +417,7 @@ class ControllerAddonInvoices extends Controller
         $bill['amount'] = $this->string->toNumber($data['amount']);
         $bill['notes'] = 'Đóng tiền lãi phiếu '.$invoice['invoicenumber']." - ".$invoice['itemname']." - ".$invoice['itemnumber'];
         $bill['invoiceid'] = $invoice['id'];
+        $bill['invoicestatus'] = 'payrate';
         $bill['cardid'] = $invoice['cardid'];
         $bill['fullname'] = $invoice['fullname'];
         $this->model_core_bills->save($bill);
@@ -427,7 +429,7 @@ class ControllerAddonInvoices extends Controller
         $this->model_addon_invoices->updateCol($invoice['id'],'enddate',$enddate);
         //Cập nhật trạng thái
         $this->model_addon_invoices->updateCol($invoice['id'],'status','payrate');
-          //Ghi log
+        //Ghi log
         $log = array();
         $log['invoiceid'] = $invoice['id'];
         $log['status'] = 'payrate';
@@ -465,6 +467,7 @@ class ControllerAddonInvoices extends Controller
         $bill['amount'] = $this->string->toNumber($data['amount']);
         $bill['notes'] = 'Đóng tiền chuột phiếu '.$invoice['invoicenumber']." - ".$invoice['itemname']." - ".$invoice['itemnumber'];
         $bill['invoiceid'] = $invoice['id'];
+        $bill['invoicestatus'] = 'getback';
         $bill['cardid'] = $invoice['cardid'];
         $bill['fullname'] = $invoice['fullname'];
         $this->model_core_bills->save($bill);
@@ -513,6 +516,7 @@ class ControllerAddonInvoices extends Controller
         $bill['amount'] = $this->string->toNumber($data['amount']);
         $bill['notes'] = 'Thanh lý phiếu '.$invoice['invoicenumber']." - ".$invoice['itemname']." - ".$invoice['itemnumber'];
         $bill['invoiceid'] = $invoice['id'];
+        $bill['invoicestatus'] = 'payoff';
         $bill['cardid'] = $invoice['cardid'];
         $bill['fullname'] = $invoice['fullname'];
         $this->model_core_bills->save($bill);

@@ -17,6 +17,7 @@ class ModelCoreBills extends Model
         'amount',
         'notes',
         'invoiceid',
+        'invoicestatus',
         'cardid',
         'fullname'
 
