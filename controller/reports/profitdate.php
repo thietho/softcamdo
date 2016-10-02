@@ -46,6 +46,9 @@ class ControllerReportsProfitdate extends Controller
     public function index()
     {
         $datenow = date('Y-m-d',time());
+        $data = $this->getProfitDate('2016-09-26');
+        print_r($data);
+
         $data = $this->getProfitDate($datenow);
         print_r($data);
         $this->id = 'content';
