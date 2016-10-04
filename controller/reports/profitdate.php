@@ -45,15 +45,34 @@ class ControllerReportsProfitdate extends Controller
 
     public function index()
     {
-        $datenow = date('Y-m-d',time());
-        $data = $this->getProfitDate('2016-09-26');
-        print_r($data);
-
-        $data = $this->getProfitDate($datenow);
-        print_r($data);
         $this->id = 'content';
         $this->template = "reports/profitdate.tpl";
         $this->layout = "layout/home";
+        $this->render();
+    }
+
+    public function showReport()
+    {
+        $formdate = $this->date->formatViewDate($this->request->post['formdate']);
+        $enddate = $this->date->formatViewDate($this->request->post['enddate']);
+        $intformdate = $this->date->timeToInt($formdate);
+        $intenddate = $this->date->timeToInt($enddate);
+        if($intformdate > $intenddate)
+            $this->data['error'] = "Bạn phải chọn từ ngày trước hoặc bằng đến ngày";
+        else
+        {
+            $data = array();
+            while($intformdate <= $intenddate )
+            {
+                $date = date('Y-m-d',$intformdate);
+                $data[] = $this->getProfitDate($date);
+                //$data[] = $date;
+                $intformdate += 24*60*60;
+            }
+            $this->data['data'] = $data;
+        }
+        $this->id = 'content';
+        $this->template = "reports/profitdate_show.tpl";
         $this->render();
     }
 
