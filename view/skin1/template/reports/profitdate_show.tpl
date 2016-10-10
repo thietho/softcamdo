@@ -17,7 +17,7 @@ else
     <?php $sum = 0; ?>
     <?php foreach($data as $key => $item){ ?>
     <tr>
-        <td class="text-center"><?php echo $key?></td>
+        <td class="text-center"><?php echo $key + 1?></td>
         <td class="text-center"><?php echo $this->date->formatMySQLDate($item['date'])?></td>
         <td class="number"><?php echo $this->string->numberFormate($item['willprofit'])?></td>
         <td class="number"><?php echo $this->string->numberFormate($item['profit'])?></td>
