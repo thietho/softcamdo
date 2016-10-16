@@ -98,7 +98,7 @@
                                     <a href="?route=reports/profitdate">Thông kê lợi nhận theo ngày</a>
                                 </li>
                                 <li>
-                                    <a href="#">Báo báo thu chi</a>
+                                    <a href="?route=reports/products">Thống kê theo loại hàng</a>
                                 </li>
 
                             </ul>
