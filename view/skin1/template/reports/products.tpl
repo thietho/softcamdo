@@ -1,3 +1,4 @@
+<script src="<?php echo HTTP_SERVER.DIR_JS?>canvasjs.min.js"></script>
 <div id="page-wrapper">
 
     <div class="row">
@@ -27,9 +28,13 @@
             </form>
 
         </div>
+
         <div id="showreport"></div>
     </div>
 </div>
+
+
+
 <script language="JavaScript">
     $('#btnShowReport').click(function () {
         $.post("?route=reports/products/showReport",$('#frmProduct').serialize(), function (html) {

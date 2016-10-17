@@ -85,13 +85,30 @@ class ControllerReportsProducts extends Controller
             {
                 $list = $this->string->array_Filter($data_items,'group',$group['groupid']);
                 $sumprecent = 0;
+                $sumcount = 0;
                 foreach($list as $li)
                 {
                     $sumprecent += $li['percent'];
+                    $sumcount += $li['count'];
                 }
                 $this->data['groups'][$key]['percent'] = $sumprecent;
+                $this->data['groups'][$key]['count'] = $sumcount;
             }
-            print_r($this->data['groups']);
+            $group = array();
+            $group['id'] = 0;
+            $group['groupname'] = "Nhóm khác";
+            $list = $this->string->array_Filter($data_items,'group','');
+            $sumprecent = 0;
+            $sumcount = 0;
+            foreach($list as $li)
+            {
+                $sumprecent += $li['percent'];
+                $sumcount += $li['count'];
+            }
+            $group['percent'] = $sumprecent;
+            $group['count'] = $sumcount;
+            $this->data['groups'][] = $group;
+
         }
         $this->id = 'content';
         $this->template = "reports/products_show.tpl";

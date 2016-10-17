@@ -4,6 +4,7 @@ if(@$error != '')
 else
 {
 ?>
+
 <table class="table table-striped table-bordered table-hover">
     <thead>
     <tr>
@@ -24,4 +25,36 @@ else
     <?php } ?>
     </tbody>
 </table>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var chart = new CanvasJS.Chart("chartContainer",
+                {
+                    theme: "theme2",
+                    title:{
+                        text: ""
+                    },
+                    data: [
+                        {
+                            type: "pie",
+                            showInLegend: true,
+                            toolTipContent: "{y} - #percent %",
+                            //yValueFormatString: "#0.#,,. Million",
+                            legendText: "{indexLabel}",
+                            dataPoints: [
+                                    <?php foreach($groups as $group){ ?>
+                                {  y: <?php echo $group['count']?>, indexLabel: "<?php echo $group['groupname']?>" },
+
+
+                                    <?php } ?>
+                            ]
+                        }
+                    ]
+                });
+        chart.render();
+    });
+
+</script>
+
+<div id="chartContainer" style="height: 400px; width: 100%;"></div>
 <?php } ?>
