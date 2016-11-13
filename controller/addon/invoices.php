@@ -64,27 +64,28 @@ class ControllerAddonInvoices extends Controller
     public function view()
     {
         $id = $this->request->get['id'];
-
-        if($id!='')
+        $this->data['item'] = @$this->model_addon_invoices->getItem($id);
+        $info = $this->model_addon_invoices->getInvoicesValue($id,'info');
+        $data_info = json_decode(base64_decode($info),true);
+        $arr = array();
+        foreach($data_info as $key => $val)
         {
-            $this->data['item'] = @$this->model_addon_invoices->getItem($id);
-            $info = $this->model_addon_invoices->getInvoicesValue($id,'info');
-            $data_info = json_decode(base64_decode($info),true);
-            $arr = array();
-            foreach($data_info as $key => $val)
-            {
-                $arr[] = $key.': '.$val;
-            }
-            $this->data['item']['info'] = implode(' - ',$arr);
-            $group = $this->model_addon_group->getItemById($this->data['item']['group']);
-            $this->data['item']['period'] = $group['period'];
+            $arr[] = $key.': '.$val;
         }
-        else
-        {
+        $this->data['item']['info'] = implode(' - ',$arr);
+        $group = $this->model_addon_group->getItemById($this->data['item']['group']);
+        $this->data['item']['period'] = $group['period'];
 
-        }
         @$this->id='content';
-        @$this->template='addon/invoices_view.tpl';
+        switch($this->data['item']['group'])
+        {
+            case 'gtx':
+                $this->template='addon/invoices_view_gtx.tpl';
+                break;
+            default:
+                $this->template='addon/invoices_view.tpl';
+        }
+
         $this->layout="layout/home";
         @$type = $this->request->get['type'];
         if($type=='popup')
