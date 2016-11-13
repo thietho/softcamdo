@@ -98,14 +98,22 @@ class ControllerAddonGroup extends Controller
         $data = @$this->request->post;
         if($this->validateForm($data))
         {
-            $listamount = $data['listamount'];
-            $listrate = $data['listrate'];
-            $arrlistrate = array();
-            foreach($listamount as $key =>$amount)
+            if(isset($data['listamount']))
             {
-                $arrlistrate[$this->string->toNumber($amount)] = $listrate[$key];
+                $listamount = $data['listamount'];
+                $listrate = $data['listrate'];
+
+
+                $arrlistrate = array();
+                foreach($listamount as $key =>$amount)
+                {
+                    $arrlistrate[$this->string->toNumber($amount)] = $listrate[$key];
+                }
+                $data['listrate'] = base64_encode(json_encode($arrlistrate));
             }
-            $data['listrate'] = base64_encode(json_encode($arrlistrate));
+            else
+                $data['listrate'] = '';
+
             $this->model_addon_group->save($data);
             @$this->data['output'] = "true";
         }

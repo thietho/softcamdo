@@ -211,10 +211,10 @@
                 }
         );
     }
-    $('#brand').val("<?php echo $item['brand']?>");
-    $('#group').val("<?php echo $item['group']?>");
-    $('#status').val("<?php echo $item['status']?>");
-    $('#amount').keyup(function () {
+    $('#frmInvoices #brand').val("<?php echo $item['brand']?>");
+    $('#frmInvoices #group').val("<?php echo $item['group']?>");
+    $('#frmInvoices #status').val("<?php echo $item['status']?>");
+    $('#frmInvoices #amount').keyup(function () {
         if(invoice.coutlistrate>0) {
             var amount = stringtoNumber($(this).val());
             for (i in invoice.listrate) {
@@ -233,13 +233,15 @@
             });
             $.getJSON("?route=addon/group/getGroup&groupid="+this.value, function (data) {
                 if(data.listrate=='') {
+
                     $('#frmInvoices #rate').val(data.rate);
+
                 }
                 else
                 {
                     invoice.listrate = data.arrlistrate;
                     invoice.coutlistrate = data.coutlistrate;
-
+                    $('#frmInvoices #amount').keyup();
 
                 }
 
