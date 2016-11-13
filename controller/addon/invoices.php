@@ -76,6 +76,8 @@ class ControllerAddonInvoices extends Controller
                 $arr[] = $key.': '.$val;
             }
             $this->data['item']['info'] = implode(' - ',$arr);
+            $group = $this->model_addon_group->getItemById($this->data['item']['group']);
+            $this->data['item']['period'] = $group['period'];
         }
         else
         {
