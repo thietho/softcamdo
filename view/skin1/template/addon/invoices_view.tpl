@@ -1,47 +1,46 @@
-<h1 class="text-center">
-    Cầm đồ *Phương Nghi*
+<h1 class="text-center" style="font-size: 2.2em">
+    DV.CẦM ĐỒ*PHƯƠNG NGHI*
 </h1>
-<p class="text-center">
-    SỐ 16.Đ.152 Cao Lỗ P.4 Q.8 TPHCM ĐT: 0838521107 DĐ 0989.517.727
+<p class="text-center" style="font-size: 1.1em">
+    <strong>ĐỊA CHỈ: SỐ.16.Đ.152.CAO LỖ.P.04.Q.08.TPHCM*ĐT*38.521107*DĐ*0989.517.727.</strong>
+</p>
+<p class="text-center" style="font-size: 1.2em">
+    <strong>*BIÊN NHẬN*[có giá trị.<?php echo $item['period']?>.ngày]</strong>
 </p>
 <p class="text-center">
-    Hôm nay: <?php echo $this->date->getDay($item['createdate'])?>/Tháng/<?php echo $this->date->getMonth($item['createdate'])?>/Năm:<?php echo $this->date->getYear($item['createdate'])?>
-    BL.SỐ <?php echo $item['invoicenumber']?>
-</p>
-<p class="text-center">
-    Biên Nhận (Có giá trị 30 ngày)
+    HÔM NAY*NGÀY:<?php echo $this->date->getDay($item['createdate'])?>:THÁNG:<?php echo $this->date->getMonth($item['createdate'])?>:NĂM:<?php echo $this->date->getYear($item['createdate'])?>
+    BL/SỐ <?php echo $item['invoicenumber']?> [2.LIÊN] ĐTKH: <?php echo $item['phone']?>
 </p>
 <p>
-    Nhận của: <?php echo $item['fullname']?>
+    <strong>NHẬN CỦA: <?php echo $item['fullname']?></strong>
     <?php echo $item['itemname']?>
     <?php echo $item['info']?>
 </p>
 <p>
-    Số tiền cầm: <?php echo $this->string->numberFormate($item['amount'])?>/VNĐ - <?php echo $this->string->doc_so($item['amount'])?> đồng
+    SỐ TIỀN CẦM: <?php echo $this->string->numberFormate($item['amount'])?>/VNĐ - <span style="text-transform: uppercase"><?php echo $this->string->doc_so($item['amount'])?></span> ĐỒNG-[G.C]-…………
 </p>
 <p>
-    Từ ngày: <?php echo $this->date->formatMySQLDate($item['startdate'])?> Đến ngày: <?php echo $this->date->formatMySQLDate($item['enddate'])?> Hết hạn
+    <strong>TỪ NGÀY</strong> <?php echo $this->date->formatMySQLDate($item['startdate'])?> <strong>ĐẾN NGÀY:</strong> <?php echo $this->date->formatMySQLDate($item['enddate'])?> <strong>*HẾT HẠN.</strong>
 </p>
 <p>
-    Lãi suất: <?php echo $item['rate']?>%. Số tiền cầm, và thời gian đã được thông báo khi đến cầm và đồng ý.
+    THỜI GIAN CẦM HẾT HẠN,SAU[05.NGÀY]MÀ KHÁCH HÀNG KHÔNG ĐẾN CHUỘC,CỬA HÀNG CÓ QUYỀN TỰ TIẾN HÀNH<strong>[THANH LÝ MÓN ĐỒ CẦM CỐ]</strong>ĐỂ THU HỒI VỐN VÀ LÃI, MỌI THẮC MẮC VÀ KHIẾU  NẠI VỀ SAU CỦA QUÝ KHÁCH,CỬA HÀNG SẼ KHÔNG GIÃI QUYẾT,MÓN ĐỒ CẦM TẠI CỬA HÀNG LÀ HỢP PHÁP,VÀ CHỊU HOÀN TOÀN TRÁCH NHIỆM NẾU CÓ TRANH CHẤP XÃY RA<strong>[ĐẾN KỲ THANH TOÁN]</strong>MÓN ĐỒ CẦM DƯỚI MƯỜI TRIỆU ĐỒNG,CỬA HÀNG SẼ KHÔNG NHẮC
 </p>
 <p>
-    Giờ mở cửa: Từ 08 giờ sáng đến 20 giờ 30 tối. LS/ tối thiểu/T.1/>[20K].T.2/>[30K.>40K]
+    LÃI SUẤT* . SỐ TIỀN CẦM ,VÀ THỜI GIAN ĐÃ ĐƯỢC THÔNG BÁO KHI ĐẾN CẦM,VÀ ĐỒNG Ý !
 </p>
 <p>
-    Thời gian cầm hết hạn sau <strong>"5 ngày"</strong> mà khách không đến chuộc, đóng lãi thay giấy, của hàng có quyền tự tiến hành <strong>"Thanh lý món đồ cầm cố"</strong> để thu hồi vốn và lãi, mọi thắc mắt và khiếu nại về sau của quý khách, cửa hàng sẽ không giải quyết, món đồ cầm tại cửa hàng là hợp pháp và chịu hoàn toàn trách nhiệm nếu có tranh chấp xãy ra <strong>"đến kỳ thanh toán"</strong> món đồ dưới mười triệu đồng cửa hàng sẽ không nhắc
+    GIỜ MỠ CỮA*	TỪ.08.GIỜ.SÁNG ĐẾN*>20.GIỜ.30.TỐI*MỖI NGÀY*	[LS/TỐI.THIỄU*.>………….]
 </p>
-<p>
-    <strong>Lưu ý:</strong> mất biên nhận(CĐ) phải báo ngay nếu báo trể mọi thiệt hại khách hàng chịu.
-</p>
+
+
 
 <table>
     <tr>
-        <td class="text-center" style="width: 50%">Khách hàng đọc hiểu(ký, ghi họ tên)</td>
-        <td class="text-center" style="width: 50%">Phụ trác cửa hàng</td>
+        <td class="text-center" style="width: 50%"><strong>KHÁCH HÀNG ĐỌC HIỂU.(KÝ,GHI HỌ TÊN)</strong></td>
+        <td class="text-center" style="width: 50%"><strong>PHỤ TRÁCH CỬA HÀNG</strong></td>
     </tr>
-    <tr style="height: 80px"></tr>
+    <tr style="height: 50px"></tr>
 </table>
-<p class="text-center">
-    *Hân hạnh được phục vụ quý khách*
+<p>
+    <strong>LƯU Ý*</strong>	MẤT BIÊN NHẬN <strong>[CẦM ĐỒ]</strong> CỮA HÀNG SẼ KHÔNG GIÃI QUYẾT,CHO QUÝ KHÁCH.
 </p>

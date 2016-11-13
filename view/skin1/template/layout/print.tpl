@@ -11,8 +11,8 @@
 <style>
     body
     {
-        font-family:arial, Helvetica, sans-serif;
-        text-transform: uppercase;
+        font-family:"Times New Roman", serif;
+
     }
     h1,h2,h3,h4,h5,h6
     {
@@ -21,8 +21,8 @@
     }
     p
     {
-        margin:0;
-        font-size:0.8em;
+        margin:5px;
+        font-size:1em;
     }
     table
     {
