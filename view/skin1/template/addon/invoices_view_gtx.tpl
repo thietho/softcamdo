@@ -39,5 +39,5 @@
     <tr style="height: 50px"></tr>
 </table>
 <p>
-    <strong>LƯU Ý*</strong>	MẤT BIÊN NHẬN <strong>[CẦM ĐỒ]</strong> CỮA HÀNG SẼ KHÔNG GIÃI QUYẾT,CHO QUÝ KHÁCH.
+    <strong>LƯU Ý*</strong>	MẤT BIÊN NHẬN <strong>[CẦM ĐỒ]</strong> PHẢI BÁO NGAY NẾU BÁO TRỂ MỌI THIỆT HẠI KHÁCH HÀNG CHỊU "NẾU CÓ".
 </p>
