@@ -17,10 +17,10 @@
     <?php echo $item['info']?>
 </p>
 <p>
-    SỐ TIỀN CẦM: <?php echo $this->string->numberFormate($item['amount'])?>/VNĐ - <span style="text-transform: uppercase"><?php echo $this->string->doc_so($item['amount'])?></span> ĐỒNG-[G.C]-…………
+    SỐ TIỀN CẦM: <?php echo $this->string->numberFormate($item['amount'])?>VNĐ - <span style="text-transform: uppercase"><?php echo $this->string->doc_so($item['amount'])?></span> ĐỒNG-[G.C]-…………
 </p>
 <p>
-    <strong>TỪ NGÀY</strong> <?php echo $this->date->formatMySQLDate($item['startdate'])?> <strong>ĐẾN NGÀY:</strong> <?php echo $this->date->formatMySQLDate($item['enddate'])?> <strong>*HẾT HẠN.</strong>
+    <strong>TỪ NGÀY</strong> <?php echo $this->date->getDay($item['startdate'])?>/THÁNG/<?php echo $this->date->getMonth($item['startdate'])?>/NĂM:<?php echo $this->date->getYear($item['startdate'])?><strong>*ĐẾN NGÀY*></strong> <?php echo $this->date->getDay($item['enddate'])?>/THÁNG/<?php echo $this->date->getMonth($item['enddate'])?>/NĂM:<?php echo $this->date->getYear($item['enddate'])?> <strong>*HẾT HẠN.</strong>
 </p>
 <p>
     THỜI GIAN CẦM HẾT HẠN,SAU[05.NGÀY]MÀ KHÁCH HÀNG KHÔNG ĐẾN CHUỘC,CỬA HÀNG CÓ QUYỀN TỰ TIẾN HÀNH<strong>[THANH LÝ MÓN ĐỒ CẦM CỐ]</strong>ĐỂ THU HỒI VỐN VÀ LÃI, MỌI THẮC MẮC VÀ KHIẾU  NẠI VỀ SAU CỦA QUÝ KHÁCH,CỬA HÀNG SẼ KHÔNG GIÃI QUYẾT,MÓN ĐỒ CẦM TẠI CỬA HÀNG LÀ HỢP PHÁP,VÀ CHỊU HOÀN TOÀN TRÁCH NHIỆM NẾU CÓ TRANH CHẤP XÃY RA<strong>[ĐẾN KỲ THANH TOÁN]</strong>MÓN ĐỒ CẦM DƯỚI MƯỜI TRIỆU ĐỒNG,CỬA HÀNG SẼ KHÔNG NHẮC
