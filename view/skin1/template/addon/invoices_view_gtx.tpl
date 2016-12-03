@@ -17,7 +17,7 @@
     <?php echo $item['info']?>
 </p>
 <p>
-    SỐ TIỀN CẦM: <?php echo $this->string->numberFormate($item['amount'])?>VNĐ - <span style="text-transform: uppercase"><?php echo $this->string->doc_so($item['amount'])?></span> ĐỒNG-[G.C]-…………
+    SỐ TIỀN CẦM: <?php echo $this->string->numberFormate($item['amount'])?>VNĐ - <span style="text-transform: uppercase"><?php echo $this->string->doc_so($item['amount'])?></span> ĐỒNG CHẲNG -[G.C]-…………
 </p>
 <p>
     <strong>TỪ NGÀY</strong> <?php echo $this->date->getDay($item['startdate'])?>/THÁNG/<?php echo $this->date->getMonth($item['startdate'])?>/NĂM:<?php echo $this->date->getYear($item['startdate'])?><strong>*ĐẾN NGÀY*></strong> <?php echo $this->date->getDay($item['enddate'])?>/THÁNG/<?php echo $this->date->getMonth($item['enddate'])?>/NĂM:<?php echo $this->date->getYear($item['enddate'])?> <strong>*HẾT HẠN.</strong>

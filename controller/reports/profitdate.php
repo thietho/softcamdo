@@ -110,6 +110,14 @@ class ControllerReportsProfitdate extends Controller
             $profit = $numdate *$invoice['amount']*$invoice['rate']/100/30;
             $sumwillprofit += $profit;
         }
-        return array('date'=>$date,'willprofit' => $sumwillprofit,'profit' => $sumpayrate + $sumprofit);
+        //Chi tien cam do
+        $where = " AND createdate = '$date' AND invoicestatus = 'new' AND `billtype` = 'pay'";
+        $bills = $this->model_core_bills->getList($where);
+        $capital = 0;
+        foreach($bills as $bill)
+        {
+            $capital+= $bill['amount'];
+        }
+        return array('date'=>$date,'willprofit' => $sumwillprofit,'profit' => $sumpayrate + $sumprofit,'capital' => $capital);
     }
 }

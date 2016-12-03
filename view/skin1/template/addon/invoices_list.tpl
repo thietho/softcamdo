@@ -252,6 +252,7 @@
             $('#invoicepayoffpopup .modal-body').html(loading);
             $("#invoicepayoffpopup .modal-body").load("?route=addon/invoices/payOff&id="+id+"&type=popup");
         }
+
         this.payOffAction = function()
         {
             $.post("?route=addon/invoices/payOffAction",$('#frmPayOff').serialize(), function (data) {
@@ -261,6 +262,10 @@
 
 
             });
+        }
+        this.createCopy = function(id)
+        {
+            window.location='?route=addon/invoices/insert&copyid=' + id;
         }
         this.history = function(id)
         {
@@ -291,7 +296,7 @@
                 <button type="button" class="btn btn-default" id="btnPayRate" onclick="invoices.payRate($('#btnPrint').attr('invoiceid'))">Đóng lãi</button>
                 <button type="button" class="btn btn-default" id="btnGetBack" onclick="invoices.getBack($('#btnPrint').attr('invoiceid'))">Chuộc</button>
                 <button type="button" class="btn btn-default" id="btnPayOff" onclick="invoices.payOff($('#btnPrint').attr('invoiceid'))">Thanh lý</button>
-
+                <button type="button" class="btn btn-default" id="btnCreateCopy" onclick="invoices.createCopy($('#btnPrint').attr('invoiceid'));">Tạo phiếu cùng nội dung</button>
                 <button type="button" class="btn btn-default" id="btnPrint" onclick="invoices.print($(this).attr('invoiceid'));">In phiếu</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
             </div>

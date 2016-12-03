@@ -69,10 +69,16 @@ class ControllerCoreBills extends Controller
         $where = "";
         foreach($data as $key => $value)
             $data[$key] = trim(urldecode($value));
+        if(@$data['fullname'] != "")
+            $where .= " AND `fullname` like '%".$data['fullname']."%'";
         if(@$data['billnumber'] != "")
             $where .= " AND `billnumber` like '%".$data['billnumber']."%'";
         if(@$data['billtype'] != "")
             $where .= " AND `billtype` like '".$data['billtype']."'";
+        if(@$data['formcreatedate'] != "")
+            $where .= " AND `createdate` >= '".$this->date->formatViewDate($data['formcreatedate'])."'";
+        if(@$data['tocreatedate'] != "")
+            $where .= " AND `createdate` <= '".$this->date->formatViewDate($data['tocreatedate'])."'";
 
         $this->data['datas'] = array();
         $rows = @$this->model_core_bills->getList($where);

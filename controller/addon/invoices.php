@@ -253,6 +253,7 @@ class ControllerAddonInvoices extends Controller
 
         $id = $this->request->get['id'];
         $group = $this->request->get['group'];
+
         if($id!='')
         {
             $this->data['item'] = @$this->model_addon_invoices->getItem($id);
@@ -260,6 +261,13 @@ class ControllerAddonInvoices extends Controller
         }
         else
         {
+            $copyid = $this->request->get['copyid'];
+            if($copyid)
+            {
+                $this->data['item'] = @$this->model_addon_invoices->getItem($copyid);
+                $this->data['item']['id'] = '';
+                $this->data['item']['copyid'] = $copyid;
+            }
             $this->data['item']['startdate'] = date('Y-m-d',time());
             $this->data['item']['enddate'] = date('Y-m-d',time()+24*60*60*30);
             $this->data['item']['group'] = $group;
@@ -538,6 +546,7 @@ class ControllerAddonInvoices extends Controller
         $this->template='common/output.tpl';
         $this->render();
     }
+
     //Cac ham xu ly tren form
     public function getInvoices()
     {

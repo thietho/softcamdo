@@ -169,6 +169,13 @@
         </div>
     </div>
 </div>
+<?php if($item['copyid']){ ?>
+<script type="application/javascript">
+    $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group=<?php echo $item['group']?>&invoiceid=<?php echo $item['copyid']?>",function(){
+        numberReady();
+    });
+</script>
+<?php } ?>
 <?php if($item['itemid'] != ""){ ?>
 <script language="JavaScript">
     $.getJSON("?route=core/items/getItems&id=<?php echo $item['itemid'] ?>", function (data) {
