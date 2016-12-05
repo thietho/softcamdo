@@ -81,7 +81,7 @@ class ControllerCoreBills extends Controller
             $where .= " AND `createdate` <= '".$this->date->formatViewDate($data['tocreatedate'])."'";
 
         $this->data['datas'] = array();
-        $rows = @$this->model_core_bills->getList($where);
+        $rows = @$this->model_core_bills->getList($where." ORDER BY `createdate` DESC ");
         //Page
         $page = @$this->request->get['page'];
         $x=$page;
