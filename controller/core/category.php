@@ -162,7 +162,7 @@ class ControllerCoreCategory extends Controller
 	{
 		$data = urldecode($this->request->post['data']);
 		$dataobj = json_decode($data);
-		//print_r($obj[0]->id);
+		print_r($dataobj);
 		foreach($dataobj as $key => $obj)
 		{
 			$this->model_core_category->updateCol($obj->id,'parent','category');
