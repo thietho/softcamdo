@@ -267,9 +267,10 @@ class ControllerAddonInvoices extends Controller
                 $this->data['item'] = @$this->model_addon_invoices->getItem($copyid);
                 $this->data['item']['id'] = '';
                 $this->data['item']['copyid'] = $copyid;
+                $objgroup = $this->model_addon_group->getItemById($this->data['item']['group']);
             }
             $this->data['item']['startdate'] = date('Y-m-d',time());
-            $this->data['item']['enddate'] = date('Y-m-d',time()+24*60*60*30);
+            $this->data['item']['enddate'] = date('Y-m-d',time()+24*60*60*$objgroup['period']);
             $this->data['item']['group'] = $group;
         }
         @$this->id='content';
