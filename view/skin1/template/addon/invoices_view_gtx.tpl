@@ -26,7 +26,7 @@
     LÃI SUẤT* . SỐ TIỀN CẦM ,VÀ THỜI GIAN ĐÃ ĐƯỢC THÔNG BÁO KHI ĐẾN CẦM,VÀ ĐỒNG Ý !
 </p>
 <p>
-    GIỜ MỠ CỮA*	TỪ.08.GIỜ.SÁNG ĐẾN*>20.GIỜ.30.TỐI*MỖI NGÀY*	[LS/TỐI.THIỄU*.>………….]
+    GIỜ MỠ CỮA*	TỪ.08.GIỜ.SÁNG ĐẾN*>21.GIỜ.00.TỐI*MỖI NGÀY*	[LS/TỐI.THIỄU*.>………….]
 </p>
 
 
