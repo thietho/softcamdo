@@ -23,7 +23,7 @@
     <strong>TỪ NGÀY</strong> <?php echo $this->date->getDay($item['startdate'])?>/THÁNG/<?php echo $this->date->getMonth($item['startdate'])?>/NĂM:<?php echo $this->date->getYear($item['startdate'])?><strong>*ĐẾN NGÀY*></strong> <?php echo $this->date->getDay($item['enddate'])?>/THÁNG/<?php echo $this->date->getMonth($item['enddate'])?>/NĂM:<?php echo $this->date->getYear($item['enddate'])?> <strong>*HẾT HẠN.</strong>
 </p>
 <p>
-    THỜI GIAN CẦM HẾT HẠN,SAU[05.NGÀY]MÀ KHÁCH HÀNG KHÔNG ĐẾN CHUỘC,CỬA HÀNG CÓ QUYỀN TỰ TIẾN HÀNH<strong>[THANH LÝ MÓN ĐỒ CẦM CỐ]</strong>ĐỂ THU HỒI VỐN VÀ LÃI, MỌI THẮC MẮC VÀ KHIẾU  NẠI VỀ SAU CỦA QUÝ KHÁCH,CỬA HÀNG SẼ KHÔNG GIÃI QUYẾT,MÓN ĐỒ CẦM TẠI CỬA HÀNG LÀ HỢP PHÁP,VÀ CHỊU HOÀN TOÀN TRÁCH NHIỆM NẾU CÓ TRANH CHẤP XÃY RA<strong>[ĐẾN KỲ THANH TOÁN]</strong>MÓN ĐỒ CẦM DƯỚI MƯỜI TRIỆU ĐỒNG,CỬA HÀNG SẼ KHÔNG NHẮC
+    THỜI GIAN CẦM HẾT HẠN, KHÁCH HÀNG KHÔNG ĐẾN CHUỘC, CỬA HÀNG CÓ QUYỀN TỰ TIẾN HÀNH<strong>[THANH LÝ MÓN ĐỒ CẦM CỐ]</strong>ĐỂ THU HỒI VỐN VÀ LÃI, MỌI THẮC MẮC VÀ KHIẾU  NẠI VỀ SAU CỦA QUÝ KHÁCH,CỬA HÀNG SẼ KHÔNG GIÃI QUYẾT,MÓN ĐỒ CẦM TẠI CỬA HÀNG LÀ HỢP PHÁP,VÀ CHỊU HOÀN TOÀN TRÁCH NHIỆM NẾU CÓ TRANH CHẤP XÃY RA<strong>[ĐẾN KỲ THANH TOÁN]</strong>MÓN ĐỒ CẦM DƯỚI MƯỜI TRIỆU ĐỒNG,CỬA HÀNG SẼ KHÔNG NHẮC
 </p>
 <p>
     LÃI SUẤT* . SỐ TIỀN CẦM ,VÀ THỜI GIAN ĐÃ ĐƯỢC THÔNG BÁO KHI ĐẾN CẦM,VÀ ĐỒNG Ý !

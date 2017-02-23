@@ -24,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="invoices_view.tpl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="invoices_view.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="44" selection-start="2025" selection-end="2025" vertical-scroll-proportion="-8.846154" vertical-offset="297" max-vertical-offset="867">
+            <state line="25" column="55" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.22456141" vertical-offset="297" max-vertical-offset="867">
               <folding />
             </state>
           </provider>
@@ -36,7 +36,7 @@
       <file leaf-file-name="invoices.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="272" column="91" selection-start="9932" selection-end="9932" vertical-scroll-proportion="-15.038462" vertical-offset="4233" max-vertical-offset="9673">
+            <state line="272" column="91" selection-start="9932" selection-end="9932" vertical-scroll-proportion="0.0" vertical-offset="4233" max-vertical-offset="9673">
               <folding />
             </state>
           </provider>
@@ -51,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invoices_view_gtx.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="invoices_view_gtx.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="3" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.7157895" vertical-offset="0" max-vertical-offset="816">
+            <state line="24" column="3" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-14.076923" vertical-offset="42" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -122,8 +122,8 @@
         <option value="$PROJECT_DIR$/controller/core/bills.php" />
         <option value="$PROJECT_DIR$/controller/core/category.php" />
         <option value="$PROJECT_DIR$/controller/addon/invoices.php" />
-        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" />
         <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" />
+        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" />
       </list>
     </option>
   </component>
@@ -440,7 +440,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../singleproject/amixu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -513,8 +513,8 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -780,21 +780,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="272" column="91" selection-start="9932" selection-end="9932" vertical-scroll-proportion="-15.038462" vertical-offset="4233" max-vertical-offset="9673">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="44" selection-start="2025" selection-end="2025" vertical-scroll-proportion="-8.846154" vertical-offset="297" max-vertical-offset="867">
+        <state line="272" column="91" selection-start="9932" selection-end="9932" vertical-scroll-proportion="0.0" vertical-offset="4233" max-vertical-offset="9673">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="3" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.7157895" vertical-offset="0" max-vertical-offset="816">
+        <state line="24" column="3" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-14.076923" vertical-offset="42" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="55" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.22456141" vertical-offset="297" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
