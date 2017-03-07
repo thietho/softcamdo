@@ -27,7 +27,7 @@
       <file leaf-file-name="invoices_view.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="55" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.22456141" vertical-offset="297" max-vertical-offset="867">
+            <state line="36" column="7" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.55263156" vertical-offset="297" max-vertical-offset="867">
               <folding />
             </state>
           </provider>
@@ -54,7 +54,7 @@
       <file leaf-file-name="invoices_view_gtx.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="3" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-14.076923" vertical-offset="42" max-vertical-offset="816">
+            <state line="25" column="14" selection-start="1472" selection-end="1472" vertical-scroll-proportion="-14.730769" vertical-offset="42" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -122,8 +122,8 @@
         <option value="$PROJECT_DIR$/controller/core/bills.php" />
         <option value="$PROJECT_DIR$/controller/core/category.php" />
         <option value="$PROJECT_DIR$/controller/addon/invoices.php" />
-        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" />
         <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" />
+        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" />
       </list>
     </option>
   </component>
@@ -787,14 +787,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="3" selection-start="1457" selection-end="1457" vertical-scroll-proportion="-14.076923" vertical-offset="42" max-vertical-offset="816">
+        <state line="25" column="14" selection-start="1472" selection-end="1472" vertical-scroll-proportion="-14.730769" vertical-offset="42" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="55" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.22456141" vertical-offset="297" max-vertical-offset="867">
+        <state line="36" column="7" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.55263156" vertical-offset="297" max-vertical-offset="867">
           <folding />
         </state>
       </provider>

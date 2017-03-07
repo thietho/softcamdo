@@ -23,7 +23,7 @@
     <strong>TỪ NGÀY</strong> <?php echo $this->date->getDay($item['startdate'])?>/THÁNG/<?php echo $this->date->getMonth($item['startdate'])?>/NĂM:<?php echo $this->date->getYear($item['startdate'])?><strong>*ĐẾN NGÀY*></strong> <?php echo $this->date->getDay($item['enddate'])?>/THÁNG/<?php echo $this->date->getMonth($item['enddate'])?>/NĂM:<?php echo $this->date->getYear($item['enddate'])?> <strong>*HẾT HẠN.</strong>
 </p>
 <p>
-    LÃI SUẤT* . SỐ TIỀN CẦM ,VÀ THỜI GIAN ĐÃ ĐƯỢC THÔNG BÁO KHI ĐẾN CẦM,VÀ ĐỒNG Ý !
+    LÃI SUẤT* SỐ TIỀN CẦM ,VÀ THỜI GIAN ĐÃ ĐƯỢC THÔNG BÁO KHI ĐẾN CẦM,VÀ ĐỒNG Ý !
 </p>
 <p>
     GIỜ MỠ CỮA*	TỪ.08.GIỜ.SÁNG ĐẾN*>21.GIỜ.00.TỐI*MỖI NGÀY*	[LS/TỐI.THIỄU*.>………….]
