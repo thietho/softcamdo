@@ -253,7 +253,9 @@ class ControllerAddonInvoices extends Controller
 
         $id = $this->request->get['id'];
         $group = $this->request->get['group'];
-
+        if($group == '' && $id == '')
+            $this->response->redirect("?route=addon/invoices/getList");
+        $this->document->title .= " ".$this->document->getGroup($group);
         if($id!='')
         {
             $this->data['item'] = @$this->model_addon_invoices->getItem($id);

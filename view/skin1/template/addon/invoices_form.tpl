@@ -64,7 +64,15 @@
                         <div class="panel-body">
 
                             <div class="form-group input-group">
+                                <?php if($item['group']){ ?>
                                 <input type="hidden" id="group" name="invoices[group]" value="<?php echo @$item['group']?>"/>
+                                <?php }else{ ?>
+                                <select id="group" name="invoices[group]" class="form-control">
+                                    <?php foreach($groups as $group){ ?>
+                                    <option value="<?php echo $group['groupid']?>"><?php echo $group['groupname']?></option>
+                                    <?php } ?>
+                                </select>
+                                <?php } ?>
                                 <input type="hidden" id="itemid" name="invoices[itemid]" value="<?php echo @$item['itemid']?>"/>
                                 <input type="text" id="itemname" name="invoices[itemname]" value="<?php echo @$item['itemname']?>" class="form-control" placeholder="Tên sản phẩm"/>
                                 <span class="input-group-btn">

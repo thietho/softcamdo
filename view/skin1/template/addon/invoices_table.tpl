@@ -27,7 +27,7 @@
             <td><?php echo $this->date->formatMySQLDate($item['enddate'])?></td>
             <td class="number"><?php echo $this->string->numberFormate($item['amount'])?></td>
             <td class="number"><?php echo $this->string->numberFormate($item['rate'])?>%</td>
-            <td><?php echo $item['itemname']?> - <?php echo $item['itemnumber']?></td>
+            <td><?php echo $item['itemname']?> - <?php echo $item['itemnumber']?>(<?php echo $this->document->getGroup($item['group'])?>)</td>
             <td>
                 Tên: <?php echo $item['fullname']?><br>
                 Số CMNDL<?php echo $item['idnumber']?><br>
