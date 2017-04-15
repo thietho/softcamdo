@@ -198,7 +198,9 @@ class ControllerAddonInvoices extends Controller
         $this->data['datas'] = array();
         $rows = @$this->model_addon_invoices->getList($where);
         //Page
-        $page = @$this->request->get['page'];
+        $page = $this->request->get['page'];
+        $this->session->set('invoicepage',$page);
+        //echo $this->session->data['invoicepage'];
         $x=$page;
         $limit = 20;
         $total = count($rows);
@@ -212,9 +214,9 @@ class ControllerAddonInvoices extends Controller
 
         for($i=$offset;$i < $offset + $limit && @count(@$rows[$i])>0;$i++)
         {
-            @$this->data['datas'][$i] = $rows[$i];
-            @$this->data['datas'][$i]['link_edit'] = $this->url->http('addon/invoices/update&id='.@$this->data['datas'][$i]['id']);
-            @$this->data['datas'][$i]['text_edit'] = "Sửa";
+            $this->data['datas'][$i] = $rows[$i];
+            $this->data['datas'][$i]['link_edit'] = $this->url->http('addon/invoices/update&id='.@$this->data['datas'][$i]['id']);
+            $this->data['datas'][$i]['text_edit'] = "Sửa";
 
 
         }
@@ -253,8 +255,16 @@ class ControllerAddonInvoices extends Controller
 
         $id = $this->request->get['id'];
         $group = $this->request->get['group'];
-        if($group == '' && $id == '')
-            $this->response->redirect("?route=addon/invoices/getList");
+        $copyid = $this->request->get['copyid'];
+        if($copyid == '')
+        {
+            if($group == '' && $id == '')
+            {
+                $this->response->redirect("?route=addon/invoices/getList");
+            }
+        }
+
+
         $this->document->title .= " ".$this->document->getGroup($group);
         if($id!='')
         {
@@ -263,7 +273,7 @@ class ControllerAddonInvoices extends Controller
         }
         else
         {
-            $copyid = $this->request->get['copyid'];
+
             if($copyid)
             {
                 $this->data['item'] = @$this->model_addon_invoices->getItem($copyid);

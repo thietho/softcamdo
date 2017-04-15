@@ -167,7 +167,7 @@
         }
         this.search = function()
         {
-            $.get("?route=addon/invoices/getData",
+            $.get("?route=addon/invoices/getData&page=<?php echo $this->session->data['invoicepage']?>",
                     $('#frmsearchinvoices').serialize(),
                     function(html){
                         $('#loadinvoicesdata').html(html);

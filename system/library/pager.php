@@ -108,9 +108,10 @@ class Pager
 		
 		for ($j = $start; $j <= $end; $j++) 
 		{
-
-			array_push($data_paginations, '<a href="#page='.$j.'" class="button pager" onclick="moveto(\''.$this->getURLQueryString('page', $j).'\',\''.$eid.'\')">'.$j.'</a>');
-
+			if($j != $page)
+				array_push($data_paginations, '<a href="#page='.$j.'" class="button pager" onclick="moveto(\''.$this->getURLQueryString('page', $j).'\',\''.$eid.'\')">'.$j.'</a>');
+			else
+				array_push($data_paginations, '<a href="#page='.$j.'" class="button pager active" onclick="moveto(\''.$this->getURLQueryString('page', $j).'\',\''.$eid.'\')">'.$j.'</a>');
 		}
 		if($pager->numPages > 1 && $page<$pager->numPages )
 		{

@@ -1,4 +1,7 @@
-.number
-{
+.number {
     text-align: right;
+}
+.active
+{
+    background: #0E3460 !important;
 }
