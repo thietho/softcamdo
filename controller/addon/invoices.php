@@ -232,16 +232,17 @@ class ControllerAddonInvoices extends Controller
 
         $objgroup = $this->model_addon_group->getItemById($group);
         $strinfo = $this->model_addon_invoices->getInvoicesValue($invoiceid,'info');
+        $data = json_decode(base64_decode($strinfo),true);
         $this->data['group'] = $objgroup;
-        if($strinfo == "")
+        if(count($data)== 0)
         {
             $arr = explode('-',$objgroup['infodes']);
             foreach($arr as $val)
-            $this->data['infos'][trim($val)] = '';
+                $this->data['infos'][trim($val)] = '';
         }
         else
         {
-            $data = json_decode(base64_decode($strinfo),true);
+            //$data = json_decode(base64_decode($strinfo),true);
             $this->data['infos'] = $data;
         }
 
@@ -280,10 +281,14 @@ class ControllerAddonInvoices extends Controller
                 $this->data['item']['id'] = '';
                 $this->data['item']['copyid'] = $copyid;
                 $objgroup = $this->model_addon_group->getItemById($this->data['item']['group']);
+                $this->data['item']['enddate'] = date('Y-m-d',time()+24*60*60*$objgroup['period']);
+            }else{
+                $this->data['item']['startdate'] = date('Y-m-d',time());
+                $objgroup = $this->model_addon_group->getItemById($group);
+                $this->data['item']['enddate'] = date('Y-m-d',time()+24*60*60*$objgroup['period']);
+                $this->data['item']['group'] = $group;
             }
-            $this->data['item']['startdate'] = date('Y-m-d',time());
-            $this->data['item']['enddate'] = date('Y-m-d',time()+24*60*60*$objgroup['period']);
-            $this->data['item']['group'] = $group;
+
         }
         @$this->id='content';
         @$this->template='addon/invoices_form.tpl';

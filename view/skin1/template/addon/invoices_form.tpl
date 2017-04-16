@@ -74,6 +74,7 @@
                                 </select>
                                 <?php } ?>
                                 <input type="hidden" id="itemid" name="invoices[itemid]" value="<?php echo @$item['itemid']?>"/>
+                                <input type="hidden" id="copyid" value="<?php echo $item['copyid']?>"/>
                                 <input type="text" id="itemname" name="invoices[itemname]" value="<?php echo @$item['itemname']?>" class="form-control" placeholder="Tên sản phẩm"/>
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="button" id="btnSearchItems"><i class="fa fa-search"></i>
@@ -177,13 +178,20 @@
         </div>
     </div>
 </div>
-<?php if($item['copyid']){ ?>
+
 <script type="application/javascript">
-    $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group=<?php echo $item['group']?>&invoiceid=<?php echo $item['copyid']?>",function(){
+    var invoiceid = '';
+    if($('#frmInvoices #copyid').val() !=''){
+        invoiceid = $('#frmInvoices #copyid').val();
+    }
+    if($('#frmInvoices #id').val()!=''){
+        invoiceid = $('#frmInvoices #id').val();
+    }
+    $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group=<?php echo $item['group']?>&invoiceid="+invoiceid,function(){
         numberReady();
     });
 </script>
-<?php } ?>
+
 <?php if($item['itemid'] != ""){ ?>
 <script language="JavaScript">
     $.getJSON("?route=core/items/getItems&id=<?php echo $item['itemid'] ?>", function (data) {
@@ -240,7 +248,7 @@
             }
         }
     })
-    $('#group').change(function(){
+    /*$('#group').change(function(){
         if(this.value!="")
         {
             $('#iteminfo').load("?route=addon/invoices/getItemGroupInfo&group="+this.value+"&invoiceid=<?php echo $item['id']?>",function(){
@@ -273,7 +281,7 @@
         {
             $('#iteminfo').html('<div class="panel panel-default"><div class="panel-heading">Thông tin nhóm sản phẩm </div></div>')
         }
-    });
+    });*/
 function Invoices()
 {
     this.listrate = new Object();
