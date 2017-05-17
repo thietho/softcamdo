@@ -82,6 +82,9 @@ class ControllerAddonInvoices extends Controller
             case 'gtx':
                 $this->template='addon/invoices_view_gtx.tpl';
                 break;
+            case 'car':
+                $this->template='addon/invoices_view_car.tpl';
+                break;
             default:
                 $this->template='addon/invoices_view.tpl';
         }
