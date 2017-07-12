@@ -31,16 +31,17 @@
 <p>
     GIỜ MỠ CỮA*	TỪ.08.GIỜ.SÁNG ĐẾN*>21.GIỜ.00.TỐI*MỖI NGÀY*	[LS/TỐI.THIỄU*.>………….]
 </p>
+
+<p>
+    <strong>CAM KẾT:</strong> NGÀY ĐẾN HẠN THANH TOÁN, MÀ TÔI KHÔNG CHUỘC XE MÁY ĐÃ CẦM, THÌ KHÁCH HÀNG PHẢI RA CÔNG CHỨNG SANG TÊN CHO CỦA HÀNG.
+    NẾU KHÔNG KHÁCH HÀNG HOÀN TOÀN CHỊU TRÁCH NHIỆM TRƯỚC PHÁP LUẬT VÀ MỌI THIỆT HẠI VỀ SAU.
+</p>
 <p>
     <strong>LƯU Ý*</strong>	MẤT BIÊN NHẬN <strong>[CẦM ĐỒ]</strong> CỮA HÀNG SẼ KHÔNG GIÃI QUYẾT,CHO QUÝ KHÁCH.
 </p>
-<p>
-    <strong>CAM KẾT:</strong> NGÀY ĐẾN HẠN THANH TOÁN, MÀ TÔI KHÔNG CHUỘC XE MÁY ĐÃ CẦM, THÌ TÔI PHẢI RA CÔNG CHỨNG SANG TÊN CHO CỦA HÀNG.
-    NẾU KHÔNG TÔI HOÀN TOÀN CHỊU TRÁCH NHIỆM TRƯỚC PHÁP LUẬT VÀ MỌI THIỆT HẠI VỀ SAU.
-</p>
 <table>
     <tr>
-        <td class="text-center" style="width: 50%"><strong>KHÁCH HÀNG ĐỌC HIỂU.(KÝ,GHI HỌ TÊN)</strong></td>
+        <td class="text-left" style="width: 50%"><strong>KHÁCH HÀNG ĐỌC HIỂU.(KÝ,GHI HỌ TÊN)</strong></td>
         <td class="text-center" style="width: 50%"><strong>PHỤ TRÁCH CỬA HÀNG</strong></td>
     </tr>
     <tr style="height: 50px"></tr>

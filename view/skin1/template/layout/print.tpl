@@ -30,6 +30,10 @@
         border-collapse: collapse;
         border-spacing: 0;
     }
+    table td
+    {
+        padding: 5px;
+    }
     .cusinfo
     {
 

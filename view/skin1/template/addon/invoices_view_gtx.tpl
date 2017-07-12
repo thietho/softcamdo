@@ -28,16 +28,15 @@
 <p>
     GIỜ MỠ CỮA*	TỪ.08.GIỜ.SÁNG ĐẾN*>21.GIỜ.00.TỐI*MỖI NGÀY*	[LS/TỐI.THIỄU*.>………….]
 </p>
-
+<p>
+    <strong>LƯU Ý*</strong>	MẤT BIÊN NHẬN <strong>[CẦM ĐỒ]</strong> PHẢI BÁO NGAY NẾU BÁO TRỂ MỌI THIỆT HẠI KHÁCH HÀNG CHỊU "NẾU CÓ".
+</p>
 
 
 <table>
     <tr>
-        <td class="text-center" style="width: 50%"><strong>KHÁCH HÀNG ĐỌC HIỂU.(KÝ,GHI HỌ TÊN)</strong></td>
+        <td class="text-left" style="width: 50%"><strong>KHÁCH HÀNG ĐỌC HIỂU.(KÝ,GHI HỌ TÊN)</strong></td>
         <td class="text-center" style="width: 50%"><strong>PHỤ TRÁCH CỬA HÀNG</strong></td>
     </tr>
     <tr style="height: 50px"></tr>
 </table>
-<p>
-    <strong>LƯU Ý*</strong>	MẤT BIÊN NHẬN <strong>[CẦM ĐỒ]</strong> PHẢI BÁO NGAY NẾU BÁO TRỂ MỌI THIỆT HẠI KHÁCH HÀNG CHỊU "NẾU CÓ".
-</p>
