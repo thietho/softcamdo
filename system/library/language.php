@@ -10,9 +10,8 @@ final class Language {
 		$this->db = Registry::get('db');
 		$this->request = Registry::get('request');
 		$this->session = Registry::get('session');
-		
+
     	$query = $this->db->query("SELECT * FROM language");
-		
     	foreach ($query->rows as $result) {
       		$this->languages[$result['code']] = array(
         		'languageid' => $result['languageid'],
