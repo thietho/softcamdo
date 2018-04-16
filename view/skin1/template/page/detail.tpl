@@ -1,2 +1,2 @@
-<?php echo @$module?>
+<?php echo @$module?>
        

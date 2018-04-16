@@ -2,13 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f69f5a-d18c-43d5-b465-4661cfa68e48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view1.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/addon/invoices.php" afterPath="$PROJECT_DIR$/controller/addon/invoices.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/library/language.php" afterPath="$PROJECT_DIR$/system/library/language.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/skin1/template/layout/print.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/layout/print.tpl" />
+      <change beforePath="$PROJECT_DIR$/system/library/language.php" afterPath="$PROJECT_DIR$/system/library/language.php" />
+      <change beforePath="$PROJECT_DIR$/system/library/pager.php" afterPath="$PROJECT_DIR$/system/library/pager.php" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/view/skin1/fonts/fontawesome-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/group_form.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/group_form.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/group_list.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/group_list.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_getback.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_getback.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_group_car.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_group_car.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_group_computer.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_group_computer.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_group_gold.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_group_gold.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_group_info.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_group_info.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_group_phone.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_group_phone.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_history.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_history.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_home.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_home.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_payoff.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_payoff.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_payrate.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_payrate.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_table.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_table.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view1.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view1.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/common/header.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/common/header.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/common/login.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/common/login.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/accounts_form.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/accounts_form.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/accounts_list.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/accounts_list.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/bills_form.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/bills_form.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/bills_list.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/bills_list.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/bills_table.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/bills_table.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/cards_form.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/cards_form.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/cards_list.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/cards_list.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/cards_table.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/cards_table.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/category_form.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/category_form.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/category_list.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/category_list.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/items_form.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/items_form.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/items_list.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/items_list.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/core/items_table.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/core/items_table.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/layout/home.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/layout/home.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/layout/print.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/layout/print.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/page/detail.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/page/detail.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/page/home.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/page/home.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/pagesample/leftsidebar.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/pagesample/leftsidebar.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/pagesample/singlecolumn.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/pagesample/singlecolumn.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/pagesample/styledemo.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/pagesample/styledemo.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/pagesample/threecolumn.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/pagesample/threecolumn.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/reports/products.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/reports/products.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/reports/products_show.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/reports/products_show.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/reports/profitdate.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/reports/profitdate.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/reports/profitdate_show.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/reports/profitdate_show.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sample/blanklist.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/sample/blanklist.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sample/defaultlist.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/sample/defaultlist.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sample/nicelist.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/sample/nicelist.tpl" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/warring/cart.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/warring/cart.tpl" />
     </list>
     <ignored path="softcamdo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,11 +66,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="softcamdo" />
   </component>
@@ -33,8 +77,8 @@
       <file leaf-file-name="invoices.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+            <state relative-caret-position="-1194">
+              <caret line="83" column="22" lean-forward="false" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -43,17 +87,29 @@
       <file leaf-file-name="invoices_view.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="31" />
-              <folding>
-                <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#7;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#8;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#9;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#10;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invoices_view1.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view1.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invoices_view_car.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,14 +118,8 @@
         <entry file="file://$PROJECT_DIR$/system/library/document.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="120" column="28" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="28" />
-              <folding>
-                <marker date="1478917545412" expanded="true" signature="2303:2396" placeholder="Select `cate... category" />
-                <marker date="1478917545412" expanded="true" signature="2540:2625" placeholder="Select `acco... accounts" />
-                <marker date="1478917545412" expanded="true" signature="2770:2845" placeholder="Select `grou... group" />
-                <marker date="1478917545412" expanded="true" signature="2961:3036" placeholder="Select `user... user" />
-                <marker date="1478917545412" expanded="true" signature="5118:5180" placeholder="SELECT ${$ta... ${$tablename}" />
-              </folding>
+              <caret line="120" column="28" lean-forward="false" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,16 +127,9 @@
       <file leaf-file-name="invoices_view_gtx.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-              <folding>
-                <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#6;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#7;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#8;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,8 +137,8 @@
       <file leaf-file-name="print.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/skin1/template/layout/print.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="17">
+              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -114,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" />
         <option value="$PROJECT_DIR$/system/library/language.php" />
         <option value="$PROJECT_DIR$/system/database/mysql.php" />
         <option value="$PROJECT_DIR$/system/library/db.php" />
@@ -122,25 +164,27 @@
         <option value="$PROJECT_DIR$/system/database/mysqli.php" />
         <option value="$PROJECT_DIR$/view/skin1/template/layout/print.tpl" />
         <option value="$PROJECT_DIR$/controller/addon/invoices.php" />
-        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" />
         <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" />
+        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" />
+        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view1.tpl" />
+        <option value="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-20" />
+    <option name="width" value="1296" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -164,16 +208,6 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -192,166 +226,49 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skin1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skin1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addon" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skin1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softcamdo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="softcamdo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="softcamdo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="softcamdo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="softcamdo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="softcamdo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="softcamdo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="skin1" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="softcamdo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="softcamdo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="skin1" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="softcamdo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="softcamdo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="skin1" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="addon" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../squarelife" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kevinhomes" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -373,6 +290,18 @@
       <recent name="D:\xampp\htdocs\softcamdo\model\core" />
       <recent name="D:\xampp\htdocs\softcamdo\controller\core" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -399,7 +328,6 @@
       <tasks />
       <arguments />
       <envs />
-      <method />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -424,23 +352,27 @@
       <workItem from="1499835760490" duration="213000" />
       <workItem from="1499847817054" duration="309000" />
       <workItem from="1502534700182" duration="6391000" />
+      <workItem from="1523851022842" duration="378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13061000" />
+    <option name="totallyTimeSpent" value="13439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2632375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26281112" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -448,12 +380,13 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -476,350 +409,309 @@
     <entry file="file://$PROJECT_DIR$/view/skin1/template/common/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/reports/profitdate.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/reports/products.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/reports/products.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/reports/products_show.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/core/cards.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/cards_table.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/cards_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_group_info.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/addon/invoices.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/reports/profitdate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/reports/profitdate_show.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/core/bills.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/bills_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/core/bills.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/category_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/core/category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/core/category_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/core/file.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/addon/group.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/addon/group.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/core/accounts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/core/cards.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/core/category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/core/items.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/date.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="78" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="78" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/css/sb-admin-2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/layout/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="33" column="82" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="82" />
+          <caret line="33" column="82" lean-forward="false" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="562" column="71" selection-start-line="562" selection-start-column="70" selection-end-line="562" selection-end-column="71" />
+          <caret line="562" column="71" lean-forward="false" selection-start-line="562" selection-start-column="70" selection-end-line="562" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_table.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+          <caret line="35" column="47" lean-forward="false" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="169" column="54" selection-start-line="169" selection-start-column="54" selection-end-line="169" selection-end-column="54" />
+          <caret line="169" column="54" lean-forward="false" selection-start-line="169" selection-start-column="54" selection-end-line="169" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="119" column="1" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="1" />
+          <caret line="119" column="1" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/pager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="113" column="96" selection-start-line="113" selection-start-column="96" selection-end-line="113" selection-end-column="96" />
+          <caret line="113" column="96" lean-forward="false" selection-start-line="113" selection-start-column="96" selection-end-line="113" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="104" column="48" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
+          <caret line="104" column="48" lean-forward="false" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/string.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/cache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view1.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/database/ClassConnect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1478917545176" expanded="true" signature="647:699" placeholder="SELECT * FRO... ${$tablename}" />
-            <marker date="1478917545176" expanded="true" signature="805:849" placeholder="SELECT max(T... ${$tablename}" />
-            <marker date="1478917545176" expanded="true" signature="971:1016" placeholder="SELECT max($... " />
-            <marker date="1478917545176" expanded="true" signature="1182:1244" placeholder="SELECT ${$ta... ${$tablename}" />
-            <marker date="1478917545176" expanded="true" signature="3078:3103" placeholder="INSERT INTO `${$table}`... " />
-            <marker date="1478917545176" expanded="true" signature="4668:4719" placeholder="DELETE FROM " />
-            <marker date="1478917545176" expanded="true" signature="5136:5189" placeholder="SELECT ${$ta... ${$tablename}" />
-            <marker date="1478917545176" expanded="true" signature="5279:5371" placeholder="UPDATE `${$t... " />
-            <marker date="1478917545176" expanded="true" signature="5458:5511" placeholder="SELECT ${$ta... ${$tablename}" />
-            <marker date="1478917545176" expanded="true" signature="5606:5667" placeholder="UPDATE `${$t... " />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/database/mysql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <marker date="1502536303958" expanded="true" signature="1632:1677" placeholder="SELECT max($... " />
-            <marker date="1502536303958" expanded="true" signature="1818:1882" placeholder="SELECT ${$ta... ${$tablename}" />
-            <marker date="1502536303958" expanded="true" signature="2336:2401" placeholder="SELECT ${$ta... ${$tablename}" />
-            <marker date="1502536303958" expanded="true" signature="2876:2905" placeholder="INSERT INTO `${$tablename}`... " />
-            <marker date="1502536303958" expanded="true" signature="4044:4075" placeholder="DELETE FROM " />
-          </folding>
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/language.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <marker date="1502536205313" expanded="true" signature="355:377" placeholder="SELECT * FRO... language" />
-            <marker date="1502536205313" expanded="true" signature="3012:3034" placeholder="SELECT * FRO... language" />
-          </folding>
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="87" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="87" />
-          <folding />
+          <caret line="10" column="87" lean-forward="false" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/database/mysqli.php">
+    <entry file="file://$PROJECT_DIR$/system/database/mysqli.php" />
+    <entry file="file://$PROJECT_DIR$/view/skin1/template/layout/print.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -827,61 +719,48 @@
     <entry file="file://$PROJECT_DIR$/system/library/document.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="120" column="28" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="28" />
-          <folding>
-            <marker date="1478917545412" expanded="true" signature="2303:2396" placeholder="Select `cate... category" />
-            <marker date="1478917545412" expanded="true" signature="2540:2625" placeholder="Select `acco... accounts" />
-            <marker date="1478917545412" expanded="true" signature="2770:2845" placeholder="Select `grou... group" />
-            <marker date="1478917545412" expanded="true" signature="2961:3036" placeholder="Select `user... user" />
-            <marker date="1478917545412" expanded="true" signature="5118:5180" placeholder="SELECT ${$ta... ${$tablename}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/skin1/template/layout/print.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <caret line="120" column="28" lean-forward="false" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+        <state relative-caret-position="-1194">
+          <caret line="83" column="22" lean-forward="false" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#9;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#10;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view1.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
