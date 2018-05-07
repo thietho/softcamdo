@@ -2,7 +2,7 @@
     DV.CẦM ĐỒ*PHƯƠNG NGHI*
 </h1>
 <p class="text-center" style="font-size: 1.1em">
-    <strong>ĐỊA CHỈ: SỐ.16.Đ.PHẠM THỊ TÁNH.P.04.Q.08.TPHCM*ĐT*38.521107*DĐ*0989.517.727.</strong>
+    <strong>SỐ.16.Đ.PHẠM THỊ TÁNH.P.04.Q.08.TPHCM*ĐT*38.521107*DĐ*0989.517.727.</strong>
 </p>
 <p class="text-center" style="font-size: 1.2em">
     <strong>*BIÊN NHẬN*[có giá trị.<?php echo $item['period']?>.ngày]</strong>
