@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0f69f5a-d18c-43d5-b465-4661cfa68e48" name="Default" comment="">
+    <list default="true" id="e0f69f5a-d18c-43d5-b465-4661cfa68e48" name="Default" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" afterDir="false" />
@@ -209,8 +209,16 @@
       <workItem from="1523851022842" duration="378000" />
       <workItem from="1523886157465" duration="94000" />
       <workItem from="1523935699675" duration="373000" />
-      <workItem from="1623220240775" duration="1375000" />
+      <workItem from="1623220240775" duration="1558000" />
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1623221712960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623221712960</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -244,6 +252,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -251,6 +270,10 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/view/skin1/template/common/header.tpl">
