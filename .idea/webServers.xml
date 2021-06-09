@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8bb10fc9-5f96-41fc-bb02-d9078da3d563" name="host ho" url="http://103.42.56.167">
+        <fileTransfer rootFolder="/camdo.camdophuongnghi.com" host="103.42.56.167" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
