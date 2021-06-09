@@ -2,101 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f69f5a-d18c-43d5-b465-4661cfa68e48" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" />
-      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view1.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view1.tpl" />
-      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" />
-      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" afterDir="false" />
     </list>
-    <ignored path="softcamdo.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path=".idea/dataSources.local.xml" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="softcamdo" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="invoices.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/addon/invoices.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="83" column="22" lean-forward="false" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices_view.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices_view1.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view1.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices_view_car.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="document.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/library/document.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="120" column="28" lean-forward="false" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices_view_gtx.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="print.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/skin1/template/layout/print.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -129,10 +52,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-20" />
     <option name="width" value="1296" />
@@ -220,13 +139,22 @@
       <pane id="Scratches" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../quyenchon60s" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../quyenchon60s" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="options.lastSelected" value="vcs.Git" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -244,18 +172,6 @@
       <recent name="D:\xampp\htdocs\softcamdo\controller\core" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
@@ -270,9 +186,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration" myUseAcceleration="nothing">
     <configuration useDefault="false">C:\Users\thiet\AppData\Roaming\Subversion</configuration>
   </component>
@@ -295,6 +209,7 @@
       <workItem from="1523851022842" duration="378000" />
       <workItem from="1523886157465" duration="94000" />
       <workItem from="1523935699675" duration="373000" />
+      <workItem from="1623220240775" duration="1375000" />
     </task>
     <servers />
   </component>
@@ -327,7 +242,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -336,21 +251,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="615" y="114" key="CommitChangelistDialog2" timestamp="1576029322153">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="615" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576029322153" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="4" />
-    </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/view/skin1/template/common/header.tpl">
