@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f69f5a-d18c-43d5-b465-4661cfa68e48" name="Default" comment="Update">
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/addon/invoices.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/invoices.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/config/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../quyenchon60s" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/database" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -159,16 +158,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\softcamdo\system\database" />
+      <recent name="D:\xampp56\htdocs\softcamdo\system\database" />
+      <recent name="D:\xampp56\htdocs\softcamdo\view\skin1\template\addon" />
+      <recent name="D:\xampp\htdocs\softcamdo\view\skin1\template\core" />
+      <recent name="D:\xampp\htdocs\softcamdo\model\core" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\softcamdo\view\skin1\template\reports" />
       <recent name="D:\xampp\htdocs\softcamdo\controller\addon" />
-      <recent name="D:\xampp\htdocs\softcamdo\view\skin1\template\core" />
-      <recent name="D:\xampp\htdocs\softcamdo\model\core" />
-      <recent name="D:\xampp\htdocs\softcamdo\controller\core" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp56\htdocs\softcamdo\system\database" />
-      <recent name="D:\xampp56\htdocs\softcamdo\view\skin1\template\addon" />
       <recent name="D:\xampp\htdocs\softcamdo\view\skin1\template\core" />
       <recent name="D:\xampp\htdocs\softcamdo\model\core" />
       <recent name="D:\xampp\htdocs\softcamdo\controller\core" />
@@ -213,6 +212,8 @@
       <workItem from="1523935699675" duration="373000" />
       <workItem from="1623220240775" duration="1558000" />
       <workItem from="1623763970182" duration="1280000" />
+      <workItem from="1625485219275" duration="1398000" />
+      <workItem from="1625490741290" duration="1333000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1623221712960</created>
@@ -221,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623221712960</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update">
+      <created>1625485357374</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1625485357374</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -254,6 +262,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

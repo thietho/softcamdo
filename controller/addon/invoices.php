@@ -452,10 +452,9 @@ class ControllerAddonInvoices extends Controller
         $this->model_core_bills->save($bill);
         //Cap nhat startdate va enddate
         $group = $this->model_addon_group->getItemById($invoice['group']);
-//        $startdate = $this->date->addday($invoice['startdate'],$data['numday']);
-//        $enddate = $this->date->addday($startdate,$group['period']);
-        //$this->model_addon_invoices->updateCol($invoice['id'],'startdate',$startdate);
-        $enddate = $this->date->addday($invoice['enddate'],$data['numday']+$group['period']);
+        $startdate = $this->date->addday($invoice['startdate'],$data['numday']);
+        $enddate = $this->date->addday($startdate,$group['period']);
+        $this->model_addon_invoices->updateCol($invoice['id'],'startdate',$startdate);
         $this->model_addon_invoices->updateCol($invoice['id'],'enddate',$enddate);
         //Cập nhật trạng thái
         $this->model_addon_invoices->updateCol($invoice['id'],'status','payrate');
