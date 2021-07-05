@@ -5,6 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/addon/invoices.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/invoices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/addon/invoices.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/addon/invoices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_form.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_car.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/invoices_view_gtx.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +218,7 @@
       <workItem from="1623220240775" duration="1558000" />
       <workItem from="1623763970182" duration="1280000" />
       <workItem from="1625485219275" duration="1398000" />
-      <workItem from="1625490741290" duration="1333000" />
+      <workItem from="1625490741290" duration="2534000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1623221712960</created>
@@ -229,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625485357374</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update">
+      <created>1625492120001</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625492120001</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

@@ -65,6 +65,10 @@ class ControllerAddonInvoices extends Controller
     {
         $id = $this->request->get['id'];
         $this->data['item'] = @$this->model_addon_invoices->getItem($id);
+
+        if($this->data['item']['begindate'] == '0000-00-00'){
+            echo $this->data['item']['begindate'] = $this->data['item']['startdate'];
+        }
         $info = $this->model_addon_invoices->getInvoicesValue($id,'info');
         $data_info = json_decode(base64_decode($info),true);
         $arr = array();
@@ -331,6 +335,7 @@ class ControllerAddonInvoices extends Controller
             $invoices['rate'] = $this->string->toNumber($data['invoices']['rate']);
             $invoices['itemname'] = $data['invoices']['itemname'];
             $invoices['itemnumber'] = $data['invoices']['itemnumber'];
+            $invoices['begindate'] = $this->date->formatViewDate($data['invoices']['begindate']);
             $invoices['startdate'] = $this->date->formatViewDate($data['invoices']['startdate']);
             $invoices['enddate'] = $this->date->formatViewDate($data['invoices']['enddate']);
             $invoices['numberexpirydate'] = $this->string->toNumber($data['invoices']['numberexpirydate']);

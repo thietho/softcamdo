@@ -31,6 +31,7 @@ class ModelAddonInvoices extends Model
         'rate',
         'itemname',
         'itemnumber',
+        'begindate',
         'startdate',
         'enddate',
         'numberexpirydate',
